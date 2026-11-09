@@ -1,0 +1,809 @@
+<Defs>
+
+  <ThingDef Name="BodyPartConsortiumBase" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <tradeTags>
+      <li>LCImplant</li>
+    </tradeTags>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <color>(28,40,25)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LCArm</defName>
+    <label>Consortium cybernetic arm</label>
+    <labelNoun>a Consortium cybernetic arm</labelNoun>
+    <description>An advantage of cheap, accessible cyberware is a populace that is essentially unbreakable-the Lahlit are one of the galaxy's greatest workforces for a reason. When their bodies inevitably degenerate from the effects of arduous labor, they just spend a few days' pay to have half of it replaced, and get back to work by the next morning.</description>
+    <descriptionHyperlinks><ThingDef>LCArm</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>10</power>
+            <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>LCArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>LCArm</defName>
+    <label>Consortium cybernetic arm</label>
+    <description>An advantage of cheap, accessible cyberware is a populace that is essentially unbreakable-the Lahlit are one of the galaxy's greatest workforces for a reason. When their bodies inevitably degenerate from the effects of arduous labor, they just spend a few days' pay to have half of it replaced, and get back to work by the next morning.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicArm</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>LCBionic</li>
+    </techHediffsTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallLCArm</defName>
+    <label>install Consortium cybernetic arm</label>
+    <description>Install a Consortium cybernetic arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LCArm</ThingDef>
+      <HediffDef>LCArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Consortium cybernetic arm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LCArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LCArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>LCArm</addsHediff>
+  </RecipeDef>
+
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LCLeg</defName>
+    <label>Consortium cybernetic leg</label>
+    <labelNoun>a Consortium cybernetic leg</labelNoun>
+    <description>Consortium-made leg prostheses tend to veer towards the wholly inhuman-some are bulky and crab-like, whereas others are far more lithe and insectoid. The one feature every Lahlit leg prosthetic has in common is the complete eschewal of a foot-like structure at the end-instead, they end in sharp, diagonal points akin to arthropod leg structures.
+The points can and will impale through most organisms through the application of enough force, and they create far less noise than feet do.</description>
+    <descriptionHyperlinks><ThingDef>LCLeg</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>LCLeg</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>LCLeg</defName>
+    <label>Consortium cybernetic leg</label>
+    <description>Consortium-made leg prostheses tend to veer towards the wholly inhuman-some are bulky and crab-like, whereas others are far more lithe and insectoid. The one feature every Lahlit leg prosthetic has in common is the complete eschewal of a foot-like structure at the end-instead, they end in sharp, diagonal points akin to arthropod leg structures.
+The points can and will impale through most organisms through the application of enough force, and they create far less noise than feet do.</description>
+    <descriptionHyperlinks><RecipeDef>InstallLCLeg</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>LCBionic</li>
+    </techHediffsTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>8</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallLCLeg</defName>
+    <label>install Consortium cybernetic leg</label>
+    <description>Install a Consortium cybernetic leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LCLeg</ThingDef>
+      <HediffDef>LCLeg</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Consortium cybernetic leg.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LCLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LCLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>LCLeg</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LCJaw</defName>
+    <label>cyber-mandibles</label>
+    <labelNoun>Consortium cyber-mandibles</labelNoun>
+    <description>A bifurcated orichalcum lower jaw, brought to you by the sick animals at Vreissehk Defense Technologies. Among the Consortium's legions, this particular implant is considered an honored symbol of sacrifice-they're typically found on grizzled war veterans who lost their original jaws to explosions or gunfire.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicJaw</ThingDef>
+    </descriptionHyperlinks>
+    <spawnThingOnRemoved>LCJaw</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>LCJaw</defName>
+    <label>cyber-mandibles</label>
+    <description>A bifurcated orichalcum lower jaw, brought to you by the sick animals at Vreissehk Defense Technologies. Among the Consortium's legions, this particular implant is considered an honored symbol of sacrifice-they're typically found on grizzled war veterans who lost their original jaws to explosions or gunfire.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>InstallLCJaw</RecipeDef>
+    </descriptionHyperlinks>
+    <techHediffsTags>
+      <li>LCBionic</li>
+    </techHediffsTags>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>1.5</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallLCJaw</defName>
+    <label>Install cyber-mandibles</label>
+    <description>Install cyber-mandibles.</description>
+    <jobString>Installing cyber-mandibles.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LCJaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LCJaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Jaw</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>LCJaw</addsHediff>
+  </RecipeDef>
+  
+
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LCTongue</defName>
+    <label>Consortium cybernetic tongue</label>
+    <labelNoun>a Consortium cybernetic tongue</labelNoun>
+    <description>This barbed, forked cybernetic tongue was originally designed for oral cancer patients-but due to its construction, it's far more popular with those who want to spice up their love lives. It can taste food to the same extent a biological tongue can, and doesn't get in the way of speech much-but it has a rather cumbersome feel.</description>
+    <descriptionHyperlinks><ThingDef>LCTongue</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>LCTongue</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.9</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>LCTongue</defName>
+    <label>Consortium cybernetic tongue</label>
+    <description>This barbed, forked cybernetic tongue is modeled after a Lahlit's biological tongue and was never meant for use by non-Lahlit, although it has gained popularity with those wishing to spice up their love lives. It can taste food to the same extent a biological tongue can, and doesn't get in the way of speech much-but it has a rather cumbersome feel.</description>
+    <descriptionHyperlinks><RecipeDef>InstallLCTongue</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>LCBionic</li>
+    </techHediffsTags>
+    <costList>
+      <Plasteel>8</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallLCTongue</defName>
+    <label>install Consortium cybernetic tongue</label>
+    <description>Install a Consortium cybernetic tongue.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LCTongue</ThingDef>
+      <HediffDef>LCTongue</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Consortium cybernetic tongue.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LCTongue</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LCTongue</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Tongue</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>LCTongue</addsHediff>
+  </RecipeDef>
+
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LCEar</defName>
+    <label>Consortium cybernetic ear</label>
+    <labelNoun>a Consortium cybernetic ear</labelNoun>
+    <description>During the reign of Lekkara Ghor, Th'res Liin's eldest sister, all cybernetic ears produced by the Consortium were required to have a small receiver built into the internals that constantly picked up advertisements broadcasted via satellite. The only way to avoid all the maddening noise was to pay a rather pricey monthly subscription to the premium version of the implant's software. Thankfully, such business practices have now been outlawed across all Consortium territories.</description>
+    <descriptionHyperlinks><ThingDef>LCEar</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>LCEar</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>LCEar</defName>
+    <label>Consortium cybernetic ear</label>
+    <description>During the reign of Lekkara Ghor, Th'res Liin's eldest sister, all cybernetic ears produced by the Consortium were required to have a small receiver built into the internals that constantly picked up advertisements broadcasted via satellite. The only way to avoid all the maddening noise was to pay a rather pricey monthly subscription to the premium version of the implant's software. Thankfully, such business practices have now been outlawed across all Consortium territories.</description>
+    <descriptionHyperlinks><RecipeDef>InstallLCEar</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>LCBionic</li>
+    </techHediffsTags>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallLCEar</defName>
+    <label>install Consortium cybernetic ear</label>
+    <description>Install a Consortium cybernetic ear.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LCEar</ThingDef>
+      <HediffDef>LCEar</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Consortium cybernetic ear.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LCEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LCEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>LCEar</addsHediff>
+  </RecipeDef>
+
+   <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LCStomach</defName>
+    <label>Consortium cybernetic stomach</label>
+    <labelNoun>a Consortium cybernetic stomach</labelNoun>
+    <description>Marketed as life-changing tech that staves off the effects of starvation and makes it so you don't NEED to eat, this Consortium-made cybernetic stomach has come under a bit of controversy recently: when it was discovered that it did not function as advertised. Instead of making it so that its hosts literally didn't need as much food to survive, it instead "staves off starvation" by not sending the proper hormones and pain signals to the brain unless in cases of severe malnutrition.
+Users of this implant are definitely still starving-they just can't feel a thing until the body starts eating muscle tissue to sustain itself. Of course, this implant's target demographic-the poorest of the galaxy's poor-will still sell their own children to crime syndicates for the money needed to purchase this tech. To those who have felt the agony of starvation their entire lives, it only matters if the pain stops-they could care less if they were still, in fact, starving. They've never experienced a period in their lives where they weren't.</description>
+    <descriptionHyperlinks><ThingDef>LCStomach</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>LCStomach</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <hungerRateFactorOffset>-0.60</hungerRateFactorOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>LCStomach</defName>
+    <label>Consortium cybernetic stomach</label>
+    <description>Marketed as life-changing tech that staves off the effects of starvation and makes it so you don't NEED to eat, this Consortium-made cybernetic stomach has come under a bit of controversy recently: when it was discovered that it did not function as advertised. Instead of making it so that its hosts literally didn't need as much food to survive, it instead "staves off starvation" by not sending the proper hormones and pain signals to the brain unless in cases of severe malnutrition.
+Users of this implant are definitely still starving-they just can't feel a thing until the body starts eating muscle tissue to sustain itself. Of course, this implant's target demographic-the poorest of the galaxy's poor-will still sell their own children to crime syndicates for the money needed to purchase this tech. To those who have felt the agony of starvation their entire lives, it only matters if the pain stops-they could care less if they were still, in fact, starving. They've never experienced a period in their lives where they weren't.</description>
+    <descriptionHyperlinks><RecipeDef>InstallLCStomach</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>LCBionic</li>
+    </techHediffsTags>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallLCStomach</defName>
+    <label>install Consortium cybernetic stomach</label>
+    <description>Install a Consortium cybernetic stomach.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LCStomach</ThingDef>
+      <HediffDef>LCStomach</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Consortium cybernetic stomach.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LCStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LCStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>LCStomach</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LCHeart</defName>
+    <label>Consortium cybernetic heart</label>
+    <labelNoun>a Consortium cybernetic heart</labelNoun>
+    <description>Blood, oil, and iron. The Consortium's motto taken terrifyingly literally-this cybernetic heart is essentially a small and very complicated engine that runs on a sapient's circulatory system instead of traditional fuel. It's slightly more efficient than a biological heart with the drawback of essentially cooking its host alive from the inside out.</description>
+    <descriptionHyperlinks><ThingDef>LCHeart</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>LCHeart</spawnThingOnRemoved>
+<stages>    
+   <li>
+    <statOffsets>
+      <ComfyTemperatureMax>-25</ComfyTemperatureMax>
+    </statOffsets>
+      <painOffset>0.35</painOffset>
+    </li>
+</stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>LCHeart</defName>
+    <label>Consortium cybernetic heart</label>
+    <description>Blood, oil, and iron. The Consortium's motto taken terrifyingly literally-this cybernetic heart is essentially a small and very complicated engine that runs on a sapient's circulatory system instead of traditional fuel. It's slightly more efficient than a biological heart with the drawback of essentially cooking its host alive from the inside out.</description>
+    <descriptionHyperlinks><RecipeDef>InstallLCHeart</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>LCBionic</li>
+    </techHediffsTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallLCHeart</defName>
+    <label>install Consortium cybernetic heart</label>
+    <description>Install a Consortium cybernetic heart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LCHeart</ThingDef>
+      <HediffDef>LCHeart</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Consortium cybernetic heart.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LCHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LCHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>LCHeart</addsHediff>
+  </RecipeDef>
+
+ <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LCSpine</defName>
+    <label>Consortium cybernetic spine</label>
+    <labelNoun>a Consortium cybernetic spine</labelNoun>
+    <description>A highly experimental combat implant. This cybernetic spine overclocks the nervous system, making its host's reflexes and reaction time far faster than those of any organic. The effects of this technology have been confirmed to cause derealization episodes in those chipped with it-the world around its users moves and feels much slower, almost unbearably so.</description>
+    <descriptionHyperlinks><ThingDef>LCSpine</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>LCSpine</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statFactors>
+          <MeleeCooldownFactor>0.6</MeleeCooldownFactor>
+        </statFactors>
+        <statOffsets>
+          <MoveSpeed>0.5</MoveSpeed>
+          <MeleeDodgeChance>30</MeleeDodgeChance>
+          <MentalBreakThreshold>0.15</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>LCSpine</defName>
+    <label>Consortium cybernetic spine</label>
+    <description>A highly experimental combat implant. This cybernetic spine overclocks the nervous system, making its host's reflexes and reaction time far faster than those of any organic. The effects of this technology have been confirmed to cause derealization episodes in those chipped with it-the world around its users moves and feels much slower, almost unbearably so.</description>
+    <descriptionHyperlinks><RecipeDef>InstallLCSpine</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>LCCombat</li>
+    </techHediffsTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallLCSpine</defName>
+    <label>install Consortium cybernetic spine</label>
+    <description>Install a Consortium cybernetic spine.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LCSpine</ThingDef>
+      <HediffDef>LCSpine</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Consortium cybernetic spine.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LCSpine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LCSpine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>LCSpine</addsHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>LCNose</defName>
+    <label>Consortium cybernetic nose</label>
+    <labelNoun>a Consortium cybernetic nose</labelNoun>
+    <description>An implant not intended for use by most. This bionic nose is catered to the anatomy of Lahlit, and its shape reflects the characteristic wide, heavy-set, and pushed-in noses of the race. Heightens the user's sense of smell with the drawback of noisy, slightly harder breathing and the implant's general ghoulish appearance.</description>
+    <descriptionHyperlinks><ThingDef>LCNose</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>LCNose</spawnThingOnRemoved>
+    <addedPartProps>
+      <partEfficiency>1.4</partEfficiency>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <PawnBeauty>-1</PawnBeauty>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>LCNose</defName>
+    <label>Consortium cybernetic nose</label>
+    <description>An implant not intended for use by most. This bionic nose is catered to the anatomy of Lahlit, and its shape reflects the characteristic wide, heavy-set, and pushed-in noses of the race. Heightens the user's sense of smell with the drawback of noisy, slightly harder breathing and the implant's general ghoulish appearance.</description>
+    <descriptionHyperlinks><RecipeDef>InstallLCNose</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <techHediffsTags>
+      <li>LCBionic</li>
+    </techHediffsTags>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallLCNose</defName>
+    <label>install Consortium cybernetic nose</label>
+    <description>Install a Consortium cybernetic nose.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LCNose</ThingDef>
+      <HediffDef>LCNose</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Consortium cybernetic nose.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LCNose</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LCNose</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>LCNose</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveLCNose</defName>
+    <label>remove Consortium cybernetic nose</label>
+    <description>Remove Consortium cybernetic nose.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LCNose</ThingDef>
+      <HediffDef>LCNose</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing Consortium cybernetic nose.</jobString>
+    <removesHediff>LCNose</removesHediff>
+  </RecipeDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>SubdermalCarapace</defName>
+    <label>subdermal carapace</label>
+    <labelNoun>a subdermal carapace</labelNoun>
+    <description>The Consortium has devised a form of armor that goes under the skin instead of over it-because what other galactic power would? The installation of such technology entails putting the patient into a medically-induced coma and pumping them full of painkillers while nanomachines construct thin, flexible, yet highly durable sheets of metal in between the skin and muscle tissue.
+Unlike contemporary skin-hardening glands, Consortium subderms don't affect the physical appearance of their users. You'd also be pleasantly surprised how much blood loss can be prevented by the insertion of metal plates under the skin. The singular drawback is just that-metal plates under the skin. Metal plates that heat up to absurdly high temperatures rather quickly and have the capacity to retain those temperatures for hours on end.</description>
+    <descriptionHyperlinks><ThingDef>ToughskinGland</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>ToughskinGland</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.85</postFactor>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+          <ArmorRating_Heat>-0.50</ArmorRating_Heat>
+        </statOffsets>
+        <statFactors>
+        <totalBleedFactor>0.3</totalBleedFactor>
+        </statFactors>
+      </li>
+    </stages>
+    <tags><li>ArmorGland</li></tags>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>SubdermalCarapace</defName>
+    <label>subdermal carapace</label>
+    <description>The Consortium has devised a form of armor that goes under the skin instead of over it-because what other galactic power would? The installation of such technology entails putting the patient into a medically-induced coma and pumping them full of painkillers while nanomachines construct thin, flexible, yet highly durable sheets of metal in between the skin and muscle tissue.
+Unlike contemporary skin-hardening glands, Consortium subderms don't affect the physical appearance of their users. You'd also be pleasantly surprised how much blood loss can be prevented by the insertion of metal plates under the skin. The singular drawback is just that-metal plates under the skin. Metal plates that heat up to absurdly high temperatures rather quickly and have the capacity to retain those temperatures for hours on end.</description>
+    <descriptionHyperlinks><RecipeDef>InstallSubdermalCarapace</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <techHediffsTags>
+      <li>LCCombat</li>
+    </techHediffsTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallSubdermalCarapace</defName>
+    <label>install subdermal carapace</label>
+    <description>Install a subdermal carapace.</description>
+    <descriptionHyperlinks>
+      <ThingDef>SubdermalCarapace</ThingDef>
+      <HediffDef>SubdermalCarapace</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing subdermal carapace.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubdermalCarapace</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SubdermalCarapace</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SubdermalCarapace</addsHediff>
+    <incompatibleWithHediffTags>
+      <li>ArmorGland</li>
+    </incompatibleWithHediffTags>
+  </RecipeDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>MantisBlade</defName>
+    <label>mantis blade</label>
+    <labelNoun>a mantis blade</labelNoun>
+    <description>The favored weapons of Machine Cult assassins and highly-trained Lahlit commandos. These rather unassuming forearm replacements can open up into terrifying, mantis-like claws in an instant. When retracted, the "blades" themselves function like any other cybernetic forearm bone-but when unsheathed, you will find that there is no other combat implant as devastating or egregiously brash.
+Consortium mantis blades are Lahlit combat excellence at its finest-they are visceral, menacing, and fucking huge, as any proper Lahlit weapon should be.</description>
+    <descriptionHyperlinks><ThingDef>ElbowBlade</ThingDef></descriptionHyperlinks>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>blade</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>11</power>
+            <cooldownTime>0.5</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>MantisBlade</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>MantisBlade</defName>
+    <label>mantis blade</label>
+    <description>The favored weapons of Machine Cult assassins and highly-trained Lahlit commandos. These rather unassuming forearm replacements can open up into terrifying, mantis-like claws in an instant. When retracted, the "blades" themselves function like any other cybernetic forearm bone-but when unsheathed, you will find that there is no other combat implant as devastating or egregiously brash.
+Consortium mantis blades are Lahlit combat excellence at its finest-they are visceral, menacing, and fucking huge, as any proper Lahlit weapon should be.</description>
+    <descriptionHyperlinks><RecipeDef>InstallElbowBlade</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <techHediffsTags>
+      <li>LCCombat</li>
+    </techHediffsTags>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>CompactWeaponry</researchPrerequisite>
+    </recipeMaker>
+    <violentTechHediff>true</violentTechHediff>
+    <techHediffsTags>
+      <li>AdvancedWeapon</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallMantisBlade</defName>
+    <label>install mantis blade</label>
+    <description>Install a mantis blade.</description>
+    <descriptionHyperlinks>
+      <ThingDef>MantisBlade</ThingDef>
+      <HediffDef>MantisBlade</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing mantis blade.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MantisBlade</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MantisBlade</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>MantisBlade</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveMantisBlade</defName>
+    <label>remove mantis blade</label>
+    <description>Remove mantis blade.</description>
+    <descriptionHyperlinks>
+      <ThingDef>MantisBlade</ThingDef>
+      <HediffDef>MantisBlade</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing mantis blade.</jobString>
+    <removesHediff>MantisBlade</removesHediff>
+  </RecipeDef>
+
+</Defs>

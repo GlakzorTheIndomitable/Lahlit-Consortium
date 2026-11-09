@@ -1,0 +1,1041 @@
+ <Defs>
+ 
+ <GeneDef>
+    <defName>LahlitFaceplate</defName>
+    <label>jagged crest</label>
+    <description>Carriers of this gene have a rocky, jagged segmented crest growing from their forehead.</description>
+    <iconPath>Things/Pawn/Humanlike/HeadAttachments/LahlitCrest/LahlitCrest_south</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPath>Things/Pawn/Humanlike/HeadAttachments/LahlitCrest/LahlitCrest</texPath>
+       <parentTagDef>Head</parentTagDef>
+       <useSkinShader>true</useSkinShader>
+       <useRottenColor>true</useRottenColor>
+       <rotDrawMode>Fresh, Rotting</rotDrawMode>
+       <shaderTypeDef>CutoutComplex</shaderTypeDef>
+       <drawData>
+         <defaultData>
+           <layer>60</layer>
+         </defaultData>
+       </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+  
+  	  <GeneDef ParentName="GeneHeadboneBase">
+	  <defName>LahlitTentacles</defName>
+	  <label>occipital tendrils</label>
+	  <description>Carriers of this gene grow a cluster of thick, scaly tentacles from the back of their head.</description>
+	  <iconPath>Things/Pawn/Humanlike/HeadAttachments/LahlitTentacles/LahlitTentacles_south</iconPath>
+      <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPath>Things/Pawn/Humanlike/HeadAttachments/LahlitTentacles/LahlitTentacles</texPath>
+	   <colorType>Skin</colorType>
+      <parentTagDef>Head</parentTagDef>
+      <useRottenColor>true</useRottenColor>
+      <rotDrawMode>Fresh, Rotting</rotDrawMode>
+      <drawData>
+        <defaultData>
+          <layer>55</layer>
+        </defaultData>
+      </drawData>
+      </li>
+    </renderNodeProperties>	 
+  </GeneDef>
+  
+   <GeneDef>
+    <defName>VerticalTusks</defName>
+    <label>vertical tusks</label>
+    <description>Carriers of this gene grow large, elongated canine teeth, not unlike those of early mammals or even earlier proto-mammals.</description>
+    <iconPath>Things/Pawn/Humanlike/HeadAttachments/VerticalTusks/VerticalTusks1_south</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPaths>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/VerticalTusks/VerticalTusks1</li>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/VerticalTusks/VerticalTusks2</li>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/VerticalTusks/VerticalTusks3</li>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/VerticalTusks/VerticalTusks4</li>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/VerticalTusks/VerticalTusks5</li>
+	   </texPaths>
+       <parentTagDef>Head</parentTagDef>
+       <useSkinShader>true</useSkinShader>
+       <useRottenColor>true</useRottenColor>
+       <rotDrawMode>Fresh, Rotting</rotDrawMode>
+       <shaderTypeDef>CutoutComplex</shaderTypeDef>
+       <drawData>
+         <defaultData>
+           <layer>60</layer>
+         </defaultData>
+       </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>OrangeEyes</defName>
+    <label>orange eyes</label>
+    <labelShortAdj>orange-eyed</labelShortAdj>
+    <description>Carriers of this gene have orange eyes.</description>
+    <iconPath>UI/Genes/OrangeEyes</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/OrangeEyes/Male/OrangeEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/OrangeEyes/Female/OrangeEyes_Female</texPathFemale>
+        <anchorTag>RightEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Right</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/OrangeEyes/Male/OrangeEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/OrangeEyes/Female/OrangeEyes_Female</texPathFemale>
+        <anchorTag>LeftEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Left</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+            <flip>true</flip>
+          </defaultData>
+          <dataWest>
+            <flip>false</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>BurntEyes</defName>
+    <label>burnt orange eyes</label>
+    <labelShortAdj>burnt orange-eyed</labelShortAdj>
+    <description>Carriers of this gene have burnt orange eyes.</description>
+    <iconPath>UI/Genes/BurntEyes</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BurntEyes/Male/BurntEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/BurntEyes/Female/BurntEyes_Female</texPathFemale>
+        <anchorTag>RightEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Right</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BurntEyes/Male/BurntEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/BurntEyes/Female/BurntEyes_Female</texPathFemale>
+        <anchorTag>LeftEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Left</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+            <flip>true</flip>
+          </defaultData>
+          <dataWest>
+            <flip>false</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>YellowEyes</defName>
+    <label>yellow eyes</label>
+    <labelShortAdj>yellow-eyed</labelShortAdj>
+    <description>Carriers of this gene have yellow eyes.</description>
+    <iconPath>UI/Genes/YellowEyes</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/YellowEyes/Male/YellowEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/YellowEyes/Female/YellowEyes_Female</texPathFemale>
+        <anchorTag>RightEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Right</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/YellowEyes/Male/YellowEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/YellowEyes/Female/YellowEyes_Female</texPathFemale>
+        <anchorTag>LeftEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Left</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+            <flip>true</flip>
+          </defaultData>
+          <dataWest>
+            <flip>false</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  
+      <GeneDef Name="LahlitBloodColor" Abstract="True">
+        <biostatCpx>0</biostatCpx>
+        <randomChosen>true</randomChosen>
+        <displayCategory>LahlitBlood</displayCategory>
+        <exclusionTags>
+            <li>LahlitBloodColor</li>
+        </exclusionTags>
+    </GeneDef>
+
+<GeneDef>
+<defName>Unbreakable</defName>
+<label>unbreakable</label>
+<description>Carriers very rarely experience mental breakdowns. They are virtually unaffected by severe trauma, and are eerily numb to everything shy of months of psychological torture.</description>
+     <iconPath>UI/Genes/Unbreakable</iconPath>      
+        <statOffsets>
+          <MentalBreakThreshold>-0.36</MentalBreakThreshold>
+        </statOffsets>
+        <statFactors>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.15</CertaintyLossFactor>
+        </statFactors>
+</GeneDef>
+
+<GeneDef>
+<defName>Efficient</defName>
+<label>efficient</label>
+<description>Carriers are industrious in every way. They seem to know how to get everything done as quickly, cheaply, and effectively as possible.</description>
+    <iconPath>UI/Genes/Efficient</iconPath>  
+      <statOffsets>
+          <WorkSpeedGlobal>0.35</WorkSpeedGlobal>
+        </statOffsets>
+</GeneDef>
+
+  <GeneDef>
+    <defName>Sadistic</defName>
+    <label>sadistic</label>
+    <description>Due to overactive predatory and competitive instincts, carriers of this gene seem to just love watching things bleed. Their nature can be disciplined or completely suppressed with enough effort, but it is something to keep in mind.</description>
+    <displayOrderInCategory>20</displayOrderInCategory>
+    <iconPath>UI/Genes/Sadistic</iconPath>
+    <forcedTraits>
+      <li>
+        <def>Bloodlust</def>
+      </li>
+    </forcedTraits>
+ </GeneDef>
+
+    <GeneDef ParentName="LahlitBloodColor">
+        <defName>BlackBlood</defName>
+        <label>black blood</label>
+        <description>Due to either improper modification of this species' genome, freak mutation from an unknown or simply overlooked environmental variable, or a combination of the two, this species bleeds an oily, viscous, ichorous substance as black as pitch.</description>
+        <iconPath>UI/Genes/BlackBlood</iconPath>
+        <displayOrderInCategory>4</displayOrderInCategory>
+        <modExtensions>
+            <li Class="VEF.Genes.GeneExtension">
+                <customBloodThingDef>Blood_Filth_Black</customBloodThingDef>
+                <customBloodIcon></customBloodIcon>
+                <customBloodEffect>Damage_Black</customBloodEffect>
+                <customWoundsFromFleshtype>FleshType_Black</customWoundsFromFleshtype>
+                <customBloodSmearThingDef>Filth_Lahlit_BloodSmear</customBloodSmearThingDef>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+  <GeneDef>
+    <defName>Rally</defName>
+    <label>rally</label>
+    <description>Carriers of this gene can let loose an invigorating war cry.</description>
+    <iconPath>UI/Genes/RallyGene</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <marketValueFactor>1.5</marketValueFactor>
+    <abilities>
+      <li>Rally</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>Rally</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+ <GeneDef>
+    <defName>SnowFaceplate</defName>
+    <label>vertical crest</label>
+    <description>Carriers of this gene have a rocky, blade-like segmented crest growing from their forehead.</description>
+    <iconPath>Things/Pawn/Humanlike/HeadAttachments/LahlitCrest/LahlitCrest_south</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPath>Things/Pawn/Humanlike/HeadAttachments/SnowCrest/SnowCrest</texPath>
+       <parentTagDef>Head</parentTagDef>
+       <useSkinShader>true</useSkinShader>
+       <useRottenColor>true</useRottenColor>
+       <rotDrawMode>Fresh, Rotting</rotDrawMode>
+       <shaderTypeDef>CutoutComplex</shaderTypeDef>
+       <drawData>
+         <defaultData>
+           <layer>60</layer>
+         </defaultData>
+       </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+
+	  <GeneDef ParentName="GeneEarsBase">
+	  <defName>SnowHorns</defName>
+	  <label>monstrous horns</label>
+	  <description>Carriers of this gene possess giant horns almost like those of legendary dragons.</description>
+	  <iconPath>Things/Pawn/Humanlike/HeadAttachments/SnowHorns/SnowHorns1_south</iconPath>
+      <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPaths>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/SnowHorns/SnowHorns1</li>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/SnowHorns/SnowHorns2</li>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/SnowHorns/SnowHorns3</li>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/SnowHorns/SnowHorns4</li>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/SnowHorns/SnowHorns5</li>
+	   </texPaths>
+      <parentTagDef>Head</parentTagDef>
+      <useRottenColor>true</useRottenColor>
+      <rotDrawMode>Fresh, Rotting</rotDrawMode>
+      <shaderTypeDef>CutoutComplex</shaderTypeDef>
+      <drawData>
+        <defaultData>
+          <layer>57</layer>
+        </defaultData>
+      </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+
+    <GeneDef>
+        <defName>LahlitMane</defName>
+        <label>furry mane</label>
+        <description>Carriers of this gene grow a very majestic mane that is rather fluffy.</description>
+        <iconPath>Things/Pawn/Humanlike/BodyAttachments/LahlitMane/LahlitMane_south</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode</nodeClass>
+                <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+                <texPath>Things/Pawn/Humanlike/BodyAttachments/LahlitMane/LahlitMane</texPath>
+                <parentTagDef>Body</parentTagDef>
+                <colorType>Hair</colorType>
+                <useSkinShader>true</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                 <drawData>
+                 <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+                  <defaultData>
+                   <layer>40</layer>
+                  </defaultData>
+                 </drawData>
+                </li>
+        </renderNodeProperties>
+    </GeneDef>
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>TealEyes</defName>
+    <label>teal eyes</label>
+    <labelShortAdj>teal-eyed</labelShortAdj>
+    <description>Carriers of this gene have teal eyes.</description>
+    <iconPath>UI/Genes/TealEyes</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/TealEyes/Male/TealEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/TealEyes/Female/TealEyes_Female</texPathFemale>
+        <anchorTag>RightEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Right</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/TealEyes/Male/TealEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/TealEyes/Female/TealEyes_Female</texPathFemale>
+        <anchorTag>LeftEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Left</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+            <flip>true</flip>
+          </defaultData>
+          <dataWest>
+            <flip>false</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>BlueEyes</defName>
+    <label>blue eyes</label>
+    <labelShortAdj>blue-eyed</labelShortAdj>
+    <description>Carriers of this gene have blue eyes.</description>
+       <iconPath>UI/Genes/BlueEyes</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BlueEyes/Male/BlueEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/BlueEyes/Female/BlueEyes_Female</texPathFemale>
+        <anchorTag>RightEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Right</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BlueEyes/Male/BlueEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/BlueEyes/Female/BlueEyes_Female</texPathFemale>
+        <anchorTag>LeftEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Left</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+            <flip>true</flip>
+          </defaultData>
+          <dataWest>
+            <flip>false</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>MagentaEyes</defName>
+    <label>magenta eyes</label>
+    <labelShortAdj>magenta-eyed</labelShortAdj>
+    <description>Carriers of this gene have magenta eyes.</description>
+    <iconPath>UI/Genes/MagentaEyes</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/MagentaEyes/Male/MagentaEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/MagentaEyes/Female/MagentaEyes_Female</texPathFemale>
+        <anchorTag>RightEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Right</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/MagentaEyes/Male/MagentaEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/MagentaEyes/Female/MagentaEyes_Female</texPathFemale>
+        <anchorTag>LeftEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Left</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+            <flip>true</flip>
+          </defaultData>
+          <dataWest>
+            <flip>false</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>PurpleEyes</defName>
+    <label>purple eyes</label>
+    <labelShortAdj>purple-eyed</labelShortAdj>
+    <description>Carriers of this gene have purple eyes.</description>
+    <iconPath>UI/Genes/PurpleEyes</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/PurpleEyes/Male/PurpleEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/PurpleEyes/Female/PurpleEyes_Female</texPathFemale>
+        <anchorTag>RightEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Right</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/PurpleEyes/Male/PurpleEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/PurpleEyes/Female/PurpleEyes_Female</texPathFemale>
+        <anchorTag>LeftEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Left</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+            <flip>true</flip>
+          </defaultData>
+          <dataWest>
+            <flip>false</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+ <GeneDef>
+    <defName>DesertFaceplate</defName>
+    <label>flared-out crest</label>
+    <description>Carriers of this gene have a rocky, segmented crest growing from their forehead that has a flared-out appearance.</description>
+    <iconPath>Things/Pawn/Humanlike/HeadAttachments/DesertCrest/DesertCrest_south</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPath>Things/Pawn/Humanlike/HeadAttachments/DesertCrest/DesertCrest</texPath>
+       <parentTagDef>Head</parentTagDef>
+       <useSkinShader>true</useSkinShader>
+       <useRottenColor>true</useRottenColor>
+       <rotDrawMode>Fresh, Rotting</rotDrawMode>
+       <shaderTypeDef>CutoutComplex</shaderTypeDef>
+       <drawData>
+         <defaultData>
+           <layer>60</layer>
+         </defaultData>
+       </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+
+	  <GeneDef ParentName="GeneEarsBase">
+	  <defName>DesertHorns</defName>
+	  <label>great horns</label>
+	  <description>Carriers of this gene possess giant horns almost like those of a great grazing beast.</description>
+	  <iconPath>Things/Pawn/Humanlike/HeadAttachments/DesertHorns/DesertHorns1_south</iconPath>
+      <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPaths>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/DesertHorns/DesertHorns1</li>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/DesertHorns/DesertHorns2</li>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/DesertHorns/DesertHorns3</li>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/DesertHorns/DesertHorns4</li>
+	   </texPaths>
+      <parentTagDef>Head</parentTagDef>
+      <useRottenColor>true</useRottenColor>
+      <rotDrawMode>Fresh, Rotting</rotDrawMode>
+      <shaderTypeDef>CutoutComplex</shaderTypeDef>
+      <drawData>
+        <defaultData>
+          <layer>57</layer>
+        </defaultData>
+      </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>JadeEyes</defName>
+    <label>jade eyes</label>
+    <labelShortAdj>jade-eyed</labelShortAdj>
+    <description>Carriers of this gene have jade eyes.</description>
+    <iconPath>UI/Genes/JadeEyes</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/JadeEyes/Male/JadeEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/JadeEyes/Female/JadeEyes_Female</texPathFemale>
+        <anchorTag>RightEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Right</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/JadeEyes/Male/JadeEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/JadeEyes/Female/JadeEyes_Female</texPathFemale>
+        <anchorTag>LeftEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Left</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+            <flip>true</flip>
+          </defaultData>
+          <dataWest>
+            <flip>false</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>EmeraldEyes</defName>
+    <label>emerald eyes</label>
+    <labelShortAdj>emerald-eyed</labelShortAdj>
+    <description>Carriers of this gene have emerald eyes.</description>
+    <iconPath>UI/Genes/EmeraldEyes</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/EmeraldEyes/Male/EmeraldEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/EmeraldEyes/Female/EmeraldEyes_Female</texPathFemale>
+        <anchorTag>RightEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Right</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/EmeraldEyes/Male/EmeraldEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/EmeraldEyes/Female/EmeraldEyes_Female</texPathFemale>
+        <anchorTag>LeftEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Left</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+            <flip>true</flip>
+          </defaultData>
+          <dataWest>
+            <flip>false</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+ <GeneDef>
+    <defName>SwampFaceplate</defName>
+    <label>forked crest</label>
+    <description>Carriers of this gene have a rocky, segmented crest growing from their forehead that has a forked appearance.</description>
+    <iconPath>Things/Pawn/Humanlike/HeadAttachments/SwampCrest/SwampCrest_south</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPath>Things/Pawn/Humanlike/HeadAttachments/SwampCrest/SwampCrest</texPath>
+       <parentTagDef>Head</parentTagDef>
+       <useSkinShader>true</useSkinShader>
+       <useRottenColor>true</useRottenColor>
+       <rotDrawMode>Fresh, Rotting</rotDrawMode>
+       <shaderTypeDef>CutoutComplex</shaderTypeDef>
+       <drawData>
+         <defaultData>
+           <layer>60</layer>
+         </defaultData>
+       </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+
+ <GeneDef>
+    <defName>SwampQuills</defName>
+    <label>head quills</label>
+    <description>Carriers of this gene grow a row of quills from their scalp.</description>
+    <iconPath>Things/Pawn/Humanlike/HeadAttachments/SwampQuills/SwampQuills_south</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPath>Things/Pawn/Humanlike/HeadAttachments/SwampQuills/SwampQuills</texPath>
+       <parentTagDef>Head</parentTagDef>
+       <useSkinShader>true</useSkinShader>
+       <useRottenColor>true</useRottenColor>
+       <rotDrawMode>Fresh, Rotting</rotDrawMode>
+       <colorType>Hair</colorType>
+       <drawData>
+         <defaultData>
+           <layer>57</layer>
+         </defaultData>
+       </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+
+ <GeneDef>
+    <defName>JungleFaceplate</defName>
+    <label>twin-tip crest</label>
+    <description>Carriers of this gene have a rocky, segmented crest growing from their forehead that has a twin-tipped appearance.</description>
+    <iconPath>Things/Pawn/Humanlike/HeadAttachments/JungleCrest/JungleCrest_south</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPath>Things/Pawn/Humanlike/HeadAttachments/JungleCrest/JungleCrest</texPath>
+       <parentTagDef>Head</parentTagDef>
+       <useSkinShader>true</useSkinShader>
+       <useRottenColor>true</useRottenColor>
+       <rotDrawMode>Fresh, Rotting</rotDrawMode>
+       <shaderTypeDef>CutoutComplex</shaderTypeDef>
+       <drawData>
+         <defaultData>
+           <layer>60</layer>
+         </defaultData>
+       </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+
+	  <GeneDef ParentName="GeneEarsBase">
+	  <defName>JungleAntlers</defName>
+	  <label>giant antlers</label>
+	  <description>Carriers of this gene possess great antlers that sprout from their head like those of large creatures of the forest.</description>
+	  <iconPath>Things/Pawn/Humanlike/HeadAttachments/DesertHorns/DesertHorns1_south</iconPath>
+      <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPaths>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/JungleAntlers/JungleAntlers1</li>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/JungleAntlers/JungleAntlers2</li>
+	   <li>Things/Pawn/Humanlike/HeadAttachments/JungleAntlers/JungleAntlers3</li>
+	   </texPaths>
+      <parentTagDef>Head</parentTagDef>
+      <useRottenColor>true</useRottenColor>
+      <rotDrawMode>Fresh, Rotting</rotDrawMode>
+      <shaderTypeDef>CutoutComplex</shaderTypeDef>
+      <drawData>
+        <defaultData>
+          <layer>57</layer>
+        </defaultData>
+      </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Stripes</defName>
+    <label>stripes</label>
+    <labelShortAdj>striped</labelShortAdj>
+    <description>Carriers of this gene have biological markings-a striped pattern all over their skin.</description>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>400</displayOrderInCategory>
+    <iconPath>Things/Pawn/Humanlike/Bodies/Striped_Male_south</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <fur>Striped</fur>
+    <skinIsHairColor>false</skinIsHairColor>
+    <tattoosVisible>false</tattoosVisible>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Skin</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+		<modExtensions>
+                        <li Class="VEF.Genes.GeneExtension">
+				<useSkinColorForFur>true</useSkinColorForFur>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+ <GeneDef>
+    <defName>MountainFaceplate</defName>
+    <label>primal crest</label>
+    <description>Carriers of this gene have a rocky, segmented crest growing from their forehead that has a menacing appearance.</description>
+    <iconPath>Things/Pawn/Humanlike/HeadAttachments/MountainCrest/MountainCrest_south</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPath>Things/Pawn/Humanlike/HeadAttachments/MountainCrest/MountainCrest</texPath>
+       <parentTagDef>Head</parentTagDef>
+       <useSkinShader>true</useSkinShader>
+       <useRottenColor>true</useRottenColor>
+       <rotDrawMode>Fresh, Rotting</rotDrawMode>
+       <shaderTypeDef>CutoutComplex</shaderTypeDef>
+       <drawData>
+         <defaultData>
+           <layer>60</layer>
+         </defaultData>
+       </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+
+ <GeneDef>
+    <defName>MountainFrills</defName>
+    <label>draconic frills</label>
+    <description>Carriers of this gene grow large, rough-feeling frills from the sides of their head.</description>
+    <iconPath>Things/Pawn/Humanlike/HeadAttachments/MountainFrills/MountainFrills1_south</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPaths>
+       <li>Things/Pawn/Humanlike/HeadAttachments/MountainFrills/MountainFrills1</li>
+       <li>Things/Pawn/Humanlike/HeadAttachments/MountainFrills/MountainFrills2</li>
+       </texPaths>
+       <parentTagDef>Head</parentTagDef>
+       <useSkinShader>true</useSkinShader>
+       <useRottenColor>true</useRottenColor>
+       <rotDrawMode>Fresh, Rotting</rotDrawMode>
+       <shaderTypeDef>CutoutComplex</shaderTypeDef>
+       <colorType>Skin</colorType>
+       <drawData>
+         <defaultData>
+           <layer>57</layer>
+         </defaultData>
+       </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+  
+ <GeneDef>
+    <defName>CaveFaceplate</defName>
+    <label>bioluminescent crest</label>
+    <description>Carriers of this gene have a rocky, segmented crest growing from their forehead that has a bioluminescent pattern.
+
+(Please only use with really bright hair colors, since the spot color is based on a hair color in the code.)</description>
+    <iconPath>Things/Pawn/Humanlike/HeadAttachments/MountainCrest/MountainCrest_south</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPath>Things/Pawn/Humanlike/HeadAttachments/CaveCrest/CaveCrest</texPath>
+       <parentTagDef>Head</parentTagDef>
+       <useSkinShader>true</useSkinShader>
+       <useRottenColor>true</useRottenColor>
+       <rotDrawMode>Fresh, Rotting</rotDrawMode>
+       <shaderTypeDef>CutoutComplex</shaderTypeDef>
+       <colorType>Hair</colorType>
+       <drawData>
+         <defaultData>
+           <layer>60</layer>
+         </defaultData>
+       </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+  
+ <GeneDef>
+    <defName>VolcanicFaceplate</defName>
+    <label>draconic crest</label>
+    <description>Carriers of this gene have a rocky, segmented crest growing from their forehead that has a draconic appearance.</description>
+    <iconPath>Things/Pawn/Humanlike/HeadAttachments/MountainCrest/MountainCrest_south</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>  
+       <texPath>Things/Pawn/Humanlike/HeadAttachments/VolcanicCrest/VolcanicCrest</texPath>
+       <parentTagDef>Head</parentTagDef>
+       <useSkinShader>true</useSkinShader>
+       <useRottenColor>true</useRottenColor>
+       <rotDrawMode>Fresh, Rotting</rotDrawMode>
+       <shaderTypeDef>CutoutComplex</shaderTypeDef>
+       <drawData>
+         <defaultData>
+           <layer>60</layer>
+         </defaultData>
+       </drawData>
+      </li>
+    </renderNodeProperties> 
+  </GeneDef>
+
+    <GeneDef>
+        <defName>FeatherMane</defName>
+        <label>feather mane</label>
+        <description>Carriers of this gene grow a blanket of feathers around their neck.</description>
+        <iconPath>Things/Pawn/Humanlike/BodyAttachments/FeatherMane/FeatherMane_south</iconPath>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode</nodeClass>
+                <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+                <texPath>Things/Pawn/Humanlike/BodyAttachments/FeatherMane/FeatherMane</texPath>
+		<parentTagDef>Body</parentTagDef>
+                <colorType>Hair</colorType>
+                <useSkinShader>true</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                 <drawData>
+                 <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+                  <defaultData>
+                   <layer>40</layer>
+                  </defaultData>
+                 </drawData>
+                </li>
+        </renderNodeProperties>
+    </GeneDef>
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>PinkEyes</defName>
+    <label>pink eyes</label>
+    <labelShortAdj>pink-eyed</labelShortAdj>
+    <description>Carriers of this gene have pink eyes.</description>
+    <iconPath>UI/Genes/PinkEyes</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/PinkEyes/Male/PinkEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/PinkEyes/Female/PinkEyes_Female</texPathFemale>
+        <anchorTag>RightEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Right</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/PinkEyes/Male/PinkEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/PinkEyes/Female/PinkEyes_Female</texPathFemale>
+        <anchorTag>LeftEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Left</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+            <flip>true</flip>
+          </defaultData>
+          <dataWest>
+            <flip>false</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>BrightEyes</defName>
+    <label>bright eyes</label>
+    <labelShortAdj>bright-eyed</labelShortAdj>
+    <description>Carriers of this gene have bright eyes.</description>
+    <iconPath>UI/Genes/BrightEyes</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BrightEyes/Male/BrightEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/BrightEyes/Female/BrightEyes_Female</texPathFemale>
+        <anchorTag>RightEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Right</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BrightEyes/Male/BrightEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/BrightEyes/Female/BrightEyes_Female</texPathFemale>
+        <anchorTag>LeftEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Left</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+            <flip>true</flip>
+          </defaultData>
+          <dataWest>
+            <flip>false</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  </Defs>

@@ -1,0 +1,16 @@
+<Defs>
+  <DamageDef Name="CorrosiveBullet">
+    <defName>CorrosiveBullet</defName>
+    <label>corrosive bullet</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been chemically dissolved.</deathMessage>
+    <hediff>ChemicalBurn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>CorrosiveImpact</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+</Defs>

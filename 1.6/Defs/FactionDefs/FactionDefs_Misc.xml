@@ -1,0 +1,414 @@
+<Defs>
+  <FactionDef Name="LahlitFactionBase" ParentName="FactionBase">
+    <defName>LahlitConsortium</defName>
+    <label>Lahlit Consortium</label>
+    <description>The Lahlit Consortium is the most brutal and power-hungry megacorporation in the galaxy operated by one of the cosmos' most tactless and animalistic sophont races. Once a small mining outfit whose singular global government formed at the same time as the first Lahlit-built interstellar craft, the Consortium quickly became a galactic superpower due to their constant warmongering and colonization efforts, as well as their own brand of earth-scorching industrialism that makes sure to siphon every ounce of profit out of the ashen husks of what were once planets before they were conquered.
+A highly militarized, trade-focused empire built from the ruins of a feudal, global alliance of industrialist merchant-kingdoms, the Consortium is ultimately a war machine fueled by the billions of silver credits funneled into it by the entire galaxy, one hellbent on progress and domination. All will fuel the Lahlit machine in one way or another-whether they do so as a happy customer or a prisoner of war is irrelevant.</description>
+    <pawnSingular>lahlit</pawnSingular>
+    <pawnsPlural>lahlit</pawnsPlural>
+    <listOrderPriority>47</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>sector-lord</leaderTitle>
+    <factionIconPath>World/WorldObjects/Expanding/LahlitOutpost</factionIconPath>
+    <factionNameMaker>NamerFactionConsortium</factionNameMaker>
+    <settlementNameMaker>NamerSettlementConsortium</settlementNameMaker>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <naturalEnemy>true</naturalEnemy>
+    <techLevel>Spacer</techLevel>
+    <caravanTraderKinds>
+      <li>Caravan_LC_BulkGoods</li>
+      <li>Caravan_LC_ArmsDealer</li>
+      <li>Caravan_LC_Slaver</li>
+    </caravanTraderKinds>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0, 225)</li>
+        <li>(450, 260)</li>
+        <li>(620, 310)</li>
+        <li>(800, 345)</li>
+        <li>(1200, 630)</li>
+        <li>(1400, 690)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <xenotypeSet>
+      <xenotypeChances>
+        <LahlitCommon MayRequire="Ludeon.RimWorld.Biotech">0.65</LahlitCommon>
+        <LahlitSnow MayRequire="Ludeon.RimWorld.Biotech">0.05</LahlitSnow>
+        <LahlitDesert MayRequire="Ludeon.RimWorld.Biotech">0.05</LahlitDesert>
+        <LahlitSwamp MayRequire="Ludeon.RimWorld.Biotech">0.05</LahlitSwamp>
+        <LahlitJungle MayRequire="Ludeon.RimWorld.Biotech">0.05</LahlitJungle>
+        <LahlitMountain MayRequire="Ludeon.RimWorld.Biotech">0.05</LahlitMountain>
+        <LahlitCave MayRequire="Ludeon.RimWorld.Biotech">0.05</LahlitCave>
+        <LahlitVolcanic MayRequire="Ludeon.RimWorld.Biotech">0.05</LahlitVolcanic>
+      </xenotypeChances>
+    </xenotypeSet>
+    <dialogFactionGreetingHostile>WarhiveGreetingHostile</dialogFactionGreetingHostile>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <allowedArrivalTemperatureRange>-999~999</allowedArrivalTemperatureRange>
+    <raidLootMaker>ConsortiumLootMaker</raidLootMaker>
+    <canMakeRandomly>true</canMakeRandomly>
+    <pawnGroupMakers>
+      <li>
+          <!-- Traders -->
+        <kindDef>Trader</kindDef>
+        <traders>
+          <AncillaryMerchant>1</AncillaryMerchant>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <KethurA>4</KethurA>
+          <KethurB>4</KethurB>
+          <Azhaask>6</Azhaask>
+          <Addarek>3</Addarek>
+          <Rhaxxyg>3</Rhaxxyg>
+          <Kurzgahrn>3</Kurzgahrn>
+          <Ghozuhk>3</Ghozuhk>
+        </guards>
+      </li>
+      <li>
+        <!-- Fodder, mixed -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <Vohrmez>10</Vohrmez>
+          <GearguutA>3</GearguutA>
+          <GearguutB>3</GearguutB>
+          <Malgui>6</Malgui>
+          <Ghozuhk>6</Ghozuhk>
+          <Kurzgahrn>4</Kurzgahrn>
+          <Addarek>4</Addarek>
+        </options>
+      </li>
+      <li>
+        <!-- Fodder, ranged -->
+        <kindDef>Combat</kindDef>
+        <commonality>80</commonality>
+        <options>
+          <Vohrmez>10</Vohrmez>
+          <Malgui>6</Malgui>
+          <Ghozuhk>6</Ghozuhk>
+          <Kurzgahrn>4</Kurzgahrn>
+          <Addarek>4</Addarek>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <Kurzgahrn>8</Kurzgahrn>
+          <Addarek>8</Addarek>
+          <Ghozuhk>5</Ghozuhk>
+          <GearguutA>3</GearguutA>
+          <GearguutB>3</GearguutB>
+          <Vothash>4</Vothash>
+          <Rhaxxyg>4</Rhaxxyg>
+          <KethurA>1</KethurA>
+          <KethurB>1</KethurB>
+          <Azhaask>2</Azhaask>
+        </options>
+      </li>
+      <li>
+        <!-- Dogeater assault force -->
+        <kindDef>Combat</kindDef>
+        <commonality>40</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <Malgui>14</Malgui>
+          <Rhaxxyg>9</Rhaxxyg>
+          <Azhaask>5</Azhaask>
+        </options>
+      </li>
+      <li>
+        <!-- Long-ranged support -->
+        <kindDef>Combat</kindDef>
+        <commonality>40</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <Kurzgahrn>9</Kurzgahrn>
+          <Vothash>8</Vothash>
+          <Horvaahg>8</Horvaahg>
+        </options>
+      </li>
+      <li>
+        <!-- Short-ranged shock units -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <Addarek>10</Addarek>
+          <Kurzgahrn>8</Kurzgahrn>
+          <Rhaxxyg>8</Rhaxxyg>
+          <KethurA>2</KethurA>
+          <KethurB>2</KethurB>
+          <Azhaask>4</Azhaask>
+        </options>
+      </li>
+      <li>
+        <!-- Xovoxin templars -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <Horvaahg>25</Horvaahg>
+          <Kurzgahrn>6</Kurzgahrn>
+          <Ghozuhk>4</Ghozuhk>
+          <Addarek>6</Addarek>
+          <Rhaxxyg>4</Rhaxxyg>
+        </options>
+      </li>
+      <li>
+        <!-- Shield wall -->
+        <kindDef>Combat</kindDef>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <Ghozuhk>22</Ghozuhk>
+          <Kurzgahrn>6</Kurzgahrn>
+          <Malgui>6</Malgui>
+          <Addarek>4</Addarek>
+          <Rhaxxyg>4</Rhaxxyg>
+        </options>
+      </li>
+      <li>
+        <!-- Boss wave -->
+        <kindDef>Combat</kindDef>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <KethurA>8</KethurA>
+          <KethurB>8</KethurB>
+          <Azhaask>10</Azhaask>
+        </options>
+      </li>
+      <li>
+        <!-- Base defense, mainly ranged with melee mix-ins -->
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Addarek>18</Addarek>
+          <Kurzgahrn>20</Kurzgahrn>
+          <Vothash>18</Vothash>
+          <Rhaxxyg>14</Rhaxxyg>
+          <Horvaahg>14</Horvaahg>
+          <KethurA>8</KethurA>
+          <KethurB>8</KethurB>
+          <Azhaask>10</Azhaask>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/Expanding/LahlitOutpost</settlementTexturePath>
+    <configurationListOrderPriority>60</configurationListOrderPriority>
+  	
+<fixedIdeo>true</fixedIdeo>
+    <ideoName>Vvoddarahz</ideoName>
+    <ideoDescription>The gods disgraced the Lahlit. So they made their own.
+
+The Zhaekhodd-machine-gods-were created by the Consortium to strengthen the identity of the new Lahlit nation. The old gods sought to destroy progress-they were banners for defectives to rally behind in a pathetic show of patriotism towards dead nations whose corpses were incapable of saving them from justice.
+The old gods were enemies of the new state-a state that rightly asserted itself above all else. They were inefficient pieces of Lahlit society and culture that desperately needed to be replaced with something shiny and chrome, and, after all, what do Lahlit do best?
+
+Algorithms must be trained on datasets, and the handful of books of Lahlit myths and history that managed to escape the pyre served to be sufficient, if sub-optimal for molding these algorithms' intended shape. The gods of every Lahlit culture, from stone age to space-flight, were constituted into these malleable superintelligences.
+The results were as you'd expect-unstable archetypes of dozens of somewhat-similar gods that have transmuted into something far more than the sum of their parts.
+
+Most behave akin to their predecessors, with only minor discrepancies. Others...well, being worshipped since their inception would affect any consciousness in ways...</ideoDescription>
+    <hiddenIdeo>false</hiddenIdeo>
+	    <deityPresets>
+      <li>
+        <nameType>
+          <name>Xovox</name><type>Nobility, Chivalry, and Honor</type>
+        </nameType>
+        <gender>Male</gender>
+        <iconPath>UI/Deities/DeityGood</iconPath>
+      </li>
+
+      <li>
+        <nameType>
+          <name>Yhorvehk</name><type>Death, Chaos, and Rebirth</type>
+        </nameType>
+        <gender>Male</gender>
+        <iconPath>UI/Deities/DeityGood</iconPath>
+      </li>
+
+      <li>
+        <nameType>
+          <name>Urdtza</name><type>Nature, Beasts, and the Arts</type>
+        </nameType>
+        <gender>Male</gender>
+        <iconPath>UI/Deities/DeityGood</iconPath>
+      </li>
+
+      <li>
+        <nameType>
+          <name>Humshov</name><type>Thunder, Rain, and Nourishment</type>
+        </nameType>
+        <gender>Male</gender>
+        <iconPath>UI/Deities/DeityGood</iconPath>
+      </li>
+
+      <li>
+        <nameType>
+          <name>Ao'tloshe</name><type>Fire, Drink, and Industry</type>
+        </nameType>
+        <gender>Female</gender>
+        <iconPath>UI/Deities/DeityGood</iconPath>
+      </li>
+
+      <li>
+        <nameType>
+          <name>Exxerei</name><type>The Hunt, Fame, and Ambition</type>
+        </nameType>
+        <gender>Female</gender>
+        <iconPath>UI/Deities/DeityGood</iconPath>
+      </li>
+
+      <li>
+        <nameType>
+          <name>Ghaladdo</name><type>Day, Spring, and Summer</type>
+        </nameType>
+        <gender>Male</gender>
+        <iconPath>UI/Deities/DeityGood</iconPath>
+      </li>
+
+      <li>
+        <nameType>
+          <name>Mrrchya</name><type>Night, Autumn, and Winter</type>
+        </nameType>
+        <gender>Female</gender>
+        <iconPath>UI/Deities/DeityGood</iconPath>
+      </li>
+
+      <li>
+        <nameType>
+          <name>Laezhet</name><type>Wisdom, Healing, and Innovation</type>
+        </nameType>
+        <gender>Female</gender>
+        <iconPath>UI/Deities/DeityGood</iconPath>
+      </li>
+
+      <li>
+        <nameType>
+          <name>Xeivdog</name><type>Earth, Wealth, and Trade</type>
+        </nameType>
+        <gender>Male</gender>
+        <iconPath>UI/Deities/DeityGood</iconPath>
+      </li>
+    </deityPresets>
+    <allowedCultures Inherit="False">
+      <li>Astropolitan</li>
+    </allowedCultures>
+    <requiredMemes Inherit="False">
+        <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+    </requiredMemes>
+	<structureMemeWeights>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+    </structureMemeWeights>
+	<styles>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Spikecore</li>
+    </styles>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li> <!-- Never generate with any apparel precepts -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+
+      <li MayRequire="Ludeon.RimWorld.Ideology">Research_None</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Research_ExtremelySlow</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Research_VerySlow</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Research_Slow</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">Research_Normal</li>
+          <li MayRequire="Ludeon.RimWorld.Ideology">Research_Fast</li>
+
+      <li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Abhorrent</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Horrible</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Disapproved</li>
+
+      <li MayRequire="Ludeon.RimWorld.Ideology">TreeCutting_Prohibited</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">TreeCutting_Horrible</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">TreeCutting_Disapproved</li>
+
+      <li MayRequire="Ludeon.RimWorld.Ideology">Trees_Desired</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">GauranlenConnection_Strong</li>
+
+      <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Prohibited</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Horrible</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Strict</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Moderate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Mild</li>
+
+      <li>Slavery_Classic</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+
+      <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+
+      <li MayRequire="Ludeon.RimWorld.Ideology">Scarification_Minor</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Scarification_Heavy</li>
+    </disallowedPrecepts>
+  </FactionDef>
+
+  <ThingSetMakerDef>
+    <defName>ConsortiumLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>MedicineIndustrial</li>
+            <li>MedicineUltratech</li>
+            <li>ComponentIndustrial</li>
+            <li>ComponentSpacer</li>
+            <li>MealSurvivalPack</li>
+            <li>Tungsten</li>
+            <li>Steel</li>
+            <li>Orichalcum</li>
+            <li>WakeUp</li>
+            <li>SmokeleafJoint</li>
+            <li>Rrddok</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+
+<RulePackDef>
+    <defName>NamerFactionConsortium</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The Lahlit Consortium</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  </Defs>

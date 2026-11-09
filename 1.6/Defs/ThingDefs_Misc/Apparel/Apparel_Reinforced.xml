@@ -1,0 +1,1960 @@
+  <Defs>
+  <ThingDef Name="ArmorConsortiumBase" ParentName="ApparelBase" Abstract="True">
+    <tradeTags>
+      <li>LCApparel</li>
+    </tradeTags>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>LahlitTable</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+          <li MayRequire="Ludeon.RimWorld.Odyssey">Obsidian</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="ArmorHelmetConsortiumBase" ParentName="ArmorConsortiumBase" Abstract="True">
+    <thingCategories>
+      <li>ArmorHeadgear</li>
+    </thingCategories>
+    <apparel>
+      <parentTagDef>ApparelHead</parentTagDef>
+    </apparel>
+  </ThingDef>
+
+ <ThingDef ParentName="ArmorConsortiumBase">
+    <defName>MeartekkReinforced</defName>
+    <label>Type-7 Meartekk exosuit</label>
+    <description>Clunky, oversized, crudely assembled, and all-around hideous, the Meartekk line represents the Consortium's wretched spirit perfectly. Its philosophy is simple: make the most protective armor we can on the cheapest budget possible so we can arm more soldiers to take more territory and build more factories that make more armor and more, more, more. 
+	There is a word in Lahlit'ehl for "enough": "ivorrekh". It's a shame no Lahlit alive ever uses it.</description>
+    <possessionCount>1</possessionCount>
+	<techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Meartekk-7/M7_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2.3</uiIconScale>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+	  <WorkToMake>6000</WorkToMake>
+      <Mass>8.5</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>7</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <costList>
+      <Steel>55</Steel>
+	  <Tungsten>23</Tungsten>
+	  <Orichalcum>15</Orichalcum>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Meartekk-7/M7</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorConsortiumBase">
+    <defName>DurhoxxReinforced</defName>
+    <label>Type-4 Durhoxx exosuit</label>
+    <description>The Durhoxx line is one adapted for melee combat. Built by Consortium subsidiary Shehka Fortifications under the many cyber-eyes of High Guildsman Kkormoss Xoja, this latest entry in the line is still in its prototype phase.
+A few million of these exosuits were produced to be tried on the frontier by Hevorg's Tusk, and many more are soon to be made.</description>
+    <possessionCount>1</possessionCount>
+	<techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Durhoxx-4/D4_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2.3</uiIconScale>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+	  <WorkToMake>7000</WorkToMake>
+      <Mass>8.5</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>7</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+	<costList>
+      <Steel>60</Steel>
+	  <Tungsten>25</Tungsten>
+	  <Orichalcum>10</Orichalcum>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Durhoxx-4/D4</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+   
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>AkkorhaReinforced</defName>
+    <label>Akkorha-12</label>
+    <description>One must always be prepared when at the forefront of an assault. After all, who knows what manner of gas or contagion the enemy might deploy against you? Everyone knows these savage rimworlders are seemingly both
+laughably backwards and an existential threat to the entire Consortium. They're despicable! They eat entire litters of Lahlit kittens for breakfast! Why they stop this important cultural tradition as soon as they start buying from the
+Consortium, we'll never know.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Akkorha-12/A12_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>2900</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	 <costList>
+      <Steel>30</Steel>
+	  <Tungsten>12</Tungsten>
+	  <Orichalcum>12</Orichalcum>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Akkorha-12/A12</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    <forceEyesVisibleForRotations>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </forceEyesVisibleForRotations>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>TlahddokReinforced</defName>
+    <label>Tlahddok-4</label>
+    <description>Engineering, to the Lahlit, may as well be a subset of biology. On a world where everything around them seemed to be a heartless, efficient killing machine, all the Lahlit could do was adapt. They studied the war-machines
+of flesh they had to contend with every waking moment, and improved upon the twisted designs of an ecosystem gone mad. They shaped, from cold orichalc and dense tungsten, new war-machines. This was not an act of reverence or imitation of
+any sort, but one of surpassion. Succession. These new inventions were soon baptized in the blood of the living machines of Lahlisek, and used to carve out a new place in the ecosystem for their inventors.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Tlahddok-4/T4_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>3500</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+	  <Tungsten>20</Tungsten>
+	  <Orichalcum>15</Orichalcum>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Tlahddok-4/T4</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>GeveskReinforced</defName>
+    <label>Gevesk-8</label>
+    <description>A visage of the profit-takers, the neo-conquistadors, the butchers of tribes and takers of slaves. The Consortium is well-known for acquiring wealth through force at any opportunity where they can't acquire it through
+trade, and the legion Hevorg's Tusk is the most infamous for doing such. They are explorers and conquerors, perpetually searching the Rim for new business opportunities. The Consortium never has enough of 3 things: influence, buyers, and
+slaves, and the goal of Hevorg's Tusk is acquiring this political lifeblood. After all, the eternal Lahlit machine is always in need of more fuel...</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Gevesk-8/G8_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>3500</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+	  <Tungsten>20</Tungsten>
+	  <Orichalcum>15</Orichalcum>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Gevesk-8/G8</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>VsakyaReinforced</defName>
+    <label>Vsakya-14</label>
+    <description>The first Vsakya helmets were worn by occupying soldiers when martial law was declared in the Shekkogorean city of Nyamrrk to quell a brewing revolt. The signature tall, pointed spike on the top of the helmet was placed there so citizens can discern the presence of Consortium legionaries in large crowds.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Vsakya-14/V14_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>3500</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+	  <Tungsten>20</Tungsten>
+	  <Orichalcum>15</Orichalcum>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Vsakya-14/V14_south</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ArmorConsortiumBase">
+    <defName>GgokhraReinforced</defName>
+    <label>Type-7 Ggokhra exosuit</label>
+    <description>The Lahlit were once patriarchs-before the Consortium, the family structure was...archaic and bestial. Women and men lived separately in the same domicile, only coming together when they wished to satiate themselves. 
+The men were laborers, fighters, and protectors, and the women were huntresses, gardeners, weavers, and homemakers. When the Lahlit started to form their first complex civilizations, it was the men who had the most experience fighting
+other Lahlit, and thus rose to leadership-they had more practice at keeping the weak in line.
+
+Now, the Consortium is, for the most part, a gender-equal society, but their ancient politics have taken new shape in their foreign policy-they'll jump at the first opportunity to bring a trusted trading partner under their "protection".</description>
+    <possessionCount>1</possessionCount>
+	<techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ggokhra-7/G7_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2.3</uiIconScale>
+    <statBases>
+      <MaxHitPoints>185</MaxHitPoints>
+	  <WorkToMake>8500</WorkToMake>
+      <Mass>8.5</Mass>
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>7</EquipDelay>
+    </statBases>
+	<costList>
+	  <Tungsten>40</Tungsten>
+	  <Orichalcum>25</Orichalcum>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Ggokhra-7/G7</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorConsortiumBase">
+    <defName>SkelkrotReinforced</defName>
+    <label>Type-16 Skelkrot exosuit</label>
+    <description>On the front lines, a new paradise is being forged. Th'res Liin's future for his people is coming closer and closer to being realized with every colony swallowed whole.
+
+As of this year, most Consortium products are made by either slaves or automated machines. The majority of workers in mines, factories, warehouses, or any other field that requires backbreaking labor, are enslaved or artificial.
+The Consortium's slaves are sourced from just about anywhere. The Lahlit aren't picky. Most come from worlds with no real diplomatic power, if they even have a centralized government. Others still come from the impoverished, illiterate
+lower classes of urbworlds tricked into signing contracts they didn't fully understand. Some are prisoners of war, and some are simply prisoners from other nations sold to the Lahlit because they were too much of a hassle for their home
+country to deal with.
+
+Lahlit androids come in all shapes and sizes. The more expensive models look completely identical to a natural Lahlit, and are thus treated as such. After all, aren't sapients simply biological machines like any other animal deep down?
+Although, the less..."natural-looking" androids are treated more like tools: mass-produced, confined to the lowest classes in Consortium society, and effectively thought of as a less expensive alternative to factory-farming sapients.</description>
+    <possessionCount>1</possessionCount>
+	<techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Skelkrot-16/S16_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2.3</uiIconScale>
+    <statBases>
+      <MaxHitPoints>205</MaxHitPoints>
+	  <WorkToMake>9000</WorkToMake>
+      <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>7</EquipDelay>
+    </statBases>
+	<costList>
+	  <Tungsten>50</Tungsten>
+	  <Orichalcum>30</Orichalcum>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Skelkrot-16/S16</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>AvvaxxReinforced</defName>
+    <label>Avvaxx-13</label>
+    <description>The Avvaxx line is what any self-respecting Lahlit soldier puts on their head when they have to storm a decades-old compound full of grizzled survivalists because said survivalists are squatting on company property. It
+doesn't MATTER if it JUST became company property 2 days ago. They're impeding the construction of DOZENS of branch offices! DOZENS! How dare they spit in the face of CIVILIZATION like this? 
+
+Take them alive, maggots-the Kethur's got some acid vats in store for them. We'll be sure to lower them in slowly...</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Avvaxx-13/A13_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>4000</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+	  <Tungsten>35</Tungsten>
+	  <Orichalcum>20</Orichalcum>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Avvaxx-13/A13</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>HavalokReinforced</defName>
+    <label>Havalok-3</label>
+    <description>Hevorg's Tusk has 4 warships in orbit of this world-all Leikh'e-series. The Negligent Discharge, the Flays the Messenger, the Humanitarian, and the Bastard Son. Lahlit are practically funneled to this world's surface by
+the millions, an endless tide of soldiers that can easily go toe-to-toe with the Hussar strain of baseliners, scouring the earth in their race to expand more and more. Their cities spread like a plague: thousands of buildings, all identical,
+built upon tens of thousands of corpses, all in what seems like a fraction of a second.
+
+Megacorporations are a funny thing-they look to be builders. Artisans, engineers, always at the forefront of the new generation of invention. Tech is only cutting-edge for so long, after all. But everything they make is another cog of a
+magnum opus, sought by all megacorporations that ever exist and ever will. A device with a very high cost, a device that will give them everything they've ever desired and ever will. That device is war.
+
+Now, Lahlit are...animals. Brutish peddlers of two-bit technologies-but are they really all that different to their competitors?</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Havalok-3/H3_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>4000</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	 <costList>
+	  <Tungsten>35</Tungsten>
+	  <Orichalcum>20</Orichalcum>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Havalok-3/H3</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>TorthogReinforced</defName>
+    <label>Torthog-10</label>
+    <description>Features of the newer Torthog-series helmets include a thermal vision setting, AR simulations that predict the trajectory and velocity of a shot before it's even fired, and in-built combat AI features.
+
+Ku'shydd, the latest groundbreaking new invention in the field of combat-specialized Consortium AGI, has been embraced as many a subsidiary's future. Armor manufacturers have adopted the technology left and right, building data chips
+containing copies of the persona into every entry in the next generation of high-end combat armor.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Torthog-10/T10_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>3200</WorkToMake>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+	  <Tungsten>15</Tungsten>
+	  <Orichalcum>20</Orichalcum>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Torthog-10/T10</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>AshaneiReinforced</defName>
+    <label>Ashanei-15</label>
+    <description>Traditionally, huntresses would shroud themselves with masks and hoods. Now, this wasn't much use for fighting, for example, the jaonavv of Lower Shekkogor or the ravenous chaenisst of the Krrvenkt Expanse, but
+it proved to be very useful for slaying more...sapient prey. Lahlit have always been conquerors, and while they do prefer shock trooper-style tactics, sometimes all that is needed to change the world is one bullet shot by one woman miles
+away.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ashanei-15/A15_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>3200</WorkToMake>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+	  <Tungsten>15</Tungsten>
+	  <Orichalcum>20</Orichalcum>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Ashanei-15/A15</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorConsortiumBase">
+    <defName>NochekkovReinforced</defName>
+    <label>Type-18 Nochekkov exosuit</label>
+    <description>See? Lahlit CAN make something somewhat light. The Nochekkov line is wholeheartedly preferred by all manner of long-range support-it's much less stiff and bulky than most other Consortium-brand armors, and is by far
+one of the most quiet armor sets of Lahlit make.</description>
+    <possessionCount>1</possessionCount>
+	<techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Nochekkov-18/N18_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2.3</uiIconScale>
+	<costList>
+      <Steel>60</Steel>
+	  <Tungsten>10</Tungsten>
+	  <Orichalcum>25</Orichalcum>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+	  <WorkToMake>7000</WorkToMake>
+      <Mass>8.5</Mass>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>7</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+      <MoveSpeed>0.5</MoveSpeed>
+      <RangedWeapon_DamageMultiplier>1.3</RangedWeapon_DamageMultiplier>
+    </equippedStatOffsets>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Nochekkov-18/N18</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorConsortiumBase">
+    <defName>BurelarReinforced</defName>
+    <label>Type-5 Burelar exosuit</label>
+    <description>Two brothers were tied to the late Hevorg by fate-Dharanak and Dharothek Gurr. The two are inseparable-a rare case of Lahlit twins instead of a full litter, one is never seen without the other. Hevorg Rexhiga was their
+closest comrade-the only man alive the brothers would trust with their very lives. And now, with Hevorg gone and his legion, the Hevorghokkr, halfway broken, the brothers were the first to rally their troops, the dreaded Gurvetskalt-the
+Dogeaters, to carry out their fallen ally's last orders-bleed this planet dry, and if they must...fight to their very last.</description>
+    <possessionCount>1</possessionCount>
+	<techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Burelar-5/B5_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2.3</uiIconScale>
+    <statBases>
+      <MaxHitPoints>170</MaxHitPoints>
+	  <WorkToMake>7500</WorkToMake>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>7</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+	<costList>
+      <Steel>90</Steel>
+	  <Tungsten>30</Tungsten>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+	<equippedStatOffsets>
+      <MoveSpeed>0.3</MoveSpeed>
+      <RangedWeapon_DamageMultiplier>0.5</RangedWeapon_DamageMultiplier>
+	  <MeleeWeapon_DamageMultiplier>0.5</MeleeWeapon_DamageMultiplier>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Burelar-5/B5</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>AeDhelReinforced</defName>
+    <label>Ae'dhel-11</label>
+    <description>Dogeater helmets are best described as a thick bronze carapace that blankets the head, a look that fits in well with the general material culture of the legion and its sponsoring Guild and their numerous vassalized 
+subsidiaries. That is, "exoskeletal industrial equipment". This appearance is a far cry from the more fungus-like aesthetic preferred by the Guild of Shekkogor, inspired by the numerous nightmarish fungal organisms of the supercontinent.
+Shekkogor, in ancient days, long before when the Gvoahrdrehex-the Consortium, was prioritized above petty national feuds, was well-known for the exploratory spirit of its people. Its empires were the first to forge bonds of trade.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ae'dhel-11/A11_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>3100</WorkToMake>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+      <Steel>50</Steel>
+	  <Tungsten>15</Tungsten>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Ae'dhel-11/A11</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>ArranothReinforced</defName>
+    <label>Arranoth-9</label>
+    <description>The Dogeaters have a tendency to adorn their helmets with artifical bone replicae. This practice is a sort of imitation of the ancient folk traditions of Hogeiyezh, the Dogeaters' fatherland, traditions that were
+supposed to either die or be left to dust as footnotes on dataslates in dilapidated archives. When the Consortium united, all ethnic practices were shunned, and all old gods were forgotten at best and blasphemed at worst, all in favor
+of new gods realized through machine learning algorithms and new practices of a reborn, unified Lahlisek, not a national identity, but a global one-one that came above all else.
+
+Dharanak and Dharothek Gurr were the sons of lorekeepers. They were the firstborn litter in a family of 3 fathers and 2 mothers, all of which met through their field of study. Theirs was perhaps the only family alive that brought their
+kin up with the knowledge of their people's old ways and ancient gods-many archivists are encouraged to study such practices, but to follow them? Absolutely irrational, truly. Some would simply call it insane.
+
+But that insanity is what makes their legion so infamous. Primal, savage, almost feral Lahlit warriors killing in the name of deities that haven't been acknowledged for hundreds of years. The Dogeaters believe that following the spirit of
+the Lahlit's barbarous martial past will greatly aid the Consortium's endless march towards further advancement.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Arranoth-9/A9_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>3100</WorkToMake>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+      <Steel>50</Steel>
+	  <Tungsten>15</Tungsten>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Arranoth-9/A9</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>ZvokkReinforced</defName>
+    <label>Zvokk-2</label>
+    <description>The Dogeaters are the Consortium's finest "foreign asset depreciators". Whereas outrider legions like Hevorg's Tusk scout the stars, discover new planets, and forge new supply lines and paths of trade, incursive legions like the Dogeaters are moreso concerned with putting the Consortium's high-tech warfare solutions to the test. If you need something blown up, call for them.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Zvokk-2/Z2_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>3100</WorkToMake>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+      <Steel>50</Steel>
+	  <Tungsten>15</Tungsten>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Zvokk-2/Z2</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ArmorConsortiumBase">
+    <defName>VekethraReinforced</defName>
+    <label>Type-20 Vekethra exosuit</label>
+    <description>The Vekethra line is not available to the civilian market. It is strictly military gear, awarded to a legion's kethureg, or field captains, upon promotion. Vekethra armors are possibly the only Consortium products
+manufactured with some thought put into aesthetics-the cape adds a considerable amount of gravitas to its wearer, and the pauldrons create a rather terrifying silhouette. Many Lahlit would even call the craftsmanship beautiful, which is...rather shocking, to say the least.
+Not only because...well, just take a look at one of those armor suits, but because of the fact that Lahlit find "beauty" in anything at all, or even consider the concept relevant.
+
+The spikes do get in the way sometimes, but...it's not like anyone wearing this would fit through a tight corridor or average-sized doorway without the spikes...</description>
+    <possessionCount>1</possessionCount>
+	<techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Vekethra-20/V20_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <uiIconScale>2.3</uiIconScale>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+	  <WorkToMake>15000</WorkToMake>
+      <Mass>8.5</Mass>
+      <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EnergyShieldRechargeRate>0.04</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.5</EnergyShieldEnergyMax>
+      <EquipDelay>7</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <equippedStatOffsets>
+      <MoveSpeed>0.7</MoveSpeed>
+      <RangedWeapon_DamageMultiplier>1.3</RangedWeapon_DamageMultiplier>
+      <MeleeWeapon_DamageMultiplier>1.3</MeleeWeapon_DamageMultiplier>
+	  <PainShockThreshold>0.7</PainShockThreshold>
+    </equippedStatOffsets>
+	<costList>
+      <Tungsten>80</Tungsten>
+	  <Orichalcum>55</Orichalcum>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Vekethra-20/V20</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+       <li Class="CompProperties_Shield">
+          <blocksRangedWeapons>false</blocksRangedWeapons>
+       </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorConsortiumBase">
+    <defName>ZhrrtloReinforced</defName>
+    <label>Type-6 Zhrrtlo exosuit</label>
+    <description>Much is sacrificed to make way for progress in Lahlit culture. Their myths, their psyches, their humanity, their very lives, let alone such pointless dreck as old military traditions.
+A majority of the Guilds have stopped production of the Vekethra line-they have recently decreed all Vekethra armors to be inefficient, primitive implements from the history books-for "last week" and "200 years ago" are one and the same to all except the archivist in the Consortium.
+The past is the past, and Guild and Dynasty decree we must focus on the future. On blessed progress. And who would dare defy the Guilds? Who would dare defy the CEO, Th'res Liin, the wayward son, the last of his line through glorious slaughter?
+The man, nay, the living god, who delivered his people from the oppression they suffered at the hands of his kin? Exactly, no Lahlit alive would be so disgraceful. Traditions breed Luddism, anyway. Such things are best left to ghet'zha-it makes them easier to conquer.</description>
+    <possessionCount>1</possessionCount>
+	<techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Zhrrtlo-6/Z6_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <uiIconScale>2.3</uiIconScale>
+    <costStuffCount>150</costStuffCount>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+	  <WorkToMake>15000</WorkToMake>
+      <Mass>8.5</Mass>
+      <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EnergyShieldRechargeRate>0.04</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.5</EnergyShieldEnergyMax>
+      <EquipDelay>7</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <equippedStatOffsets>
+      <MoveSpeed>0.7</MoveSpeed>
+      <RangedWeapon_DamageMultiplier>1.3</RangedWeapon_DamageMultiplier>
+      <MeleeWeapon_DamageMultiplier>1.3</MeleeWeapon_DamageMultiplier>
+	  <PainShockThreshold>0.7</PainShockThreshold>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+	<costList>
+      <Tungsten>80</Tungsten>
+	  <Orichalcum>55</Orichalcum>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Zhrrtlo-6/Z6</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+       <li Class="CompProperties_Shield">
+          <blocksRangedWeapons>false</blocksRangedWeapons>
+       </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>EazletReinforced</defName>
+    <label>Eazlet-17</label>
+    <description> The Consortium's populace will soon be an army of corpses. Their legions fight this extravagant crusade across the stars for a much more distinguished goal than mining worlds hollow to make guns-mining worlds hollow to build up data infrastructure. Have you any idea the amount of hardware required to digitize a sapient brain? Much less the amount of biofuel required to power the resulting post-organic intellect?
+Lahlit greed is endless, but they're not simply fighting for the sake of greed. They do not wish to simply fuel their war machine-they wish to refurbish it. Most of the Consortium's wealthy and renowned have already become virtual beings, and the technology will be soon available to the middle class as it, like most Lahlit tech, grows cheaper and cheaper by the day.
+The most pessimistic projections indicate that the entirety of the Lahlit species will find immortality in the Gorzghuit-cyberspace, or "number realm" when translated literally-in a remarkably swift timeframe: just shy of three decades.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Eazlet-17/E17_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+	  <WorkToMake>12000</WorkToMake>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+      <Tungsten>40</Tungsten>
+	  <Orichalcum>25</Orichalcum>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Eazlet-17/E17</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>NizhaogReinforced</defName>
+    <label>Nizhaog-5</label>
+    <description> Ascension is the wayward son's vision. He wishes to cast the Lahlit as living gods, just like himself-he was the first adopter of digitization in the galaxy. The second was Voydoss Rek, Liin's grand vizier, who was awarded with transcendence for being the first in recent memory to successfully keep the irate Guilds from invading each other's respective territories.
+The third was G'vor Valgok, a war hero who is widely considered the greatest soldier the Consortium has ever produced, and serves as Liin's personal guard. Then the tech wasn't "the highest honor only granted to 2 people" anymore. The fourth was closely followed by the twenty-third, who was closely followed by the 119th.
+Soon, a solid 5.3% of the Consortium's subjects were digitized immortals who were quickly slotted into the finest lab-grown bodies or top-of-the-line androids after their previous vessels were damaged beyond repair (which...happens way more often than you'd think).
+
+While their competitors hardly consider the Consortium a functioning society, much less alike to them in any way, and the Consortium considers itself more of a trade empire akin to many great nations in Lahlisek's history, the Consortium is still a megacorporation. And like any other megacorporation, it desires complete monopoly.
+The Lahlit's aim is to create this monopoly by way of total domination. Death will become a tool for progress instead of a hindrance to it-the elevated, digitized consciousnesses of what was once an organic species will learn from every spent vessel, every "death" rendering them more efficient. And without death to halt the Lahlit machine, nothing will stand in the way of expansion.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Nizhaog-5/N5_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+	  <WorkToMake>12000</WorkToMake>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+      <Tungsten>40</Tungsten>
+	  <Orichalcum>25</Orichalcum>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Nizhaog-5/N5</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>ZeitlhaReinforced</defName>
+    <label>Zeitlha-8</label>
+    <description>For all their barbaric screeching and talk of supremacy, the Lahlit are ultimately slaves. They are servants of machines in all their forms. In their youth, their families typically employ constructs for most tasks related to childcare, if they weren't just tossed in a growth vat until puberty.
+Algorithms taught them science and arithmetic and history, and it was mainly through conversations with characters in fully-immersive video games that they learned Lahlit'ehl. Their first romantic experiences were with artificial intelligences, and, even though they don't like to admit it, they all love the beautiful voices of virtual pop stars.
+In their youth, they adored the fruits of the Machine, the bountiful blessings of progress, and now their lives are spent destroying themselves to nourish it. In their youth, they were taught by Consortium products that their nation comes above all, even the self, for their nation grants them shallow fulfillment for 25% off, and now...they still haven't learned any better.
+
+In the future, they will still be shackled by their allegiance, and every Lahlit will pledge their eternal minds to furthering the goals of the state.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Zeitlha-8/Z8_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+	  <WorkToMake>12000</WorkToMake>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+      <Tungsten>40</Tungsten>
+	  <Orichalcum>25</Orichalcum>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Zeitlha-8/Z8</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>GrammkReinforced</defName>
+    <label>Grammk-3</label>
+    <description>The Grammk line serves as a clear indicator of one's status-considered a throwback to the top hats of the Terran Machine Age, these helmets are worn with pride by many a military officer and petty executive.
+They can even stack on top of one another! Whenever a subsidiary's board of directors is begging a guild ambassador to NOT have everyone in the room executed for not meeting production quotas, there's always a stack of these helmets on a table somewhere-after all, it's rude to wear helmets in a building.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Grammk-3/G3_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+	  <WorkToMake>12000</WorkToMake>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+      <Tungsten>40</Tungsten>
+	  <Orichalcum>25</Orichalcum>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Grammk-3/G3</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorConsortiumBase">
+    <defName>RathkkorReinforced</defName>
+    <label>Type-9 Rathkkor exosuit</label>
+    <description>Privileged is the tale of the great pride-lord Kikhol Hvedd, or "Kikhol the Pallid" when translated into Galactic-for it is a rarity among Lahlit legends. Most were erased or simply left to rot in the name of progress, but Kikhol's story was instead embraced.
+Celebrated, even. And this is solely because Kikhol was the first to unite the Lahlit, if even for a few fleeting years-ultimately a footnote in the race's long, violent history.
+
+Lahlisek was always somewhat sought after-every polity in the Core wanted it, but they all were far too busy with much more critical issues to randomly go out and fight a war against a bunch of feudal cat-lizards. All except for one.
+The Hierarchy of Rán was a small nation, but one that was moving up in the galaxy quite quickly. The folk of Rán, or "Epsilon Eridani" as the old Terran star-maps label it, didn't concern themselves much with the latest struggles in galactic politick.
+Their claim to fame was their isolationism-they conserved resources instead of frivolously spending them waging wars every 5 minutes, but they did execute shockingly quick land grabs when they could.
+
+One morning, the fractured prides woke up under the shadow of military transports, awakened by the noise of multiple Epsilonian army detachments touching down on Lahlit soil. Years of bloody war followed the invasion-some prides were horribly weakened, others were cut down to a man or completely annihilated, their cities blown to dust.
+Kikhol's pride was one of the only societies on the planet to thrive amid the chaos. He was possibly the greatest tactician Lahlisek ever produced-and it was in this war that his tactics, both on the battlefield and in state, led to the first unification of Lahlisek and the expulsion of Epsilonian forces from the planet.
+Kikhol's tale is a tale of perseverance and the strength of unity-he perfectly embodies the values the Consortium wishes to spread among its people, so he became one of the only folk heroes that was spared.
+</description>
+    <possessionCount>1</possessionCount>
+	<techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Rathkkor-9/R9_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <uiIconScale>2.3</uiIconScale>
+	<costList>
+      <Steel>120</Steel>
+	  <Orichalcum>35</Orichalcum>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+	  <WorkToMake>7000</WorkToMake>
+      <Mass>8.5</Mass>
+      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EnergyShieldRechargeRate>0.08</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.9</EnergyShieldEnergyMax>
+      <EquipDelay>7</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <equippedStatOffsets>
+	  <MoveSpeed>0.6</MoveSpeed>
+      <RangedWeapon_DamageMultiplier>1.6</RangedWeapon_DamageMultiplier>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Rathkkor-9/R9</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+       <li Class="CompProperties_Shield">
+          <blocksRangedWeapons>false</blocksRangedWeapons>
+       </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>EchaskReinforced</defName>
+    <label>Echask-2</label>
+    <description>It is a unusual thing for two Lahlit to receive the same spirit name-for a spirit name is given to call attention to one's qualities. Their skill in something, their temperament, their personality, their habits, their appearance, their great deeds, and, in some cases, their humiliating mistakes.
+Kikhol was called Kikhol Hvedd because he was as pale as a corpse. G'vor was called G'vor Valgok after an older line of Consortium tanks, the Valgok series-he was a bit heavy when he first enlisted. As for the brothers-they were, indeed, a rare case among Lahlit. Everything they achieved, they achieved together, and their deeds manifested a shared-and fitting-name.
+Gurr: "savage".</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Echask-2/E2_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>3200</WorkToMake>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+      <Steel>80</Steel>
+	  <Orichalcum>25</Orichalcum>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Echask-2/E2</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>ChrrskolReinforced</defName>
+    <label>Chrrskol-8</label>
+    <description>The Consortium has a surprising amount of influence for a corporation with such ever-present PR struggles. No matter how often the damn cats make headlines for sapient rights violations, everyone will still continue to eat at their favorite Consortium-sponsored Lahlit restaurants and children across the galaxy will still snuggle their plushies of various Lahlit mascots.
+Some nations even look up to them-most are nations that are hardly recognized as sovereign, if recognized at all, made up of maybe one habitable planet and a few orbital habitats and lunar colonies, none of which are holding together and all of which are in the throes of abject poverty. The Lahlit are slaves to progress, but some in the galaxy yearn for such things.
+More effective nations who aren't nearly as desperate for improvement can still be made to look past any controversy. Like any good megacorp, the Lahlit routinely send operatives to either bribe or behead any politician that wishes to speak out against them or put up trade barriers.
+There also exist multiple artificial superintelligences on Lahlisek who are regularly tasked with "persuading" the feeble minds of quintillions of AEthernet users-both inside company borders and beyond. And...well, you can't go wrong with mascot plushies, can you?</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Chrrskol-8/C8_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>3200</WorkToMake>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<costList>
+      <Steel>80</Steel>
+	  <Orichalcum>25</Orichalcum>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Chrrskol-8/C8</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorConsortiumBase">
+   <defName>Aottezt-84ShevReinforced</defName>
+    <label>Aottezt-84 Shev</label>
+    <description>The Lahlit machine-gods are ultimately imitative: superintelligences programmed to emulate archetypes seen throughout Lahlit regional mythologies. Every pantheon of every great Lahlit pride had gods of the elements, gods of the sun and moons, a god of nature and death, a patron god, a god of craft and industry, and a god of honor and nobility. One could consider Xovox to be an imitation of the latter archetype-or an evolution of it.
+One that speaks to its faithful, instructs them, too, to imitate-to imitate the many honorable figures from Lahlit history registered in its databanks. Great knights, priests, and nobles known only to the Machine Cults-for the machine-gods are the last real encyclopedic sources of Lahlit regional history. Every nation and free city conquered by the Consortium in its early days, when its first deals with extraterrestrial powers had been struck, immediately had their records purged upon assimilation.
+Exactly how Xovox discovered such knowledge, none really know, aside from perhaps its most favored acolytes. All we do know is that it takes such knowledge to heart, ordering its faithful to dress in a way that reflects ancient chivalrous fashion-to dress in the armor of knights, the hood and robes of priests, and the corsets and skirts of nobles.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Aottezt-84Shev/AS_Male_south</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+	<costList>
+      <ComponentSpacer>2</ComponentSpacer>
+	  <Orichalcum>45</Orichalcum>
+    </costList>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.5</Mass>
+      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.7</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Legs</li>
+        <li>Shoulders</li>
+	<li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Aottezt-84Shev/AS</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+    </apparel>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>Ddokshoz-93ArlaReinforced</defName>
+    <label>Ddokshoz-93 Arla</label>
+    <description>The old gods deserved to be forgotten. They were primitive. Worthless. Figments of the imagination that the Lahlit would build statues to and throw their lives away for, all for nought. The gods wouldn't heal their sick, or ensure victory over their enemies. The gods wouldn't enlighten them. The gods wouldn't even speak!
+How inefficient-nay-how defective the gods were in function! The cats no longer have need of legends or god-talk...especially when they can make far better. Progress is evolution, and just as their physiologies evolved to adapt to Lahlisek's environment in ages past, so have their gods evolved to adapt to their undying want for more in this new age of machines.
+
+Old legends can't satisfy the masses anymore-the Lahlit have evolved past patience, and will no longer tolerate prayers unanswered. So...new gods were made in their stead. Gods that speak, gods that enlighten, gods that are paragons of progress instead of barriers to it.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ddokshoz-93Arla/DDA_south</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.15</uiIconScale>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <WorkToMake>850</WorkToMake>
+      <Mass>0.1</Mass>
+      <EquipDelay>0.8</EquipDelay>
+      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.7</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+    </statBases>
+	<costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+	  <Orichalcum>25</Orichalcum>
+    </costList>
+    <apparel>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Ddokshoz-93Arla/DDA</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>Ddokshoz-93AekkReinforced</defName>
+    <label>Ddokshoz-93 Aekk</label>
+    <description>Evolution is progress, and progress is replacement. The inefficient are doomed to be usurped by the fulfilling, as the weak are doomed to be usurped by the strong. The old gods were weak, and the Lahlit have evolved yet again. Just as they evolved to conquer Lahlisek, they have evolved once more to conquer the stars, their new, deserving gods cheering them on from the blessed Gorzghuit.
+The Machine Cults are not the new gods' only faithful-just their most devoted followers. Even in these prosperous times, the people still need leadership. They still need someone to turn to, someone to guide them, when they have no true friends by their side. The people find solace in the Code as their ancestors did in legends-every day, they commune with the machine-gods through screens, neural implants, and virtual reality sessions.
+For once in Lahlit history, the people can truly find fulfillment in higher powers-because for once in Lahlit history, the divine is finally palpable: and more importantly, useful.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ddokshoz-93Aekk/DDAE_south</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.15</uiIconScale>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <WorkToMake>850</WorkToMake>
+      <Mass>0.1</Mass>
+      <EquipDelay>0.8</EquipDelay>
+      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.7</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+    </statBases>
+	<costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+	  <Orichalcum>25</Orichalcum>
+    </costList>
+    <apparel>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Ddokshoz-93Aekk/DDAE</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>Ddokshoz-93BahkReinforced</defName>
+    <label>Ddokshoz-93 Bahk</label>
+    <description>When divinity is the result of unchecked greed, when the gods themselves are yet another Consortium product, monthly subscriptions become holy tribute, and self-sacrifice for the betterment of the bottom line becomes every citizen's-every believer's-moral duty.
+Like the pantheons of old, the machine-gods descend from a patron: a greater machine, one whose power is limitless, whose word is law, and whose life is eternal. That machine is, of course, the state-the Consortium itself, an undying engine of evolution in which the Lahlit are its blessed cogs and pistons.
+When the gods themselves are yet another Consortium product, the state and its rulers become the ultimate moral authority, and the state's goal becomes the divine purpose of its citizenry.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ddokshoz-93Bahk/DDB_south</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.15</uiIconScale>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <WorkToMake>850</WorkToMake>
+      <Mass>0.1</Mass>
+      <EquipDelay>0.8</EquipDelay>
+      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.7</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+    </statBases>
+	<costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+	  <Orichalcum>25</Orichalcum>
+    </costList>
+    <apparel>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Ddokshoz-93Bahk/DDB</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>Ddokshoz-93ChetReinforced</defName>
+    <label>Ddokshoz-93 Chet</label>
+    <description>To evolve is to be Lahlit. Such is the main historical narrative pushed onto the Consortium's populace-for rapid evolution is what saved their species from being hunted to extinction by everything around them, and rapid societal evolution-the elimination of redundant features and the focus on ddeikotgorz-the act of "elevating numbers", of perpetually aiming for more wealth and power and the addictive feeling of satisfaction and fulfillment that inevitably results from such a mindset-is what has saved their species from being utterly annihilated by foreign powers. 
+To be Lahlit is to progress, to outpace, and to dominate, for these are the qualities of evolution-and evolution is the Consortium's sacred goal, ordained not by the gods, but by their creators.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Ddokshoz-93Chet/DDC_south</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.15</uiIconScale>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <WorkToMake>850</WorkToMake>
+      <Mass>0.1</Mass>
+      <EquipDelay>0.8</EquipDelay>
+      <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.7</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+    </statBases>
+	<costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+	  <Orichalcum>25</Orichalcum>
+    </costList>
+    <apparel>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Ddokshoz-93Chet/DDC</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+
+ <ThingDef ParentName="ArmorConsortiumBase">
+    <defName>EiztteakReinforced</defName>
+    <label>Type-6 Eiztteak exosuit</label>
+    <description>The first suit of Eiztteak armor was made as a gesture of loyalty: to honor oaths of trade between Upper Shekkogor and neighboring Aenolk. It was artificed by the tenured Shekkogorean armorsmith Rhonodhig the Haruspex, who adorned the exosuit with snaking, lucent designs reminiscent of the bioluminescent patterns on giant Aenolkan cave molluscs.
+
+In Rhonodhig's time, the written contract was the only thing keeping Lahlisek together-the singular barrier to the (somewhat) consolidated continental powers' seemingly inevitable descent into total world war was a labyrinth of paperwork. Trade deals, peace agreements, and most importantly, army reduction orders, all put in place to ensure a begrudging peace.
+And if any regional power were to disregard just one of the thousands of contracts they signed, they effectively dishonored them all. They were treated as a threat to world peace, and their people were deemed as oath-breakers. Neighboring governments would immediately rip them apart, burning their cities, slaughtering their people, and divvying up the ravaged holdings amongst themselves-all out of equal parts slavering opportunism and contractual obligation.</description>
+    <possessionCount>1</possessionCount>
+	<techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Eiztteak-6/E6_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2.3</uiIconScale>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+	  <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>12</MaxHitPoints>
+      <Mass>8.5</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>7</EquipDelay>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <costList>
+      <Steel>55</Steel>
+	  <Tungsten>23</Tungsten>
+	  <Orichalcum>15</Orichalcum>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Eiztteak-6/E6</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>DlochenReinforced</defName>
+    <label>Dlochen-5</label>
+    <description>"They say the fisher's daughter cut Khalkheggo to pieces."
+
+"Asketovi? Khorvehg...you know, she can lop the heads off as many stuck-up ssengohr as she wants. She'll still never lead the Tusk for one damned second. Th'res's got a much shorter stick up his ass, but he's still a Wyrmblood.
+If you think any one of their number-even HIM, will choose someone without billions in their name as pride-lord: then Gohlmir, my friend, I have 2 moons to sell you."
+
+-Conversation betweeen Mo'lokk Khiz, kurzgahrn, and Gohlmir Chuth, addarek</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Dlochen-5/D5_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>2900</WorkToMake>
+      <MaxHitPoints>135</MaxHitPoints>
+      <MaxHitPoints>4</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+	  <Tungsten>8</Tungsten>
+	  <Orichalcum>8</Orichalcum>
+    </costList>    
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Dlochen-5/D5</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>RrklotyReinforced</defName>
+    <label>Rrkloty-2</label>
+    <description>Originally intended for combat mechanics, the Rrkloty-2's optics can quickly scan vehicles of any kind for damage or malfunction. In recent years, the helmet line has gained popularity among Hevorg's Tusk legionaries for its flared-out and frightening appearance.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Rrkloty-2/R2_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+	  <WorkToMake>2900</WorkToMake>
+      <MaxHitPoints>135</MaxHitPoints>
+      <MaxHitPoints>4</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+	  <Tungsten>8</Tungsten>
+	  <Orichalcum>8</Orichalcum>
+    </costList> 
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Rrkloty-2/R2</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+ <ThingDef ParentName="ArmorConsortiumBase">
+    <defName>AskoggirReinforced</defName>
+    <label>Type-2 Askoggir exosuit</label>
+    <description>The Zdiishlat line, the previous armor series sported by Dogeater captains, had a built-in jetpack instead of being paired with an external one. This, of course, wasn't very effective-needing to be built into the armor hindered the jetpack's capabilities. It wasn't powerful enough to propel the wearer very far, and it couldn't be made more powerful to avoid increasing the size of the already-bulky exosuit, so it was just recalled as a failed product and all production was ceased.
+The first Askoggir exosuit was then developed to fill the void left by the recall.</description>
+    <possessionCount>1</possessionCount>
+	<techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Askoggir-2/A2_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <uiIconScale>2.3</uiIconScale>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <Mass>8.5</Mass>
+      <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>7</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.7</MoveSpeed>
+      <RangedWeapon_DamageMultiplier>1.6</RangedWeapon_DamageMultiplier>
+      <MeleeWeapon_DamageMultiplier>1.6</MeleeWeapon_DamageMultiplier>
+	  <PainShockThreshold>0.35</PainShockThreshold>
+    </equippedStatOffsets>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Askoggir-2/A2</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+	<costList>
+      <Tungsten>60</Tungsten>
+	  <Orichalcum>45</Orichalcum>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+ <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>SloktoguReinforced</defName>
+    <label>Sloktogu-12</label>
+    <description>It is impossible for an object to travel faster than the speed of light. Light travels as fast as light does because it is weightless. When objects with mass move faster and faster, the energy required to accelerate its momentum grows exponentially. For an object to move faster than light, the energy required to sustain it would need to be infinite, which is an obvious impossibility.
+There are ways around this, though. Ways that keep the trade lanes alive and the silver flowing. The technology is experimental. Unstable. But when has that ever stopped the course of progress?
+
+The coreworld sectors are more unified than ever before thanks to the invention of the star-fortress: gargantuan stellar structures that act as nodes in a blossoming wormhole network. They are expensive and highly impractical for use on a large scale, but they don't really need to be for most galactic governments-most are content with their dominion over a handful of worlds and only utilize them for forays into the borders of neighboring nations. Journeys that used to take more than half a century now only require 20 or so years in cryo-sleep: moving at sub-light speed is much quicker when you're taking shortcuts.
+But some galactic powers aren't sated with the idea of ONLY ruling over a handful of planets. And some galactic powers specialize in mass-producing things widely considered "expensive" and "highly impractical".</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Sloktogu-12/S12_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+      <MaxHitPoints>9</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <costList>
+      <Tungsten>55</Tungsten>
+      <Orichalcum>35</Orichalcum>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Sloktogu-12/S12</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+ <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>VvatalzReinforced</defName>
+    <label>Vvatalz-4</label>
+    <description>The Consortium's borders stretch from Lahlisek to the most distant midworlds. The outriders have sat at the mouth of the Rim for years, biding their time and reinforcing control over the territory they already have for the most part. Large interstellar empires are extremely hard to control at sub-light: your subjects may not consider your power relevant if the closest star-fortress is a twenty-years' journey from them. Consortium territory is theoretically vast, but largely disputed and only effectively recognized by Lahlisek.
+Even on the interstellar scale, "the Consortium" as both a galactic power and a national identity is mostly held together through trade and nothing else. Because of this, the outrider legions have been tasked with policing the Consortium's dubiously-controlled borderlands: that is, collapsing the spheres of influence of warlords and petty planetary leaders that are informally recognized as the actual ones in charge.
+
+Hevorg was the sole outlier. He was a man whose strengths would be wasted on such tasks. He was allowed to venture further-to continue his crusade into the dark, for he would have it no other way. He was to do the one thing he loved-explore. Map the stars. Search for new slaves, new riches, new worlds, new beginnings. If he lived, he was to report his wealth of findings. And if he died, he was to be avenged.
+
+
+Rexhiga- "wayfinder". His name will be known, and his death will not be forgotten.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Vvatalz-4/V4_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+      <MaxHitPoints>9</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <costList>
+      <Tungsten>55</Tungsten>
+      <Orichalcum>35</Orichalcum>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Vvatalz-4/V4</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+ <ThingDef ParentName="ArmorHelmetConsortiumBase">
+    <defName>ZnargaiReinforced</defName>
+    <label>Znargai-13</label>
+    <description>The Dogeaters are a feared name across the midworlds-they worked hand in hand with Hevorg's Tusk during the last major Consortium "expansion". If a world was discovered, and the locals weren't developed enough to support diplomacy, they were simply subjugated. Having outrider legions be tailed by highly-trained assault forces such as the Dogeaters was a common tactic due to the sheer number of worlds the Lahlit were faced with that were, by all means, irrelevant in galactic politics.
+It's not an unwarranted annexation if the world's natives have just invented steel-because there is no recognized "nation" being conquered, only a planet being settled and its people...put to better use.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Znargai-13/Z13_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <statBases>
+      <MaxHitPoints>9</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <costList>
+      <Tungsten>55</Tungsten>
+      <Orichalcum>35</Orichalcum>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Znargai-13/Z13</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  </Defs>

@@ -1,0 +1,279 @@
+<Defs>
+    <ThingDef Name="LCBalShield" ParentName="BaseMeleeWeapon_Blunt_Quality" Abstract="True">
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit="False">
+            <li>VFEC_Shields</li>
+	    <li>VFEM2_BaseShield</li>
+        </thingCategories>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.2</MoveSpeed>
+            <MeleeDodgeChance>-7</MeleeDodgeChance>
+        </equippedStatOffsets>
+		<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<bodyPartGroups>
+				<li>LeftHand</li>
+			</bodyPartGroups>
+			<layers>
+				<li>VFEC_OuterShell</li>
+			</layers>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+        <equippedAngleOffset>-30</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>base</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>11</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>centre</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>11</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="LCBalShield">
+        <defName>LC_Sselyg</defName>
+        <label>Sselyg-31</label>
+        <description>Lahlit shields are typically thick, cumbersome lumps of metal that are used more for bashing skulls in than anything else-for Consortium soldiers have no real need to prioritize form or...mobility.
+Consortium close-combat armor is optimized to render most beast attacks or low-tech weapons impotent. If something can get through the armor, what's any shield of the same make going to do other than slightly delay its wielder's
+gory demise? The only uses the Lahlit would have for shields are offensive ones-they are to be awkwardly held in front of their wielder's face until the enemy is in pulverizing range. They're useful for knocking weapons out of
+hands...or hands off of arms.
+
+This specific design is a much older construction-which is not out of character for the Consortium in the slightest. Whereas other megacorps re-fit the entirety of their personnel as soon as a new innovation is made to replace
+the previous, the Consortium follows the philosophy of "if it works, keep using it". In its recent history, the Consortium has invented easily hundreds of thousands of different product lines and tens of millions of individual
+additions to them-most of which are still in production.</description>
+        <graphicData>
+            <texPath>Things/Shields/Sselyg31/S31</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <costList>
+            <Steel>65</Steel>
+            <Orichalcum>12</Orichalcum>
+        </costList>
+        <statBases>
+            <MaxHitPoints>320</MaxHitPoints>
+            <Flammability>0.0</Flammability>
+            <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>6.5</Mass>
+        </statBases>
+<equippedStatOffsets>
+<ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+</equippedStatOffsets>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>LCTech</researchPrerequisite>
+            <recipeUsers>
+                <li>LahlitTable</li>
+            </recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+        <comps>
+            <li Class="VEF.Apparels.CompProperties_Shield">
+                <shieldTags>
+                    <li>Gearguut</li>
+                </shieldTags>
+                <useDeflectMetalEffect>true</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Shields/Sselyg31/S31</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.5</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.05, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.05, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	    <ThingDef ParentName="LCBalShield">
+        <defName>LC_SselygTwo</defName>
+        <label>Sselyg-55</label>
+        <description>Lahlit shields are typically thick, cumbersome lumps of metal that are used more for bashing skulls in than anything else-for Consortium soldiers have no real need to prioritize form or...mobility.
+Consortium close-combat armor is optimized to render most beast attacks or low-tech weapons impotent. If something can get through the armor, what's any shield of the same make going to do other than slightly delay its wielder's
+gory demise? The only uses the Lahlit would have for shields are offensive ones-they are to be awkwardly held in front of their wielder's face until the enemy is in pulverizing range. They're useful for knocking weapons out of
+hands...or hands off of arms.
+		
+This specific design of shield was refined for war-its curved design allows for catching all manner of body parts or close-range weaponry.</description>
+        <graphicData>
+            <texPath>Things/Shields/Sselyg55/S55</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <costList>
+            <Steel>65</Steel>
+            <Orichalcum>12</Orichalcum>
+        </costList>
+        <statBases>
+            <MaxHitPoints>320</MaxHitPoints>
+            <Flammability>0.0</Flammability>
+            <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>6.5</Mass>
+        </statBases>
+<equippedStatOffsets>
+<ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+</equippedStatOffsets>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>LCTech</researchPrerequisite>
+            <recipeUsers>
+                <li>LahlitTable</li>
+            </recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+        <comps>
+            <li Class="VEF.Apparels.CompProperties_Shield">
+                <shieldTags>
+                    <li>Gearguut</li>
+                </shieldTags>
+                <useDeflectMetalEffect>true</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Shields/Sselyg55/S55</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.5</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.05, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.05, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+	
+	    <ThingDef ParentName="LCBalShield">
+        <defName>LC_Drakkyx</defName>
+        <label>Drakkyx-4</label>
+        <description>The use of pistols and shields in tandem by Lahlit legionaries has roots in the Wars of Synthesis-it was one of the many tactics devised by the newly-formed Khiithk Lahlit Gvoahrdrehex, or better known as the Consortium, that gave them the edge they needed to unite their world.
+Three of Lahlisek's greatest merchant-kingdoms broke every oath to their inferiors that stifled them and banded together under the ultimate, absolute rule of one CEO-Threxedog "Threx" Khul, first of the Wyrmbloods. Khul's armies may as well have been destruction made manifest-an armageddon that would not be out of place in a legend.
+Lahlisek was ultimately easy pickings for the Consortium-so they turned their attention to the stars.</description>
+        <graphicData>
+            <texPath>Things/Shields/Drakkyx4/D4</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <costList>
+            <Steel>80</Steel>
+            <Tungsten>18</Tungsten>
+        </costList>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0.0</Flammability>
+            <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>6.5</Mass>
+        </statBases>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>LCTech</researchPrerequisite>
+            <recipeUsers>
+                <li>LahlitTable</li>
+            </recipeUsers>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+        <comps>
+            <li Class="VEF.Apparels.CompProperties_Shield">
+                <shieldTags>
+                    <li>Ghozuhk</li>
+                </shieldTags>
+                <useDeflectMetalEffect>true</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Shields/Drakkyx4/D4</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.5</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.05, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.05, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

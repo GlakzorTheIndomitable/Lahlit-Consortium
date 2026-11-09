@@ -1,0 +1,2221 @@
+ <Defs>
+  <ThingDef Name="BaseMakeableGunLC" ParentName="BaseGunWithQuality" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>LahlitTable</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef Name="BaseHumanMakeableGunLC" ParentName="BaseMakeableGunLC" Abstract="True">
+    <tradeTags>
+      <li>LCRanged</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Garyat</defName>
+    <label>garyat bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Garyat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>21</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Garyat</defName>
+    <label>Type-23 Garyat</label>
+    <description>The Consortium's time-honored answer to all of life's problems. The Garyat is definitely purpose-built: it's clunky, loud, and could easily break the user's hand if they aren't careful, but it can blow a hole through a mechanoid war queen and whatever's unlucky enough to be behind it.
+This heavy revolver, like most Lahlit-designed armaments, is optimized for the most base function that a weapon must have-its ability to spill blood. All sleekness, shine, and...subtlety has been stripped away in favor of bigger booms, bigger bullets, and much smaller production costs.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Garyat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>2600</WorkToMake>
+      <Mass>3.2</Mass>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>0.5</AccuracyShort>
+      <AccuracyMedium>0.2</AccuracyMedium>
+      <AccuracyLong>0</AccuracyLong>
+      <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <Orichalcum>5</Orichalcum>
+      <Tungsten>3</Tungsten>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Garyat</defaultProjectile>
+        <warmupTime>0.1</warmupTime>
+        <range>16</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Vohrmez</li>
+      <li>AncillaryMerchant</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Dalkorr</defName>
+    <label>dalkorr bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Dalkorr</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Dalkorr</defName>
+    <label>Type-16 Dalkorr</label>
+    <description>The first weapon many Lahlit ever held. The Dalkorr is a reliable civilian sidearm-it has practically no recoil and is very accurate among Consortium weapons. It's also remarkably easy to build-Lahlit
+soldiers are trained to put practically any Consortium firearm together in seconds, but the Dalkorr is unique in the fact that ANYONE can manage to piece it together rather quickly.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Dalkorr</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>2200</WorkToMake>
+      <Mass>3.2</Mass>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.3</AccuracyMedium>
+      <AccuracyLong>0</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <Orichalcum>4</Orichalcum>
+      <Tungsten>4</Tungsten>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Dalkorr</defaultProjectile>
+        <warmupTime>0.1</warmupTime>
+        <range>24</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Vohrmez</li>
+      <li>AncillaryMerchant</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Ozlek</defName>
+    <label>ozlek bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Ozlek</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+      <stoppingPower>.8</stoppingPower>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Ozlek</defName>
+    <label>Type-2 Ozlek</label>
+    <description>One of the most respected tenets of Lahlit culture is the decree that all individuals, no matter subspecies, gender, mental state, or criminal history, should be able to fire as many rounds per minute as they please.
+The Ozlek is this cultural law given shape-found anywhere goods are sold and costing about as much as a sub sandwich, this trusty little tube is one of the most distributed weapon lines in the galaxy.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Ozlek</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>1600</WorkToMake>
+      <Mass>2.8</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.4</AccuracyShort>
+      <AccuracyMedium>0.2</AccuracyMedium>
+      <AccuracyLong>0</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+      <Orichalcum>2</Orichalcum>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Ozlek</defaultProjectile>
+        <warmupTime>0.35</warmupTime>
+        <range>20</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <soundCast>Shot_MachinePistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Vohrmez</li>
+      <li>AncillaryMerchant</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Zahrnost</defName>
+    <label>zahrnost bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Zahrnost</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_ZahrnostG</defName>
+    <label>Type-51 Zahrnost</label>
+    <description>The main reason the Consortium hasn't been wiped out yet is the fact that they're too useful in this galaxy, and they know it well. They're allowed to actively wage war and conquer any planets in their path to infinite
+wealth and glory, unlike every other megacorporation who instead works through puppet states, proxy wars, secret agents, and diplomatic sabotage, due to the Consortium's practices of mass-producing cheap guns. Every empire, nation, state, and polity
+with any diplomatic weight needs their populace to be able to purchase cheap guns-every functioning government survives through keeping the disenfranchised distracted through pogroms and gang wars. Civilization relies on the poor wiping
+themselves out, mowing each other down with machine guns so they won't get wise and massacre the 1% running the show.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/ZahrnostG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3100</WorkToMake>
+      <Mass>4.6</Mass>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.4</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>4.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <Orichalcum>6</Orichalcum>
+      <Tungsten>2</Tungsten>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Zahrnost</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>40</range>
+        <burstShotCount>11</burstShotCount>
+        <ticksBetweenBurstShots>.8</ticksBetweenBurstShots>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Kurzgahrn</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_ZahrnostK</defName>
+    <label>Type-54 Zahrnost</label>
+    <description>The Lahlit are a people that celebrate their mistakes along with their victories. The Type-54 Zahrnost was originally a disgraced prototype weapon, an obscure footnote in the annals of the Consortium's lengthy history of
+weapons production. In the year 5487, engineer Zhezl Kors took it upon himself to revive and improve upon the original design, turning the Type-54 Zahrnost from a promising, yet discarded concept into a fully-realized, albeit odd-looking
+54th entry in the Zahrnost succession line.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/ZahrnostK</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3100</WorkToMake>
+      <Mass>4.6</Mass>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>4.3</RangedWeapon_Cooldown>
+    </statBases>
+     <costList>
+      <Steel>45</Steel>
+      <Orichalcum>6</Orichalcum>
+      <Tungsten>2</Tungsten>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Zahrnost</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>40</range>
+        <burstShotCount>11</burstShotCount>
+        <ticksBetweenBurstShots>.8</ticksBetweenBurstShots>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Kurzgahrn</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Kurzlhokk</defName>
+    <label>kurzlhokk bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Kurzlhokk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Kurzlhokk</defName>
+    <label>Type-44 Kurzlhokk</label>
+    <description>Lahlit soldiers love nothing more than machine guns. A weapon that can shoot more bullets than ever necessary is always a weapon well-received among both the military and civilian populace, but in rare cases, a weapon
+more purposeful, accurate, and...somewhat tactical is absolutely required to succeed. Those scenarios are where the Kurzlhokk comes in.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Kurzlhokk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_AssaultRifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3600</WorkToMake>
+      <Mass>5.4</Mass>
+      <AccuracyTouch>0.2</AccuracyTouch>
+      <AccuracyShort>0.5</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.5</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>64</Steel>
+      <Orichalcum>5</Orichalcum>
+      <Tungsten>7</Tungsten>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Kurzlhokk</defaultProjectile>
+        <warmupTime>0.45</warmupTime>
+        <range>65</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>8.4</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Kurzgahrn</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Arvelsk</defName>
+    <label>arvelsk bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Arvelsk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Arvelsk</defName>
+    <label>Type-68 Arvelsk</label>
+    <description>The Arvelsk is a reliable weapon for medium-sized game, and is heralded by rural communities on many planets. By Lahlit military legions, it is moreso used for crashing through front lines and executing brutal flanking
+maneuvers. Like most Lahlit weapons, it was partially designed with cramped or crowded spaces in mind.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Arvelsk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3600</WorkToMake>
+      <Mass>7.8</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.4</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <Orichalcum>12</Orichalcum>
+      <Tungsten>12</Tungsten>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Arvelsk</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>18</range>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Addarek</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Ttereth</defName>
+    <label>ttereth bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Ttereth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Ttereth</defName>
+    <label>Type-38 Ttereth</label>
+    <description>The Ttereth line is a sort of "evolution" of the Arvelsk's (and similar weapon lines') capabilities for point-blank indoor combat. It's easily concealable in power armor, and has a rather wide bullet spread. The Ttereth
+is commonly used as a sidearm by Consortium ship crews and business clerks.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Ttereth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>2800</WorkToMake>
+      <Mass>5.8</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.2</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>3.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <Orichalcum>6</Orichalcum>
+      <Tungsten>8</Tungsten>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Ttereth</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>14</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>4.5</ticksBetweenBurstShots>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Addarek</li>
+      <li>AncillaryMerchant</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shozehd</defName>
+    <label>shozehd bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shozehd</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10.5</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Shozehd</defName>
+    <label>Type-29 Shozehd</label>
+    <description>A Dogeater specialty, the Shozehd was designed for mid-range engagements that require more accuracy than the Ozlek, yet more suppressive capabilities than the Garyat.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Shozehd</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>2800</WorkToMake>
+      <Mass>5.1</Mass>
+      <AccuracyTouch>0.7</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.3</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+      <Orichalcum>9</Orichalcum>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Shozehd</defaultProjectile>
+        <warmupTime>0.2</warmupTime>
+        <range>35</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>3.8</ticksBetweenBurstShots>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Malgui</li>
+      <li>AncillaryMerchant</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Brekkaya</defName>
+    <label>brekkaya bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Brekkaya</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>23</damageAmountBase>
+      <stoppingPower>1.7</stoppingPower>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Brekkaya</defName>
+    <label>Type-49 Brekkaya</label>
+    <description>The Brekkaya: for the huntress that wishes to make the switch to more intelligent prey. This rifle is completely useless when combating the majority of errant beasts on Lahlisek, save for common pests like small predators,
+scavengers, or the worker castes of eusocial giant insects, but its remarkably silent nature for such a large caliber and high magazine size make it the go-to rifle for skirmishes and covert operations..."covert" by Lahlit standards,
+that is...</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Brekkaya</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>4100</WorkToMake>
+      <Mass>7.3</Mass>
+      <AccuracyTouch>0.1</AccuracyTouch>
+      <AccuracyShort>0.3</AccuracyShort>
+      <AccuracyMedium>0.4</AccuracyMedium>
+      <AccuracyLong>0.7</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>70</Steel>
+      <Orichalcum>8</Orichalcum>
+      <Tungsten>5</Tungsten>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Brekkaya</defaultProjectile>
+        <warmupTime>0.1</warmupTime>
+        <range>70</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Vothash</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Kelizhad</defName>
+    <label>kelizhad bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Kelizhad</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <stoppingPower>1.7</stoppingPower>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Kelizhad</defName>
+    <label>Type-35 Kelizhad</label>
+    <description>In the crowded streets of Shekkogor's largest city, Kar Varead, there exists many establishments that...would not be, in the slightest, considered "respectable" by any sense of the word. Tlozatre's Aria is one of the most
+well-known: it's been burned down, forcefully collapsed, or otherwise destroyed by irate patrons more times than any man or woman cares to count-cases of vibrant nightlife going horribly wrong are very much the norm on Lahlisek.
+
+Many drinks are served in this dingy, flea-ridden tavern-some to make you relax, some to make you throw hands with anyone within 3 feet of you, and some to make you throw hands with the spirits trying to force you to join them. And under
+the bartender's counter is a Type-35 Kelizhad, a rifle powerful enough to make an eorlosh's head explode with one shot-just in case the bartender receives word from Consortium top brass that one of their richer patrons is a traitor to the
+wayward son and an enemy of the state.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Kelizhad</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>4100</WorkToMake>
+      <Mass>7.3</Mass>
+      <AccuracyTouch>0.0</AccuracyTouch>
+      <AccuracyShort>0.0</AccuracyShort>
+      <AccuracyMedium>0.3</AccuracyMedium>
+      <AccuracyLong>0.9</AccuracyLong>
+      <RangedWeapon_Cooldown>4.1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>90</Steel>
+      <Orichalcum>11</Orichalcum>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Kelizhad</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>70</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Vothash</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Zaarvhrad</defName>
+    <label>zaarvhrad bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Zaarvhrad</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Zaarvhrad</defName>
+    <label>Type-1 Zaarvhrad</label>
+    <description>Innovation requires a certain degree of insanity, and the Lahlit in general have way more than a few screws loose. One of the Consortium's newest weapon lines, the Zaarvhrad is a perfect example of the wild shots in the dark that Lahlit engineers live to take-the Consortium's brand of "progress" that has defined Lahlit technology over the course of the megacorporation's history.
+Optimized for indoors, close-quarters combat, as well as combat with large, fleshy targets, the Zaarvhrad is the first Lahlit production rifle to have 3 separate barrels. The barrels are positioned side-by-side horizontally and fed by a thick, three-chambered magazine positioned in a bullpup configuration to increase bullet velocity.
+Great care was taken to ensure that the bullets enter and leave the barrels at the exact same interval-even an iota of disconnect between the shots was considered unacceptable. The Consortium can, in fact, allocate time towards eliminating minor dysfunctions in their product lines-but such practices aren't normally worthwhile investments. Failures in the latest entry of a decades-old product line are easily glossed over, they'll be replaced with a new model in a few months.
+But failures in a brand-new product could consign the entire concept to the abyss.
+
+And a brand-new product could be the difference between a subsidiary earning the favor of their continent's Guild or having its territories forcibly "redistributed" among its rivals.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Zaarvhrad</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_AssaultRifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3950</WorkToMake>
+      <Mass>5.4</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.4</AccuracyShort>
+      <AccuracyMedium>0.2</AccuracyMedium>
+      <AccuracyLong>0.0</AccuracyLong>
+      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <Orichalcum>3</Orichalcum>
+      <Tungsten>9</Tungsten>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Zaarvhrad</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>50</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Kethur</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Jhekkch</defName>
+    <label>jhekkch bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Jhekkch</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Jhekkch</defName>
+    <label>Type-20 Jhekkch</label>
+    <description>Jhekkch-line light machine guns are also known to the Consortium's military legions as Grenzvhyttoer-roughly translating to "street cleaners", machine guns of this type are infamous for their use by the Lahlit in military campaigns on densely-packed urbworlds.
+The most bloody of the Consortium's urbworld annexations was the annexation of New Korinth in 5465. The Shadowmauls-a legion strictly comprised of veteran special forces formerly in the service of other legions-were rapidly deployed to New Korinth as the first wave of the assault, along with more tanks and war-striders
+than the locals could shake a homemade bludgeon at.
+
+When the main infantry force touched down on New Korinth, they were greeted with blankets of viscera and shell casings covering every street, the scent of shrapnel and blood still in the air. The environment looked as if every hard surface was poorly spray-painted crimson, and piles of burned corpses were an ever-present feature of the dreary surroundings.
+Nothing short of a world war or orbital bombardment could outmatch the sheer butchery the Consortium carried out on New Korinth during the onset of the invasion. Jhekkch-line guns were made for 1 purpose and 1 purpose alone-suppressive fire. They excel at thinning the numbers of barbarian hordes before they crash into the Lahlit front line, or "clearing room" for armored vehicles amid mass protests.
+Concentrated fire from these machine guns can and will penetrate into impromptu defensive positions-if some dastardly, insubordinate rebels are holed up in "their" apartment building that they KNOW is now company property, just shoot in its general direction until either the noise inside ceases or the flame squad arrives to finish the job.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Jhekkch</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_AssaultRifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>4800</WorkToMake>
+      <Mass>5.4</Mass>
+      <AccuracyTouch>0.2</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>5.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <Orichalcum>14</Orichalcum>
+      <Tungsten>14</Tungsten>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Jhekkch</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>38</range>
+        <burstShotCount>24</burstShotCount>
+        <ticksBetweenBurstShots>6.4</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Kethur</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Turvenn</defName>
+    <label>turvenn bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Turvenn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Turvenn</defName>
+    <label>Type-11 Turvenn</label>
+    <description>The Turvenn line of twin SMGs was specifically tailored to the Gurr brothers' tastes by the Guild of Hogeiyezh. The Dogeaters needed a new sidearm that conformed to their highly aggressive tactics-something that wouldn't slow them down and was easy enough to conceal, but also spit enough bullets to turn highly armored brigands into an oddly...juicy pâté.
+Something that would become the main armament used in the Dogeaters' rapid raids on enemy positions and hit-and-run skirmishes with much larger, technologically inferior armies.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Turvenn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_AssaultRifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>2800</WorkToMake>
+      <Mass>5.4</Mass>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.3</AccuracyShort>
+      <AccuracyMedium>0.1</AccuracyMedium>
+      <AccuracyLong>0.0</AccuracyLong>
+      <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>55</Steel>
+      <Orichalcum>3</Orichalcum>
+      <Tungsten>3</Tungsten>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Turvenn</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>16</range>
+        <burstShotCount>13</burstShotCount>
+        <ticksBetweenBurstShots>0.7</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Rhaxxyg</li>
+<li>AncillaryMerchant</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Eavvorgt</defName>
+    <label>eavvorgt bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Eavvorgt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <stoppingPower>2</stoppingPower>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Eavvorgt</defName>
+    <label>Type-28 Eavvorgt</label>
+    <description>The Eavvorgt: for when simply kicking in your enemies' doors is a bit too subtle. This fully-automatic Dogeater shotgun is perfect for descending upon isolated villages in the middle of the night-then chasing down the survivors after blowing the whole place to hell. Originally designed for boarding enemy ships and swiftly gunning down their crews, the Eavvorgt line has achieved great popularity among guerrilla fighters and urbworld gangs for its function as a cheap, swift assault weapon.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Eavvorgt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3600</WorkToMake>
+      <Mass>7.8</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.2</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Orichalcum>9</Orichalcum>
+      <Tungsten>9</Tungsten>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Eavvorgt</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>16</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>2.4</ticksBetweenBurstShots>
+        <soundCast>Shot_Shotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Rhaxxyg</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Eldlhokk</defName>
+    <label>eldlhokk bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Eldlhokk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>20</stoppingPower>
+      <speed>120</speed>
+      <armorPenetrationBase>0.9</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Eldlhokk</defName>
+    <label>Type-7 Eldlhokk</label>
+    <description>The Machine Cults could be described as the truest-to-form of their species. Lahlit are, above all, innovators: they first based their technology on the forms and anatomies of dread beasts, beasts they have now outmatched. The only thing left to do going forward is to base their technology on technology of ages long past.
+The Type-7 Eldlhokk is the signature weapon of the Brood of Xovox's holy warriors-a modern recreation of the flintlock rifles of the 3800s, it can fire tungsten slugs with such force that armor is useless when its wearer is in the weapon's proverbial crosshairs.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Eldlhokk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3800</WorkToMake>
+      <Mass>7.3</Mass>
+      <AccuracyTouch>0.0</AccuracyTouch>
+      <AccuracyShort>0.0</AccuracyShort>
+      <AccuracyMedium>0.4</AccuracyMedium>
+      <AccuracyLong>0.8</AccuracyLong>
+      <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <Tungsten>11</Tungsten>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Eldlhokk</defaultProjectile>
+        <warmupTime>0.1</warmupTime>
+        <range>55</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Horvaahg</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Esken</defName>
+    <label>esken acid shot</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Esken</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>CorrosiveBullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Esken</defName>
+    <label>Type-5 Esken</label>
+    <description>Imprisoned in the frame of this horrid Xovoxin contrivance is a common pest of Lahlisek-one found in every environment that lacks the capacity for movement or higher function. This animal, known as a groehtol, is essentially a form of alien kudzu-it reproduces through spores that attach themselves to anything.
+Rocks, trees, the walls of caves, the crawlspace under a domicile, inside the husks of broken-down old vehicles, under bridges, anywhere mold, vines, or moss would grow on most planets, groehtol propagate on Lahlisek. The creatures quickly take over anything abandoned or effectively untouched-and when disturbed, groehtol reflexively spit the highly corrosive acids produced in their rudimentary stomachs as a defense mechanism.
+
+Now, groehtol are normally easily dispatched. The trick is to club or stab it to death from a safe distance-a groehtol's tendrils and mouth(s) don't have a very far reach except in cases of unfiltered growth or severe infestation, and wild groehtol don't have strong enough muscles to spit acid at any meaningful range. But purpose-bred, weaponized groehtol? That's another story.
+Groehtol, like everything else on Lahlisek, reproduce, mutate, and evolve extremely quickly. If someone were to essentially farm these strange, gibbering masses of roiling flesh, selecting traits among a controlled population to increase their combat effectiveness-well, they would make living weapons out of the humble, albeit disgusting creatures. And by then, all you'd need to do is give the animals a painful stimulus for them to melt the face off of anything in front of them.
+And groehtol, once attached to something, cannot escape their environment-only spread throughout it.
+
+The mad engineers of the Brood of Xovox concocted a handheld containment unit to house weaponized groehtol strains-equipped with a oddly trigger-shaped lever that provides electrical power to rows of copper spikes inside of the weapon frame that give the poor creature inside a highly painful shock.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Esken</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3200</WorkToMake>
+      <Mass>5.1</Mass>
+      <AccuracyTouch>0.4</AccuracyTouch>
+      <AccuracyShort>0.7</AccuracyShort>
+      <AccuracyMedium>0.6</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Orichalcum>25</Orichalcum>
+      <Tungsten>25</Tungsten>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Esken</defaultProjectile>
+        <warmupTime>0.2</warmupTime>
+        <range>45</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>2.3</ticksBetweenBurstShots>
+        <soundCast>CorrosiveShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Horvaahg</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Vviltorn</defName>
+    <label>vviltorn barb</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Vviltorn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>5</stoppingPower>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Vviltorn</defName>
+    <label>Type-1 Vviltorn</label>
+    <description>Reverence is paid to Urdtza, lord of beasts, by all those sick, starving and maddened: the animal, and the artist. He is the patron of plagues, of dense forests and gnashing fangs, and all those who look upon such horrors as their muses. Product designers, media developers, and research and development specialists count themselves among Urdtza's most devout.
+The Beast-Lord is the visionary's best friend: after all, the organic, unaugmented minds of most cannot possibly do their own endless ambitions justice on last-gen creative hardware. Thus, many Lahlit products were shaped by the digital incarnate of nature's bloody will-one imbued with the entirety of Lahlit artistic knowledge shaped throughout the centuries.
+From medieval paintings to the skeletal structure of the spotted oevizehk, Urdtza knows all that the Lahlit find inspiring, and uses this wealth of information to do the thing it does best-create.
+
+The Vviltorn is one such creation, one that stands out from many other Consortium products because the superintelligence was given much more autonomy in its conception than usual. It was, for the most part, not designed by a Lahlit.
+A team of engineers was kept on standby to revise Urdtza's design, grounding it into reality and tweaking it to actually fit with the laws of physics, but the weapon itself was ultimately a product of a machine.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Vviltorn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Bow_Large</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3400</WorkToMake>
+      <Mass>3.2</Mass>
+      <AccuracyTouch>0</AccuracyTouch>
+      <AccuracyShort>0.5</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>0</AccuracyLong>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>70</Steel>
+      <Orichalcum>5</Orichalcum>
+      <Tungsten>6</Tungsten>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Vviltorn</defaultProjectile>
+        <warmupTime>0.25</warmupTime>
+        <range>36</range>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Malgui</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Ruhmoxx</defName>
+    <label>ruhmoxx bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Ruhmoxx</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Ruhmoxx</defName>
+    <label>Type-17 Ruhmoxx</label>
+    <description>"And Ajae? WHERE'S AJAE? Gods, Nogrihx, do you have no damned regard to tell me-"
+
+"Cool it, Chaevekt. Or do YOU have no regard to kindly grant me one khorvehg peaceful second?"
+
+"You'd GET a peaceful second if you didn't get men killed, you diseased son of a groehtol! Zvortbek and Hlarvend are being roasted on a fire by CANNIBALS because you wanted to go play soldier!"
+
+"How could I POSSIBLY know that a bunch of savages in animal skins would be armed with COILGUNS? Or that the approach to their handful of tents in the woods would be lined with incendiary mines? We're lucky any of us got out of there.
+If Ajaexor didn't, it's not our concern now. Our concern is keeping the rest of us alive for long enough that we'll get to see civilization again."
+
+-Conversation between Lahlit soldiers Chaevekt Hrrnok and Nogrihx Araku, after a failed assault on a tribal settlement</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Ruhmoxx</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>2800</WorkToMake>
+      <Mass>5.1</Mass>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.6</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+      <Orichalcum>9</Orichalcum>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Ruhmoxx</defaultProjectile>
+        <warmupTime>0.2</warmupTime>
+        <range>19</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>6.7</ticksBetweenBurstShots>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Ghozuhk</li>
+      <li>AncillaryMerchant</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Thogarsh</defName>
+    <label>thogarsh bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Thogarsh</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <stoppingPower>0.6</stoppingPower>
+      <speed>35</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Thogarsh</defName>
+    <label>Type-59 Thogarsh</label>
+    <description>The favored weapon of the Wyrmblood dynasty's endling. Liin famously used a custom Thogarsh-51 to execute two of his 8 brothers-Galaghai and Sloskudan-during the night of his glorious massacre, a night that would enter the annals of treasured Lahlit history after its final event: Liin slitting the hated Lekkara Ghor's throat on broadcast to the entire known galaxy.
+This celebrated cultural event would become known as the Seven Blades' Vesper-named for the seven knives found in the corpse of Liin's first kill that night-his cousin, Bhalraxx, a man synonymous with the Wyrmbloods' former corruption and with close ties to multiple major crime syndicates.
+
+Today, the day of the Vesper is considered a company holiday, and all but the Consortium's most essential workers take to the streets in wild, no-holds-barred celebration as soon as dusk comes upon their world.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Thogarsh</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3400</WorkToMake>
+      <Mass>5.1</Mass>
+      <AccuracyTouch>0.5</AccuracyTouch>
+      <AccuracyShort>0.4</AccuracyShort>
+      <AccuracyMedium>0.2</AccuracyMedium>
+      <AccuracyLong>0</AccuracyLong>
+      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <Orichalcum>4</Orichalcum>
+      <Tungsten>4</Tungsten>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Thogarsh</defaultProjectile>
+        <warmupTime>3</warmupTime>
+        <range>14</range>
+        <burstShotCount>12</burstShotCount>
+        <ticksBetweenBurstShots>0.7</ticksBetweenBurstShots>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Ghozuhk</li>
+      <li>AncillaryMerchant</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Zleskvu</defName>
+    <label>Zleskvu micro-missile</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Zleskvu</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1</explosionRadius>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Zleskvu</defName>
+    <label>Type-80 Zleskvu</label>
+    <description>Dubbed the "Type-80" sarcastically, since...well, in the amount of time it took Lahlit engineers to make this damn thing functional, they could have made and released 80 different weapons.
+
+Luckily, after years of constant redesigning, the Zleskvu reached a galaxy-wide audience...due to its use in Consortium-produced AEthernet snuff content. This pistol-sized rocket launcher was originally made to combat medium-sized military vehicles, but oh boy, did the damn thing look good on camera.
+When used against anything made of living tissue, the Zleskvu's micro-missiles can put on a horrifying show-brutally shredding limbs into chunks of gore and turning insubordinate slaves and unfortunate political enemies into something that barely resembles anything bipedal, much less sapient.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Zleskvu</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3600</WorkToMake>
+      <Mass>3.2</Mass>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>0.6</AccuracyShort>
+      <AccuracyMedium>0.4</AccuracyMedium>
+      <AccuracyLong>0</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>65</Steel>
+      <Orichalcum>4</Orichalcum>
+      <Tungsten>8</Tungsten>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Zleskvu</defaultProjectile>
+        <ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+        <warmupTime>1</warmupTime>
+        <range>32</range>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Ghozuhk</li>
+      <li>AncillaryMerchant</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Orojekt</defName>
+    <label>orojekt bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Orojekt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Orojekt</defName>
+    <label>Type-8 Orojekt</label>
+    <description>Best known as "that gun from that one movie", the Orojekt-8 is the signature weapon of beloved action hero Rhel Voncharog from the widely-acclaimed "VONCHAROG" movie franchise. Regarded by the AEthernet as some of the best films ever made, the movies are a prime exhibit of Lahlisek's control over the galactic attention economy.
+The digital landscape has no borders in the way of Lahlit trade routes, and any empire knows the importance of a strong and vast communications network: so of course the Lahlit had to invest quadrillions into information and social media technologies. You can make anything a trend when you own the mainstream narrative-when everyone in the galaxy spends all the time they can eating their bread and watching their own circus on your stage.
+They can't look away, and you direct everything they see. They act as good little circus monkeys on their own accord-but some shows would be far more profitable to you than others. Increase the visibility of a select few monkeys, and all of a sudden, a previously-unknown series of low-budget action films from Lahlisek are now the greatest movies of all time.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Orojekt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_AssaultRifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>3600</WorkToMake>
+      <Mass>5.4</Mass>
+      <AccuracyTouch>0.0</AccuracyTouch>
+      <AccuracyShort>0.3</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.6</AccuracyLong>
+      <RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <Orichalcum>4</Orichalcum>
+      <Tungsten>10</Tungsten>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Orojekt</defaultProjectile>
+        <warmupTime>0.45</warmupTime>
+        <range>55</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>11.5</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Malgui</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Vsazzoth</defName>
+    <label>Type-7 Vsazzoth</label>
+    <description>At the end of this weapon's barrel lies the fate of all those who refuse to bow. The Lahlit have put many worlds to the torch in pursuit of their own twisted brand of "trade without borders", especially those who insisted on making their transition to Consortium vassal states more...difficult.
+The Consortium hates being opposed, and it certainly despises being betrayed. Many leaders of former galactic powers have tried to secure their people's independence and their own dignity via one way or the other, and all of their efforts ended the same way.
+They brought upon themselves and their people destruction at such a scale that it wasn't a humanitarian tragedy, but a galactic depopulation statistic.</description>
+    <relicChance>0</relicChance>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Vsazzoth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>9</Mass>
+      <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Tungsten>16</Tungsten>
+	  <Orichalcum>16</Orichalcum>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_ArcSprayIncinerator</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>0.5</warmupTime>
+        <range>24</range>
+        <minRange>1</minRange>
+        <beamFullWidthRange>15</beamFullWidthRange>
+        <burstShotCount>30</burstShotCount>
+        <showBurstShotStats>false</showBurstShotStats>
+        <requireLineOfSight>true</requireLineOfSight>
+        <beamWidth>10</beamWidth>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <beamDamageDef>Flame</beamDamageDef>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <soundCastBeam>Flamethrower_Firing</soundCastBeam>
+        <beamGroundFleckDef>Fleck_IncineratorBeamBurn</beamGroundFleckDef>
+        <beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+        <beamMaxDeviation>0.5</beamMaxDeviation>
+        <beamCurvature>0</beamCurvature>
+        <beamEndEffecterDef>IncineratorBeam_End</beamEndEffecterDef> 
+        <beamChanceToStartFire>0.90</beamChanceToStartFire>
+        <beamFireSizeRange>0.70~0.90</beamFireSizeRange>
+        <beamStartOffset>.5</beamStartOffset>
+        <beamHitsNeighborCells>true</beamHitsNeighborCells>
+        <beamCantHitWithinMinRange>true</beamCantHitWithinMinRange>
+        <beamHitsNeighborCellsRequiresLOS>true</beamHitsNeighborCellsRequiresLOS>
+        <beamSetsGroundOnFire>true</beamSetsGroundOnFire>
+        <ai_BeamIsIncendiary>true</ai_BeamIsIncendiary>
+        <beamLineFleckDef>Fleck_IncineratorBeamSmoke</beamLineFleckDef>
+        <highlightColor>(180, 60, 10)</highlightColor>
+        <secondaryHighlightColor>(220, 210, 20)</secondaryHighlightColor>
+        <beamLineFleckChanceCurve>
+          <points>
+            <li>(0, 0)</li>
+            <li>(0.65, 0.02)</li>
+            <li>(1, .5)</li>
+          </points>
+        </beamLineFleckChanceCurve>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <flammabilityAttachFireChanceCurve>
+          <points>
+            <li>(0.6, 0)</li>
+            <li>(0.7, 0.2)</li>
+            <li>(1.2, 0.8)</li>
+          </points>
+        </flammabilityAttachFireChanceCurve>
+        <rangedFireRulepack>Combat_RangedFlamethrower</rangedFireRulepack>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Azhaask</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Grundayal</defName>
+    <label>Grundayal rocket</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Grundayal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>8</explosionRadius>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseHumanMakeableGunLC">
+    <defName>LC_Grundayal</defName>
+    <label>Type-11 Grundayal</label>
+    <description>The Grundayal: the pinnacle of Consortium artifice. The most powerful, gigantic, destructive piece of equipment the common soldiery has access to that can (barely) be held in one's hands. The Lahlit see wealth differently than most-wealth is power, and a wealthy man that sits upon his limitless potential and never does anything with it is at best a coward, at worst entirely undeserving of the power he possesses.
+The Grundayal is ultimately a product of that philosophy-it is a portable cataclysm, the limitless wealth of the Consortium used to maximum effect.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Grundayal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>8500</WorkToMake>
+      <Mass>3.2</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.5</AccuracyLong>
+      <RangedWeapon_Cooldown>6.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>65</Steel>
+      <Orichalcum>15</Orichalcum>
+      <Tungsten>30</Tungsten>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Grundayal</defaultProjectile>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
+        <ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+        <warmupTime>1</warmupTime>
+        <range>48</range>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>Azhaask</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  </Defs>

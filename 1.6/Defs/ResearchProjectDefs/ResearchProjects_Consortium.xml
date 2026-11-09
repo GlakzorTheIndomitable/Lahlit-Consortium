@@ -1,0 +1,18 @@
+<Defs>
+<ResearchProjectDef>
+    <defName>LCTech</defName>
+    <label>Consortium defense solutions</label>
+    <techLevel>Spacer</techLevel>
+    <description>Reverse-engineering the few bits of technology we can scrounge off of dead Lahlit gives us vast insights into the crude, yet undoubtedly advanced processes used to create the Consortium's products.</description>
+    <baseCost>1800</baseCost>
+    <prerequisites>
+      <li>PrecisionRifling</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+</Defs>

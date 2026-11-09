@@ -1,0 +1,211 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+		
+		    <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitCommon"]/genes</xpath>
+                <value>
+                    <li>BS_Diet_Carnivore</li>
+                </value>
+            </li>
+
+		    <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitCommon"]/genes</xpath>
+                <value>
+                    <li>BS_EndlessGrowth</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitCommon"]/genes</xpath>
+                <value>
+                    <li>BS_BirthLitter</li>
+                </value>
+            </li>
+		
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitCommon"]/genes</xpath>
+                <value>
+                    <li>BS_NightOwl</li>
+                </value>
+            </li>
+	
+
+		    <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitSnow"]/genes</xpath>
+                <value>
+                    <li>BS_Diet_Carnivore</li>
+                </value>
+            </li>
+           
+             <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitSnow"]/genes</xpath>
+                <value>
+                    <li>BS_BirthLitter</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitSnow"]/genes</xpath>
+                <value>
+                    <li>BS_NightOwl</li>
+                </value>
+            </li>
+		    <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitDesert"]/genes</xpath>
+                <value>
+                    <li>BS_Diet_Carnivore</li>
+                </value>
+            </li>
+
+		    <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitDesert"]/genes</xpath>
+                <value>
+                    <li>BS_EndlessGrowth</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitDesert"]/genes</xpath>
+                <value>
+                    <li>BS_BirthLitter</li>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitDesert"]/genes</xpath>
+                <value>
+                    <li>BS_NightOwl</li>
+                </value>
+            </li>
+		
+		    <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitSwamp"]/genes</xpath>
+                <value>
+                    <li>BS_Diet_Carnivore</li>
+                </value>
+            </li>
+
+		    <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitSwamp"]/genes</xpath>
+                <value>
+                    <li>BS_EndlessGrowth</li>
+                </value>
+            </li>
+		
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitSwamp"]/genes</xpath>
+                <value>
+                    <li>BS_BirthLitter</li>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitSwamp"]/genes</xpath>
+                <value>
+                    <li>BS_NightOwl</li>
+                </value>
+            </li>
+
+		    <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitJungle"]/genes</xpath>
+                <value>
+                    <li>BS_Diet_Carnivore</li>
+                </value>
+            </li>
+
+		    <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitJungle"]/genes</xpath>
+                <value>
+                    <li>BS_EndlessGrowth</li>
+                </value>
+            </li>
+		
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitJungle"]/genes</xpath>
+                <value>
+                    <li>BS_BirthLitter</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitJungle"]/genes</xpath>
+                <value>
+                    <li>BS_NightOwl</li>
+                </value>
+            </li>
+
+		    <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitMountain"]/genes</xpath>
+                <value>
+                    <li>BS_Diet_Carnivore</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitMountain"]/genes</xpath>
+                <value>
+                    <li>BS_BirthLitter</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitMountain"]/genes</xpath>
+                <value>
+                    <li>BS_NightOwl</li>
+                </value>
+            </li>
+		
+		    <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitCave"]/genes</xpath>
+                <value>
+                    <li>BS_Diet_Carnivore</li>
+                </value>
+            </li>
+
+		    <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitCave"]/genes</xpath>
+                <value>
+                    <li>BS_EndlessGrowth</li>
+                </value>
+            </li>
+		
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitCave"]/genes</xpath>
+                <value>
+                    <li>BS_BirthLitter</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitCave"]/genes</xpath>
+                <value>
+                    <li>BS_NightOwl</li>
+                </value>
+            </li>
+
+		    <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitVolcanic"]/genes</xpath>
+                <value>
+                    <li>BS_Diet_Carnivore</li>
+                </value>
+            </li>
+		
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitVolcanic"]/genes</xpath>
+                <value>
+                    <li>BS_BirthLitter</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XenotypeDef[defName="LahlitVolcanic"]/genes</xpath>
+                <value>
+                    <li>BS_NightOwl</li>
+                </value>
+            </li>
+
+		</operations>
+    </Operation>
+</Patch>

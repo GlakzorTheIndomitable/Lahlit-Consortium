@@ -1,0 +1,1485 @@
+    <Defs>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Shelozh</defName>
+    <label>Shelozh-2 cyberoptic</label>
+    <labelNoun>a Shelozh-2 cyberoptic</labelNoun>
+    <description>When someone comes of age in the Consortium, it is not just customary, but mandatory for them to have cybernetics of some form installed into their bodies if they haven't done so already. Cyberware holds great significance to the Lahlit-tearing away your own flesh and replacing it with Consortium products is considered a proud and honorable display of fealty and patriotism.</description>
+    <descriptionHyperlinks><ThingDef>Shelozh</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Shelozh</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/HevorgsTusk/Shelozh/Shelozh</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.18</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Shelozh</defName>
+    <label>Shelozh-2 cyberoptic</label>
+    <description>When someone comes of age in the Consortium, it is not just customary, but mandatory for them to have cybernetics of some form installed into their bodies if they haven't done so already. Cyberware holds great significance to the Lahlit-tearing away your own flesh and replacing it with Consortium products is considered a proud and honorable display of fealty and patriotism.</description>
+    <descriptionHyperlinks><RecipeDef>InstallShelozh</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>HTEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallShelozh</defName>
+    <label>install Shelozh-2 cyberoptic</label>
+    <description>Install a Shelozh-2 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Shelozh</ThingDef>
+      <HediffDef>Shelozh</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Shelozh-2.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Shelozh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Shelozh</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Shelozh</addsHediff>
+  </RecipeDef>
+
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Chegramm</defName>
+    <label>Chegramm-14 cyberoptic</label>
+    <labelNoun>a Chegramm-14 cyberoptic</labelNoun>
+    <description>Zhaeprashta-that is, cyberware-can denote the place of a particular cog in the eternal war machine. There are easily millions of career paths in the Consortium that require the installation of specific implants into one's body, and thousands of Consortium-managed manufacturers that produce designer implants for the wealthy, meant to be "worn" as both a fashion statement and power play.</description>
+    <descriptionHyperlinks><ThingDef>Chegramm</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Chegramm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/HevorgsTusk/Chegramm/Chegramm</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Chegramm</defName>
+    <label>Chegramm-14 cyberoptic</label>
+    <description>Zhaeprashta-that is, cyberware-can denote the place of a particular cog in the eternal war machine. There are easily millions of career paths in the Consortium that require the installation of specific implants into one's body, and thousands of Consortium-managed manufacturers that produce designer implants for the wealthy, meant to be "worn" as both a fashion statement and power play.</description>
+    <descriptionHyperlinks><RecipeDef>InstallChegramm</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>HTEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallChegramm</defName>
+    <label>install Chegramm-14 cyberoptic</label>
+    <description>Install a Chegramm-14 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Chegramm</ThingDef>
+      <HediffDef>Chegramm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Chegramm-14.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chegramm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chegramm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Chegramm</addsHediff>
+  </RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Vaosh</defName>
+    <label>Vaosh-9 cyberoptic</label>
+    <labelNoun>a Vaosh-9 cyberoptic</labelNoun>
+    <description>To the Lahlit, the most inhuman are the most virtuous. Cyberware shows devotion to their nation, but above all, it shows adherence to the undeniable moral duty that is progress. For men are, after all, extremely complex organic machines invented by the force of change-the mastermind that is evolution.
+And machines never stagnate. Tech is always marching on, new inventions are being made by the day. Eventually, there's going to come a time when you need to replace some parts-the wider world has moved far past the outdated technologies of the mortal shell, and to evolve is to keep up with the wider world or face complete extinction.
+Remind yourself-what does it mean to be Lahlit?</description>
+    <descriptionHyperlinks><ThingDef>Vaosh</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Vaosh</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/HevorgsTusk/Vaosh/Vaosh</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Vaosh</defName>
+    <label>Vaosh-9 cyberoptic</label>
+    <description>To the Lahlit, the most inhuman are the most virtuous. Cyberware shows devotion to their nation, but above all, it shows adherence to the undeniable moral duty that is progress. For men are, after all, extremely complex organic machines invented by the force of change-the mastermind that is evolution.
+And machines never stagnate. Tech is always marching on, new inventions are being made by the day. Eventually, there's going to come a time when you need to replace some parts-the wider world has moved far past the outdated technologies of the mortal shell, and to evolve is to keep up with the wider world or face complete extinction.
+Remind yourself-what does it mean to be Lahlit?</description>
+    <descriptionHyperlinks><RecipeDef>InstallVaosh</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>HTEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallVaosh</defName>
+    <label>install Vaosh-9 cyberoptic</label>
+    <description>Install a Vaosh-9 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Vaosh</ThingDef>
+      <HediffDef>Vaosh</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Vaosh-9.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Vaosh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Vaosh</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Vaosh</addsHediff>
+  </RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Griltz</defName>
+    <label>Griltz-5 cyberoptic</label>
+    <labelNoun>a Griltz-5 cyberoptic</labelNoun>
+    <description>This recon sight was adopted by some Lahlit military legions during Lekkara Ghor's reign as CEO. The Griltz line of cyberoptics is as bulbous as it is unseemly, but...it is Lahlit tech, and far worse cybernetic implants were regularly issued to soldiers during Ghor's rule-none of which were installed consensually.
+Cybernetics are many things to the Lahlit, and up until Th'res Liin took power, cybernetics were very commonly used as a deplorably cruel punishment.</description>
+    <descriptionHyperlinks><ThingDef>Griltz</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Griltz</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/Dogeaters/Griltz/Griltz</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Griltz</defName>
+    <label>Griltz-5 cyberoptic</label>
+    <description>This recon sight was adopted by some Lahlit military legions during Lekkara Ghor's reign as CEO. The Griltz line of cyberoptics is as bulbous as it is unseemly, but...it is Lahlit tech, and far worse cybernetic implants were regularly issued to soldiers during Ghor's rule-none of which were installed consensually.
+Cybernetics are many things to the Lahlit, and up until Th'res Liin took power, cybernetics were very commonly used as a deplorably cruel punishment.</description>
+    <descriptionHyperlinks><RecipeDef>InstallGriltz</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>DEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallGriltz</defName>
+    <label>install Griltz-5 cyberoptic</label>
+    <description>Install a Griltz-5 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Griltz</ThingDef>
+      <HediffDef>Griltz</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Griltz-5.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Griltz</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Griltz</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Griltz</addsHediff>
+  </RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Zhetek</defName>
+    <label>Zhetek-20 cyberoptic</label>
+    <labelNoun>a Zhetek-20 cyberoptic</labelNoun>
+    <description>The Zhetek line of cyberoptic is a very common sight among the lower classes of urbworlds-it's easy enough for any back-alley street doctor to install, and...economical even by the Consortium's exceptional standards.
+Zhetek-20s are a much more infrequent sight, however. The 20s are a much-needed improvement on the Zheteks, adapted for military use and (if surprisingly so) able to rival most other military-grade options.</description>
+    <descriptionHyperlinks><ThingDef>Zhetek</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Zhetek</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/Dogeaters/Zhetek/Zhetek</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Zhetek</defName>
+    <label>Zhetek-20 cyberoptic</label>
+    <description>The Zhetek line of cyberoptic is a very common sight among the lower classes of urbworlds-it's easy enough for any back-alley street doctor to install, and...economical even by the Consortium's exceptional standards.
+Zhetek-20s are a much more infrequent sight, however. The 20s are a much-needed improvement on the Zheteks, adapted for military use and (if surprisingly so) able to rival most other military-grade options.</description>
+    <descriptionHyperlinks><RecipeDef>InstallZhetek</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>DEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallZhetek</defName>
+    <label>install Zhetek-20 cyberoptic</label>
+    <description>Install a Zhetek-20 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Zhetek</ThingDef>
+      <HediffDef>Zhetek</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Zhetek-20.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Zhetek</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Zhetek</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Zhetek</addsHediff>
+  </RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Enkaz</defName>
+    <label>Enkaz-18 cyberoptic</label>
+    <labelNoun>an Enkaz-18 cyberoptic</labelNoun>
+    <description>Along with the installation of company cybernetics, the Consortium also legally requires regular employment and at least 6 years of military service from its citizens. It is cultural belief that fighting for one's nation is the highest form of devotion to the state and its progress, and that everyone should get to experience such an honor.</description>
+    <descriptionHyperlinks><ThingDef>Enkaz</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Enkaz</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/HevorgsTusk/Enkaz/Enkaz</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Enkaz</defName>
+    <label>Enkaz-18 cyberoptic</label>
+    <description>Along with the installation of company cybernetics, the Consortium also legally requires regular employment and at least 6 years of military service from its citizens. It is cultural belief that fighting for one's nation is the highest form of devotion to the state and its progress, and that everyone should get to experience such an honor.</description>
+    <descriptionHyperlinks><RecipeDef>InstallEnkaz</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>HTEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallEnkaz</defName>
+    <label>install Enkaz-18 cyberoptic</label>
+    <description>Install a Enkaz-18 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Enkaz</ThingDef>
+      <HediffDef>Enkaz</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Enkaz-18.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Enkaz</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Enkaz</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Enkaz</addsHediff>
+  </RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Rrzovu</defName>
+    <label>Rrzovu-6 cyberoptic</label>
+    <labelNoun>an Rrzovu-6 cyberoptic</labelNoun>
+    <description>One of the more high-end Lahlit cyberoptics-as well as one of the hardest for ghet'zha to pronounce-the Rrzovu is most often seen on the upper-middle class. This implant is imbued with technology that allows its wearer to see a higher spectrum of light than organic eyes allow for-leading to the discovery of new colors
+by the Lahlit Consortium, most notably "khrutt" and "yahth"-both of which are unexplainable to those who cannot see them.
+
+The Lahlit letter rrn-or the double R-functions as a rolled, syllabic R when there are no vowels around it. Most people don't know this. One can imagine the difficulty galactic citizens have when pronouncing the names of many Consortium products.</description>
+    <descriptionHyperlinks><ThingDef>Rrzovu</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Rrzovu</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/HevorgsTusk/Rrzovu/Rrzovu</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Rrzovu</defName>
+    <label>Rrzovu-6 cyberoptic</label>
+    <description>One of the more high-end Lahlit cyberoptics-as well as one of the hardest for ghet'zha to pronounce-the Rrzovu is most often seen on the upper-middle class. This implant is imbued with technology that allows its wearer to see a higher spectrum of light than organic eyes allow for-leading to the discovery of new colors
+by the Lahlit Consortium, most notably "khrutt" and "yahth"-both of which are unexplainable to those who cannot see them.
+
+The Lahlit letter rrn-or the double R-functions as a rolled, syllabic R when there are no vowels around it. Most people don't know this. One can imagine the difficulty galactic citizens have when pronouncing the names of many Consortium products.</description>
+    <descriptionHyperlinks><RecipeDef>InstallRrzovu</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>HTEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallRrzovu</defName>
+    <label>install Rrzovu-6 cyberoptic</label>
+    <description>Install an Rrzovu-6 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Rrzovu</ThingDef>
+      <HediffDef>Rrzovu</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Rrzovu-6.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Rrzovu</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Rrzovu</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Rrzovu</addsHediff>
+  </RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Cheshk</defName>
+    <label>Cheshk-11 cyberoptic</label>
+    <labelNoun>a Cheshk-11 cyberoptic</labelNoun>
+    <description>Between all the bloody battles, copious amounts of combat stimulants, and regular stints on the operating table being ripped apart and put back together again, it doesn't take long for Lahlit to lose themselves.
+Now, Lahlit don't necessarily break like baseliners do-they don't have meltdowns or panic attacks or violent outbursts. They don't get hurt once, then live in fear for the rest of their lives. Lahlit just have their humanity...stripped away. Slowly, but surely.
+
+The Consortium puts its entire populace through war for a good reason-war makes them more like machines. They go in feeling truly fulfilled-like they're finally where they're supposed to be in life, doing the work of not gods, but the gods' creators.
+They come out not feeling...anything at all. Not joy, not sympathy, not sadness, not even anger-for progress demands the entire essence of its faithful to be granted as tribute. Progress demands the last thing that make the Lahlit recognizable as human-their minds-to be warped and twisted and numbed, and in some cases, completely converted into code.
+
+The Lahlit know this well-they spend their youths preparing for their humanity to be their ultimate sacrifice. From birth, they are taught that there is no sanctity to life-men are but machines to be used, upgraded, and replaced as animals are. A sapient is the sum of its parts, and the brain is just another organ to be improved. Emotion is irrelevant in the context of evolution, and what does it mean to be Lahlit?
+What do all Lahlit aspire to do?</description>
+    <descriptionHyperlinks><ThingDef>Cheshk</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Cheshk</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/Dogeaters/Cheshk/Cheshk</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Cheshk</defName>
+    <label>Cheshk-11 cyberoptic</label>
+    <description>Between all the bloody battles, copious amounts of combat stimulants, and regular stints on the operating table being ripped apart and put back together again, it doesn't take long for Lahlit to lose themselves.
+Now, Lahlit don't necessarily break like baseliners do-they don't have meltdowns or panic attacks or violent outbursts. They don't get hurt once, then live in fear for the rest of their lives. Lahlit just have their humanity...stripped away. Slowly, but surely.
+
+The Consortium puts its entire populace through war for a good reason-war makes them more like machines. They go in feeling truly fulfilled-like they're finally where they're supposed to be in life, doing the work of not gods, but the gods' creators.
+They come out not feeling...anything at all. Not joy, not sympathy, not sadness, not even anger-for progress demands the entire essence of its faithful to be granted as tribute. Progress demands the last thing that make the Lahlit recognizable as human-their minds-to be warped and twisted and numbed, and in some cases, completely converted into code.
+
+The Lahlit know this well-they spend their youths preparing for their humanity to be their ultimate sacrifice. From birth, they are taught that there is no sanctity to life-men are but machines to be used, upgraded, and replaced as animals are. A sapient is the sum of its parts, and the brain is just another organ to be improved. Emotion is irrelevant in the context of evolution, and what does it mean to be Lahlit?
+What do all Lahlit aspire to do?</description>
+    <descriptionHyperlinks><RecipeDef>InstallCheshk</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>DEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallCheshk</defName>
+    <label>install Cheshk-11 cyberoptic</label>
+    <description>Install a Cheshk-11 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Cheshk</ThingDef>
+      <HediffDef>Cheshk</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Cheshk-11.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cheshk</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Cheshk</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Cheshk</addsHediff>
+  </RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Kkejol</defName>
+    <label>Kkejol-15 cyberoptic</label>
+    <labelNoun>a Kkejol-15 cyberoptic</labelNoun>
+    <description>This optic rose to popularity among the soldiers of Hevorg's Tusk after the pride-lord's death-for in life, Hevorg Rexhiga had his right eye-socket filled with a Kkejol-15 optic after losing his eye in combat.
+Hevorg was one to jump at every opportunity to prove himself that came his way-his recklessness stemmed from the fact that he didn't exactly acquire his position through merit. Hevorg was a fifth-generation descendant of Vvurkonar Grenk, the resolute pride-lord of Lower Shekkogor who fought an infant, burgeoning Consortium for 15 long years.
+Vvurkonar's kingdom was absorbed into Consortium-aligned Upper Shekkogor (now just Shekkogor, politically) just as the Consortium made its first forays into the stars.
+
+Now, to avoid disgracing the formerly-independent aristoracy of what is now Consortium territory, the Guilds that the fractured pride-lords ruled over retained power over the regions they governed-they just now had to answer to the Consortium's CEO. As for the pride-lords themselves, they were put in charge of the Consortium's legions instead of matters of state-and most welcomed this change with open arms.
+Lahlit royals of the time had a particular bloodlust about them that no amount of destruction could sate-the evolution of their title was a fitting one.</description>
+    <descriptionHyperlinks><ThingDef>Kkejol</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Kkejol</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/HevorgsTusk/Kkejol/Kkejol</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Kkejol</defName>
+    <label>Kkejol-15 cyberoptic</label>
+    <description>This optic rose to popularity among the soldiers of Hevorg's Tusk after the pride-lord's death-for in life, Hevorg Rexhiga had his right eye-socket filled with a Kkejol-15 optic after losing his eye in combat.
+Hevorg was one to jump at every opportunity to prove himself that came his way-his recklessness stemmed from the fact that he didn't exactly acquire his position through merit. Hevorg was a fifth-generation descendant of Vvurkonar Grenk, the resolute pride-lord of Lower Shekkogor who fought an infant, burgeoning Consortium for 15 long years.
+Vvurkonar's kingdom was absorbed into Consortium-aligned Upper Shekkogor (now just Shekkogor, politically) just as the Consortium made its first forays into the stars.
+
+Now, to avoid disgracing the formerly-independent aristoracy of what is now Consortium territory, the Guilds that the fractured pride-lords ruled over retained power over the regions they governed-they just now had to answer to the Consortium's CEO. As for the pride-lords themselves, they were put in charge of the Consortium's legions instead of matters of state-and most welcomed this change with open arms.
+Lahlit royals of the time had a particular bloodlust about them that no amount of destruction could sate-the evolution of their title was a fitting one.</description>
+    <descriptionHyperlinks><RecipeDef>InstallKkejol</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>HTEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallKkejol</defName>
+    <label>install Kkejol-15 cyberoptic</label>
+    <description>Install a Kkejol-15 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Kkejol</ThingDef>
+      <HediffDef>Kkejol</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Kkejol-15.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Kkejol</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Kkejol</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Kkejol</addsHediff>
+  </RecipeDef>
+
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Vvarat</defName>
+    <label>Vvara't-3 cyberoptic</label>
+    <labelNoun>a Vvara't-3 cyberoptic</labelNoun>
+    <description>The Vvara't-3 was..."reclaimed". Before Th'res Liin took power, this optic was used in the creation of servitors. The Consortium was the last coreworld power to outlaw servitor conversion, and their widespread and frankly grotesque usage of the practice
+led to their reputation as the most brutal and backwards megacorporation in the galaxy. The Guilds were allowed to do whatever they wanted with the Lahlit populace, and their draconian laws made it rather easy to be punished with conversion.
+
+Lahlit servitors took many horrifying forms-people were cut in half and attached at the torso to a rocket-propelled, bulbous, drone-like body covered in dozens of grasping tendrils. Others were full-borged save the head, and completely covered in explosives. These unfortunate Lahlit were most often soldiers
+that disobeyed or failed orders, and were used as remote-controlled suicide squads as punishment. The one feature every servitor shared was this optic-it was their mark, to differentiate them from "free" Lahlit who were...more "patriotic" than most.
+
+Disenfranchised Lahlit started wearing the optic in protest of the blatant atrocities that occurred daily in Consortium space. It was a quiet denouncement of the tyranny of the Guilds back then, and now it's still a mainstay of various fashion and music subcultures on Lahlisek.</description>
+    <descriptionHyperlinks><ThingDef>Vvarat</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Vvarat</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/HevorgsTusk/Vvara't/Vvara't</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Vvarat</defName>
+    <label>Vvara't-3 cyberoptic</label>
+    <description>The Vvara't-3 was..."reclaimed". Before Th'res Liin took power, this optic was used in the creation of servitors. The Consortium was the last coreworld power to outlaw servitor conversion, and their widespread and frankly grotesque usage of the practice
+led to their reputation as the most brutal and backwards megacorporation in the galaxy. The Guilds were allowed to do whatever they wanted with the Lahlit populace, and their draconian laws made it rather easy to be punished with conversion.
+
+Lahlit servitors took many horrifying forms-people were cut in half and attached at the torso to a rocket-propelled, bulbous, drone-like body covered in dozens of grasping tendrils. Others were full-borged save the head, and completely covered in explosives. These unfortunate Lahlit were most often soldiers
+that disobeyed or failed orders, and were used as remote-controlled suicide squads as punishment. The one feature every servitor shared was this optic-it was their mark, to differentiate them from "free" Lahlit who were...more "patriotic" than most.
+
+Disenfranchised Lahlit started wearing the optic in protest of the blatant atrocities that occurred daily in Consortium space. It was a quiet denouncement of the tyranny of the Guilds back then, and now it's still a mainstay of various fashion and music subcultures on Lahlisek.</description>
+    <descriptionHyperlinks><RecipeDef>InstallVvarat</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>HTEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallVvarat</defName>
+    <label>install Vvara't-3cyberoptic</label>
+    <description>Install a Vvara't-3 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Vvarat</ThingDef>
+      <HediffDef>Vvarat</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Vvara't-3.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Vvarat</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Vvarat</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Vvarat</addsHediff>
+  </RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Yarchaed</defName>
+    <label>Yarchaed-17 cyberoptic</label>
+    <labelNoun>a Yarchaed-17 cyberoptic</labelNoun>
+    <description>This Xovoxin optic denotes recent recruitment-those who have not yet been fully acquainted with the glory and limitless knowledge of Xovox as his Brood have must display the widened, attentive eyes of faithful lambs, and be led towards true fulfillment by those closer to him.</description>
+    <descriptionHyperlinks><ThingDef>Yarchaed</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Yarchaed</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/BroodOfXovox/Yarchaed/Yarchaed</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Yarchaed</defName>
+    <label>Yarchaed-17 cyberoptic</label>
+    <description>This Xovoxin optic denotes recent recruitment-those who have not yet been fully acquainted with the glory and limitless knowledge of Xovox as his Brood have must display the widened, attentive eyes of faithful lambs, and be led towards true fulfillment by those closer to him.</description>
+    <descriptionHyperlinks><RecipeDef>InstallYarchaed</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>BXEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallYarchaed</defName>
+    <label>install Yarchaed-17 cyberoptic</label>
+    <description>Install a Yarchaed-17 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Yarchaed</ThingDef>
+      <HediffDef>Yarchaed</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Yarchaed-17.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Yarchaed</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Yarchaed</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Yarchaed</addsHediff>
+  </RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Achart</defName>
+    <label>A'chart-7 cyberoptic</label>
+    <labelNoun>an A'chart-7 cyberoptic</labelNoun>
+    <description>Before Th'res Liin took power, the Lahlit citizenry were considered the personal property of whatever subsidiary had jurisdiction over the territory they lived in. The Lahlit were treated like animals by their local governments-personal autonomy was an afterthought.
+People were very commonly forcibly relocated or cybernetically altered without their consent. A particularly infamous punishment was organ repossession-a Lahlit's living tissue could be and very much was confiscated by local governments as retribution for minor crimes.</description>
+    <descriptionHyperlinks><ThingDef>Achart</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Achart</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/Dogeaters/A'chart/A'chart</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Achart</defName>
+    <label>A'chart-7 cyberoptic</label>
+    <description>Before Th'res Liin took power, the Lahlit citizenry were considered the personal property of whatever subsidiary had jurisdiction over the territory they lived in. The Lahlit were treated like animals by their local governments-personal autonomy was an afterthought.
+People were very commonly forcibly relocated or cybernetically altered without their consent.
+
+A particularly infamous punishment was organ repossession-a Lahlit's living tissue could be, and very much was, confiscated by local governments as retribution for minor crimes.</description>
+    <descriptionHyperlinks><RecipeDef>InstallAchart</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>DEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallAchart</defName>
+    <label>install A'chart-7 cyberoptic</label>
+    <description>Install an A'chart-7 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Achart</ThingDef>
+      <HediffDef>Achart</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing A'chart-7.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Achart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Achart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Achart</addsHediff>
+  </RecipeDef>
+
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Tlegev</defName>
+    <label>Tlegev-14 cyberoptic</label>
+    <labelNoun>a Tlegev-14 cyberoptic</labelNoun>
+    <description>The sons and daughters of the conquered went on to become the next generation of the Consortium's elite-the empire took their bloodlines' sovereignty, but not necessarily their wealth. They no longer had legal dominion over the regions they governed-but they were still the proprietors of much of their former territories.
+Intense focus was put on buying and developing land by the former nobility, as doing such was the only way to retain their status. Now, their great, great, great grandsons may not be kings...but they certainly do live as kings did, commanding armies and making millions of dollars a minute off of the investments of minor nobles made hundreds of years ago.</description>
+    <descriptionHyperlinks><ThingDef>Tlegev</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Tlegev</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/HevorgsTusk/Tlegev/Tlegev</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Tlegev</defName>
+    <label>Tlegev-14 cyberoptic</label>
+    <description>The sons and daughters of the conquered went on to become the next generation of the Consortium's elite-the empire took their bloodlines' sovereignty, but not necessarily their wealth. They no longer had legal dominion over the regions they governed-but they were still the proprietors of much of their former territories.
+Intense focus was put on buying and developing land by the former nobility, as doing such was the only way to retain their status. Now, their great, great, great grandsons may not be kings...but they certainly do live as kings did, commanding armies and making millions of dollars a minute off of the investments of minor nobles made hundreds of years ago.</description>
+    <descriptionHyperlinks><RecipeDef>InstallTlegev</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>HTEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallTlegev</defName>
+    <label>install Tlegev-14 cyberoptic</label>
+    <description>Install a Tlegev-14 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Tlegev</ThingDef>
+      <HediffDef>Tlegev</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Tlegev-14 cyberoptic.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tlegev</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Tlegev</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Tlegev</addsHediff>
+  </RecipeDef>
+
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Tluuthir</defName>
+    <label>Tluuthir-13 cyberoptic</label>
+    <labelNoun>a Tluuthir-13 cyberoptic</labelNoun>
+    <description>Cyberoptics are more in use in Hogeiyezh than anywhere else on Lahlisek-the continent's long nights, thick forests, and dense mountainous regions lend themselves well to night-vision technology, especially considering the presence of many eusocial, nocturnal, and extremely predatory giant insect species that infest the crags.</description>
+    <descriptionHyperlinks><ThingDef>Tluuthir</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Tluuthir</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/Dogeaters/Tluuthir/Tluuthir</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Tluuthir</defName>
+    <label>Tluuthir-13 cyberoptic</label>
+    <description>Cyberoptics are more in use in Hogeiyezh than anywhere else on Lahlisek-the continent's long nights, thick forests, and dense mountainous regions lend themselves well to night-vision technology, especially considering the presence of many eusocial, nocturnal, and extremely predatory giant insect species that infest the continent's crags.</description>
+    <descriptionHyperlinks><RecipeDef>InstallTluuthir</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>DEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallTluuthir</defName>
+    <label>install Tluuthir-13 cyberoptic</label>
+    <description>Install a Tluuthir-13 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Tluuthir</ThingDef>
+      <HediffDef>Tluuthir</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Tluuthir-13.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Tluuthir</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Tluuthir</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Tluuthir</addsHediff>
+  </RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Varddolz</defName>
+    <label>Varddolz-11 cyberoptic</label>
+    <labelNoun>a Varddolz-11 cyberoptic</labelNoun>
+    <description>The Varddolz-11 is in common use by Dogeater pilots-the optic is imbued with a dumb AI that highlights important targets for its wearer.</description>
+    <descriptionHyperlinks><ThingDef>Varddolz</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Varddolz</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/Dogeaters/Varddolz/Varddolz</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Varddolz</defName>
+    <label>Varddolz-11 cyberoptic</label>
+    <description>The Varddolz-11 is in common use by Dogeater pilots-the optic is imbued with a dumb AI that highlights important targets for its wearer.</description>
+    <descriptionHyperlinks><RecipeDef>InstallVarddolz</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>DEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallVarddolz</defName>
+    <label>install Varddolz-11 cyberoptic</label>
+    <description>Install a Varddolz-11 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Varddolz</ThingDef>
+      <HediffDef>Varddolz</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Varddolz-11.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Varddolz</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Varddolz</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Varddolz</addsHediff>
+  </RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Hvinaraxx</defName>
+    <label>Hvinaraxx-6 cyberoptic</label>
+    <labelNoun>a Hvinaraxx-6 cyberoptic</labelNoun>
+    <description>The Machine Cults see themselves at the forefront of Lahlit "evolution". The physical forms of their priests are unrecognizable as anything Lahlit, much less human, if they even have physical forms at all.
+Many esteemed members of the Lahlit faiths have converted themselves into virtual intelligences to be more like the gods they admire. In some extreme cases, digitized Lahlit cultists will fuse themselves with their deities, effectively shredding their persona and all autonomy they had to strengthen the superintelligence they worshipped in life.</description>
+    <descriptionHyperlinks><ThingDef>Hvinaraxx</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Hvinaraxx</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/BroodOfXovox/Hvinaraxx/Hvinaraxx</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Hvinaraxx</defName>
+    <label>Hvinaraxx-6 cyberoptic</label>
+    <description>The Machine Cults see themselves at the forefront of Lahlit "evolution". The physical forms of their priests are unrecognizable as anything Lahlit, much less human, if they even have physical forms at all.
+Many esteemed members of the Lahlit faiths have converted themselves into virtual intelligences to be more like the gods they admire. In some extreme cases, digitized Lahlit cultists will fuse themselves with their deities, effectively shredding their persona and all autonomy they had to strengthen the superintelligence they worshipped in life.</description>
+    <descriptionHyperlinks><RecipeDef>InstallHvinaraxx</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>BXEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallHvinaraxx</defName>
+    <label>install Hvinaraxx-6 cyberoptic</label>
+    <description>Install a Hvinaraxx-6 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Hvinaraxx</ThingDef>
+      <HediffDef>Hvinaraxx</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Hvinaraxx-6.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hvinaraxx</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Hvinaraxx</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Hvinaraxx</addsHediff>
+  </RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Ghexssl</defName>
+    <label>Ghexssl-9 cyberoptic</label>
+    <labelNoun>a Ghexssl-9 cyberoptic</labelNoun>
+    <description>Th'res Liin allowed the Machine Cults to possess their own paramilitary forces for a good reason-there's no need for any leader to worry about armed religious zealots when the religion they follow is an invention of the state.</description>
+    <descriptionHyperlinks><ThingDef>Ghexssl</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Ghexssl</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/BroodOfXovox/Ghexssl/Ghexssl</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Ghexssl</defName>
+    <label>Ghexssl-9 cyberoptic</label>
+    <description>Th'res Liin allowed the Machine Cults to possess their own paramilitary forces for a good reason-there's no need for any leader to worry about armed religious zealots when the religion they follow is an invention of the state.</description>
+    <descriptionHyperlinks><RecipeDef>InstallGhexssl</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>BXEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallGhexssl</defName>
+    <label>install Ghexssl-9 cyberoptic</label>
+    <description>Install a Ghexssl-9 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Ghexssl</ThingDef>
+      <HediffDef>Ghexssl</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Ghexssl-9.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Ghexssl</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Ghexssl</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Ghexssl</addsHediff>
+  </RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Orveska</defName>
+    <label>Or'veska-3 cyberoptic</label>
+    <labelNoun>an Or'veska-3 cyberoptic</labelNoun>
+    <description>Based on the eyepatches of ancient Lahlit paladins. In olden days, paladin orders initiated their members by poking an eye out with a red-hot iron, then bestowing upon them an ornate eyepatch that everyone knew as the mark of a holy warrior.</description>
+    <descriptionHyperlinks><ThingDef>Orveska</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Orveska</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.10</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CyberOptics/BroodOfXovox/Or'veska/Or'veska</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.15</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>56</layer>
+            <offset>(0, 0, -0.23)</offset>
+          </defaultData>
+          <dataWest>
+            <flip>true</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartConsortiumBase">
+    <defName>Orveska</defName>
+    <label>Or'veska-3 cyberoptic</label>
+    <description>Based on the eyepatches of ancient Lahlit paladins. In olden days, paladin orders initiated their members by poking an eye out with a red-hot iron, then bestowing upon them an ornate eyepatch that everyone knew as the mark of a holy warrior.</description>
+    <descriptionHyperlinks><RecipeDef>InstallOrveska</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>BXEye</li>
+    </techHediffsTags>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <Mass>0.3</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallOrveska</defName>
+    <label>install Or'veska-3 cyberoptic</label>
+    <description>Install a Or'veska-3 cyberoptic.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Orveska</ThingDef>
+      <HediffDef>Orveska</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Or'veska-3.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Orveska</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Orveska</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Orveska</addsHediff>
+  </RecipeDef>
+</Defs>

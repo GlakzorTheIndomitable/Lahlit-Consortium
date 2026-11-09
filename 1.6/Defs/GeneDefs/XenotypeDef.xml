@@ -1,0 +1,474 @@
+<Defs>
+<XenotypeDef>
+ <defName>LahlitCommon</defName>
+ <label>Lahlit (Common)</label>
+ <description>The inventive, efficient, and unquestionably animalistic denizens of Lahlisek, the most hostile and hellish planet in all of the coreworld sectors, the Lahlit began as one of the first attempts to spread civilization to other worlds.
+ An extinct proto-mammal, Gorgonops torvus, was revived and given forced evolutionary treatments and numerous mutations before ultimately being spliced with the human genome to create a population of ancestral Lahlit that was then seeded on the newly-terraformed planet of Kárr-IV, now known as Lahlisek.
+ The reason modern Lahlit are so bestial is because of two reasons: one being the species' ability to rapidly evolve, adapting to whatever environment they find themselves in within little more than a few generations, and the other being that Kárr-IV was terraformed by a primitive, primordial algorithm riddled with debilitating mistakes.
+ The long-dead confederacy that was the United Terran Stars knew of the margin of error with their terraforming system-hence why they used transhuman bionts in Kárr-IV's colonization-but the sheer number of catastrophic errors in the planet's terraforming surpassed even the most cynical estimates.
+ Natural disasters are constant. The atmosphere is closer to Earth in the Carboniferous period than anything else, and the geosphere is very rich in heavy metals, gemstones, and above all, radioactive elements. The biosphere is locked in a bloody arms race where every organism seems to be constantly competing to be the deadliest on the planet.
+ 
+ Eusocial insect species where the smallest castes are the size of pitbulls, fungal organisms that take over entire forests and regularly release noxious and deadly gas, parasitic worms that enter your body through your eyes and eat you from the inside out, Lahlisek is one of the most ecologically diverse worlds in the galaxy with dozens of different supercontinents hosting thousands of unique ecosystems-and this trait of the planet is reflected in the Lahlit themselves.
+ The Lahlit are made up of a multitude of different subspecies, each with their own distinct cultures and ways of life. The Lahlit have only been one united race for around a few hundred years, and their relentless industrialism that drives dozens of horrific Lahliseki species extinct every day is always met by the planet breeding hundreds more.
+ This particular Lahlit subspecies is adapted to temperate climates and can afford a more cosmopolitan lifestyle than others. Thus, it is the most dominant and most commonly found subtype of Lahlit.</description>
+ <descriptionShort></descriptionShort>
+ <iconPath>UI/Xenotypes/XenoIcon_Common</iconPath>
+ <inheritable>true</inheritable>
+ <nameMaker>NamerPersonLahlit</nameMaker>
+ <chanceToUseNameMaker>1</chanceToUseNameMaker>
+ <genes>
+  <li>Body_Standard</li>
+  <li>Body_Hulk</li>
+  <li>LahlitFaceplate</li>
+  <li>LahlitTentacles</li>
+  <li>VerticalTusks</li>
+  <li>OrangeEyes</li>
+  <li>YellowEyes</li>
+  <li>BurntEyes</li>
+  <li>Hair_BaldOnly</li>
+  <li>Beard_NoBeardOnly</li>
+  <li>Robust</li>
+  <li>Pain_Reduced</li>
+  <li>VerySleepy</li>
+  <li>DarkVision</li>
+  <li>Unbreakable</li>
+  <li>Efficient</li>
+  <li>Sadistic</li>
+  <li>Rally</li>
+  <li MayRequire="nlh.core">Skin_RusticBrown</li>
+  <li MayRequire="nlh.core">Skin_ArmyGreen</li>
+  <li MayRequire="nlh.core">Skin_MidGray</li>
+  <li MayRequire="nlh.core">Skin_StormGray</li>
+  <li MayRequire="nlh.core">Skin_SlateGray</li>
+  <li MayRequire="nlh.core">Skin_InkBlack</li>
+  <li MayRequire="nlh.core">Skin_Ruddy</li>
+  <li MayRequire="nlh.core">Skin_PallidOrange</li>
+  <li MayRequire="nlh.core">Skin_GrizzlyBrown</li>
+  <li MayRequire="nlh.core">Skin_Caracal</li>
+  <li MayRequire="nlh.core">Skin_Gorgonops</li>
+  <li>BlackBlood</li>
+  <li>AptitudeStrong_Melee</li>
+  <li>AptitudeStrong_Shooting</li>
+  <li>AptitudeStrong_Social</li>
+  <li>AptitudeTerrible_Plants</li>
+ </genes>
+</XenotypeDef>
+
+<XenotypeDef>
+ <defName>LahlitSnow</defName>
+ <label>Lahlit (Snow)</label>
+ <description>The inventive, efficient, and unquestionably animalistic denizens of Lahlisek, the most hostile and hellish planet in all of the coreworld sectors, the Lahlit began as one of the first attempts to spread civilization to other worlds.
+ An extinct proto-mammal, Gorgonops torvus, was revived and given forced evolutionary treatments and numerous mutations before ultimately being spliced with the human genome to create a population of ancestral Lahlit that was then seeded on the newly-terraformed planet of Kárr-IV, now known as Lahlisek.
+ The reason modern Lahlit are so bestial is because of two reasons: one being the species' ability to rapidly evolve, adapting to whatever environment they find themselves in within little more than a few generations, and the other being that Kárr-IV was terraformed by a primitive, primordial algorithm riddled with debilitating mistakes.
+ The long-dead confederacy that was the United Terran Stars knew of the margin of error with their terraforming system-hence why they used transhuman bionts in Kárr-IV's colonization-but the sheer number of catastrophic errors in the planet's terraforming surpassed even the most cynical estimates.
+ Natural disasters are constant. The atmosphere is closer to Earth in the Carboniferous period than anything else, and the geosphere is very rich in heavy metals, gemstones, and above all, radioactive elements. The biosphere is locked in a bloody arms race where every organism seems to be constantly competing to be the deadliest on the planet.
+ 
+ Eusocial insect species where the smallest castes are the size of pitbulls, fungal organisms that take over entire forests and regularly release noxious and deadly gas, parasitic worms that enter your body through your eyes and eat you from the inside out, Lahlisek is one of the most ecologically diverse worlds in the galaxy with dozens of different supercontinents hosting thousands of unique ecosystems-and this trait of the planet is reflected in the Lahlit themselves.
+ The Lahlit are made up of a multitude of different subspecies, each with their own distinct cultures and ways of life. The Lahlit have only been one united race for around a few hundred years, and their relentless industrialism that drives dozens of horrific Lahliseki species extinct every day is always met by the planet breeding hundreds more.
+ This particular Lahlit subspecies is adapted to extreme cold. They are indigenous to the smatterings of island continents around Lahlisek's polar regions such as Xarathogh, Mlenggos, and Dvirgrund. Due to the development of interplanetary travel in recent centuries, snow Lahlit have spread across Consortium space, finding new homes on planets that could accurately be described to baseliners as the 9th circle of Hell made manifest in reality.</description>
+ <descriptionShort></descriptionShort>
+ <iconPath>UI/Xenotypes/XenoIcon_Snow</iconPath>
+ <inheritable>true</inheritable>
+ <nameMaker>NamerPersonLahlit</nameMaker>
+ <chanceToUseNameMaker>1</chanceToUseNameMaker>
+ <genes>
+ <li>Body_Standard</li>
+  <li>Body_Hulk</li>
+  <li>SnowFaceplate</li>
+  <li>SnowHorns</li>
+  <li>LahlitMane</li>
+  <li>LahlitTentacles</li>
+  <li>VerticalTusks</li>
+  <li>TealEyes</li>
+  <li>BlueEyes</li>
+  <li>PurpleEyes</li>
+  <li>MagentaEyes</li>
+  <li>Hair_BaldOnly</li>
+  <li>Beard_NoBeardOnly</li>
+  <li>Robust</li>
+  <li>Pain_Reduced</li>
+  <li>MinTemp_LargeDecrease</li>
+  <li>VerySleepy</li>
+  <li>DarkVision</li>
+  <li>Unbreakable</li>
+  <li>Efficient</li>
+  <li>Sadistic</li>
+  <li>Rally</li>
+  <li MayRequire="nlh.core">Skin_Frost</li>
+  <li MayRequire="nlh.core">Skin_Sherbet</li>
+  <li MayRequire="nlh.core">Skin_BlueIce</li>
+  <li MayRequire="nlh.core">Skin_Iceberg</li>
+  <li MayRequire="nlh.core">Skin_Alpine</li>
+  <li MayRequire="nlh.core">Skin_BlackIce</li>
+  <li MayRequire="nlh.core">Skin_Larvikite</li>
+  <li MayRequire="nlh.core">Skin_Heather</li>
+  <li MayRequire="nlh.core">Skin_SheerWhite</li>
+  <li MayRequire="nlh.core">Skin_StormGray</li>
+  <li MayRequire="nlh.core">Skin_LightGray</li>
+  <li MayRequire="nlh.core">Hair_Sherbet</li>
+  <li MayRequire="nlh.core">Hair_SnowWhite</li>
+  <li MayRequire="nlh.core">Hair_BlueIce</li>
+  <li MayRequire="nlh.core">Hair_Permafrost</li>
+  <li MayRequire="nlh.core">Hair_BlueWool</li>
+  <li MayRequire="nlh.core">Hair_SnowySilver</li>
+  <li MayRequire="nlh.core">Hair_StormCloud</li>
+  <li MayRequire="nlh.core">Hair_DustyLilac</li>
+  <li MayRequire="nlh.core">Hair_WhiteGray</li>
+  <li>BlackBlood</li>
+  <li>AptitudeStrong_Melee</li>
+  <li>AptitudeStrong_Shooting</li>
+  <li>AptitudeStrong_Social</li>
+  <li>AptitudeTerrible_Plants</li>
+ </genes>
+</XenotypeDef>
+
+<XenotypeDef>
+ <defName>LahlitDesert</defName>
+ <label>Lahlit (Desert)</label>
+ <description>The inventive, efficient, and unquestionably animalistic denizens of Lahlisek, the most hostile and hellish planet in all of the coreworld sectors, the Lahlit began as one of the first attempts to spread civilization to other worlds.
+ An extinct proto-mammal, Gorgonops torvus, was revived and given forced evolutionary treatments and numerous mutations before ultimately being spliced with the human genome to create a population of ancestral Lahlit that was then seeded on the newly-terraformed planet of Kárr-IV, now known as Lahlisek.
+ The reason modern Lahlit are so bestial is because of two reasons: one being the species' ability to rapidly evolve, adapting to whatever environment they find themselves in within little more than a few generations, and the other being that Kárr-IV was terraformed by a primitive, primordial algorithm riddled with debilitating mistakes.
+ The long-dead confederacy that was the United Terran Stars knew of the margin of error with their terraforming system-hence why they used transhuman bionts in Kárr-IV's colonization-but the sheer number of catastrophic errors in the planet's terraforming surpassed even the most cynical estimates.
+ Natural disasters are constant. The atmosphere is closer to Earth in the Carboniferous period than anything else, and the geosphere is very rich in heavy metals, gemstones, and above all, radioactive elements. The biosphere is locked in a bloody arms race where every organism seems to be constantly competing to be the deadliest on the planet.
+ 
+ Eusocial insect species where the smallest castes are the size of pitbulls, fungal organisms that take over entire forests and regularly release noxious and deadly gas, parasitic worms that enter your body through your eyes and eat you from the inside out, Lahlisek is one of the most ecologically diverse worlds in the galaxy with dozens of different supercontinents hosting thousands of unique ecosystems-and this trait of the planet is reflected in the Lahlit themselves.
+ The Lahlit are made up of a multitude of different subspecies, each with their own distinct cultures and ways of life. The Lahlit have only been one united race for around a few hundred years, and their relentless industrialism that drives dozens of horrific Lahliseki species extinct every day is always met by the planet breeding hundreds more.
+ This particular Lahlit subspecies is adapted to parched environs such as the great desert of Ddeiz-Zneddek, the cold dunes of Voturbad, or the rocky, beast-infested mesas of Okklojeth. The desert Lahlit are possibly the most culturally versed in the art of combat. For most of their history, they were either nomadic reavers fighting amongst each other, not to mention myriads of predators-or citizens of proud warrior nations based around major waterways staving off hordes of nomadic reavers.</description>
+ <descriptionShort></descriptionShort>
+ <iconPath>UI/Xenotypes/XenoIcon_Desert</iconPath>
+ <inheritable>true</inheritable>
+ <nameMaker>NamerPersonLahlit</nameMaker>
+ <chanceToUseNameMaker>1</chanceToUseNameMaker>
+ <genes>
+  <li>Body_Standard</li>
+  <li>Body_Hulk</li>
+  <li>DesertFaceplate</li>
+  <li>DesertHorns</li>
+  <li>LahlitTentacles</li>
+  <li>VerticalTusks</li>
+  <li>JadeEyes</li>
+  <li>EmeraldEyes</li>
+  <li>BurntEyes</li>
+  <li>OrangeEyes</li>
+  <li>YellowEyes</li>
+  <li>Hair_BaldOnly</li>
+  <li>Beard_NoBeardOnly</li>
+  <li>Robust</li>
+  <li>Pain_Reduced</li>
+  <li>VerySleepy</li>
+  <li>DarkVision</li>
+  <li>Unbreakable</li>
+  <li>Efficient</li>
+  <li>Sadistic</li>
+  <li>MinTemp_SmallDecrease</li>
+  <li>MaxTemp_SmallIncrease</li>
+  <li>Rally</li>
+  <li MayRequire="nlh.core">Skin_SandyYellow</li>
+  <li MayRequire="nlh.core">Skin_SandyOrange</li>
+  <li MayRequire="nlh.core">Skin_SandyBronze</li>
+  <li MayRequire="nlh.core">Skin_SandyCopper</li>
+  <li MayRequire="nlh.core">Skin_SandyBrown</li>
+  <li MayRequire="nlh.core">Skin_RedSand</li>
+  <li>BlackBlood</li>
+  <li>AptitudeStrong_Melee</li>
+  <li>AptitudeStrong_Shooting</li>
+  <li>AptitudeStrong_Social</li>
+  <li>AptitudeTerrible_Plants</li>
+ </genes>
+</XenotypeDef>
+
+<XenotypeDef>
+ <defName>LahlitSwamp</defName>
+ <label>Lahlit (Swamp)</label>
+ <description>The inventive, efficient, and unquestionably animalistic denizens of Lahlisek, the most hostile and hellish planet in all of the coreworld sectors, the Lahlit began as one of the first attempts to spread civilization to other worlds.
+ An extinct proto-mammal, Gorgonops torvus, was revived and given forced evolutionary treatments and numerous mutations before ultimately being spliced with the human genome to create a population of ancestral Lahlit that was then seeded on the newly-terraformed planet of Kárr-IV, now known as Lahlisek.
+ The reason modern Lahlit are so bestial is because of two reasons: one being the species' ability to rapidly evolve, adapting to whatever environment they find themselves in within little more than a few generations, and the other being that Kárr-IV was terraformed by a primitive, primordial algorithm riddled with debilitating mistakes.
+ The long-dead confederacy that was the United Terran Stars knew of the margin of error with their terraforming system-hence why they used transhuman bionts in Kárr-IV's colonization-but the sheer number of catastrophic errors in the planet's terraforming surpassed even the most cynical estimates.
+ Natural disasters are constant. The atmosphere is closer to Earth in the Carboniferous period than anything else, and the geosphere is very rich in heavy metals, gemstones, and above all, radioactive elements. The biosphere is locked in a bloody arms race where every organism seems to be constantly competing to be the deadliest on the planet.
+ 
+ Eusocial insect species where the smallest castes are the size of pitbulls, fungal organisms that take over entire forests and regularly release noxious and deadly gas, parasitic worms that enter your body through your eyes and eat you from the inside out, Lahlisek is one of the most ecologically diverse worlds in the galaxy with dozens of different supercontinents hosting thousands of unique ecosystems-and this trait of the planet is reflected in the Lahlit themselves.
+ The Lahlit are made up of a multitude of different subspecies, each with their own distinct cultures and ways of life. The Lahlit have only been one united race for around a few hundred years, and their relentless industrialism that drives dozens of horrific Lahliseki species extinct every day is always met by the planet breeding hundreds more.
+ This particular Lahlit subspecies is adapted to swamps, lowlands, and marshes. Such environs are so numerous on Lahlisek and so widely settled that they, over the generations, spawned their own breed of Lahlit-one adapted for a somewhat amphibious lifestyle, with a far thicker hide than other subspecies and a remarkable resistance to diseases-perfect for trawling through swamp water.</description>
+ <descriptionShort></descriptionShort>
+ <iconPath>UI/Xenotypes/XenoIcon_Swamp</iconPath>
+ <inheritable>true</inheritable>
+ <nameMaker>NamerPersonLahlit</nameMaker>
+ <chanceToUseNameMaker>1</chanceToUseNameMaker>
+ <genes>
+  <li>Body_Standard</li>
+  <li>Body_Hulk</li>
+  <li>SwampFaceplate</li>
+  <li>SwampQuills</li>
+  <li>LahlitTentacles</li>
+  <li>VerticalTusks</li>
+  <li>EmeraldEyes</li>
+  <li>BurntEyes</li>
+  <li>YellowEyes</li>
+  <li>Hair_BaldOnly</li>
+  <li>Beard_NoBeardOnly</li>
+  <li>Robust</li>
+  <li>Pain_Reduced</li>
+  <li>Immunity_Strong</li>
+  <li>VerySleepy</li>
+  <li>DarkVision</li>
+  <li>Unbreakable</li>
+  <li>Efficient</li>
+  <li>Sadistic</li>
+  <li>Rally</li>
+  <li MayRequire="nlh.core">Skin_SlimyWeed</li>
+  <li MayRequire="nlh.core">Skin_SlimyGrass</li>
+  <li MayRequire="nlh.core">Skin_VerdantMoss</li>
+  <li MayRequire="nlh.core">Skin_VerdantLeaf</li>
+  <li MayRequire="nlh.core">Skin_SlimyLizard</li>
+  <li MayRequire="nlh.core">Skin_BogDweller</li>
+  <li MayRequire="nlh.core">Hair_EarthyGold</li>
+  <li MayRequire="nlh.core">Hair_EarthyBrown</li>
+  <li MayRequire="nlh.core">Hair_DeepAlmond</li>
+  <li MayRequire="nlh.core">Hair_EarthyRed</li>
+  <li MayRequire="nlh.core">Hair_RedWalnut</li>
+  <li>BlackBlood</li>
+  <li>AptitudeStrong_Melee</li>
+  <li>AptitudeStrong_Shooting</li>
+  <li>AptitudeStrong_Social</li>
+  <li>AptitudeTerrible_Plants</li>
+ </genes>
+</XenotypeDef>
+
+<XenotypeDef>
+ <defName>LahlitJungle</defName>
+ <label>Lahlit (Jungle)</label>
+ <description>The inventive, efficient, and unquestionably animalistic denizens of Lahlisek, the most hostile and hellish planet in all of the coreworld sectors, the Lahlit began as one of the first attempts to spread civilization to other worlds.
+ An extinct proto-mammal, Gorgonops torvus, was revived and given forced evolutionary treatments and numerous mutations before ultimately being spliced with the human genome to create a population of ancestral Lahlit that was then seeded on the newly-terraformed planet of Kárr-IV, now known as Lahlisek.
+ The reason modern Lahlit are so bestial is because of two reasons: one being the species' ability to rapidly evolve, adapting to whatever environment they find themselves in within little more than a few generations, and the other being that Kárr-IV was terraformed by a primitive, primordial algorithm riddled with debilitating mistakes.
+ The long-dead confederacy that was the United Terran Stars knew of the margin of error with their terraforming system-hence why they used transhuman bionts in Kárr-IV's colonization-but the sheer number of catastrophic errors in the planet's terraforming surpassed even the most cynical estimates.
+ Natural disasters are constant. The atmosphere is closer to Earth in the Carboniferous period than anything else, and the geosphere is very rich in heavy metals, gemstones, and above all, radioactive elements. The biosphere is locked in a bloody arms race where every organism seems to be constantly competing to be the deadliest on the planet.
+ 
+ Eusocial insect species where the smallest castes are the size of pitbulls, fungal organisms that take over entire forests and regularly release noxious and deadly gas, parasitic worms that enter your body through your eyes and eat you from the inside out, Lahlisek is one of the most ecologically diverse worlds in the galaxy with dozens of different supercontinents hosting thousands of unique ecosystems-and this trait of the planet is reflected in the Lahlit themselves.
+ The Lahlit are made up of a multitude of different subspecies, each with their own distinct cultures and ways of life. The Lahlit have only been one united race for around a few hundred years, and their relentless industrialism that drives dozens of horrific Lahliseki species extinct every day is always met by the planet breeding hundreds more.
+ This particular Lahlit subspecies is adapted for life under the thick canopies of tropical jungles. Their antlers work wonders for cleaving paths through the undergrowth, and the instincts of many exotic beasts betray them once they see the subspecies' bright, striped complexion. The jungle Lahlit aren't venomous-that is, unless a particular individual has a few implants installed...</description>
+ <descriptionShort></descriptionShort>
+ <iconPath>UI/Xenotypes/XenoIcon_Jungle</iconPath>
+ <inheritable>true</inheritable>
+ <nameMaker>NamerPersonLahlit</nameMaker>
+ <chanceToUseNameMaker>1</chanceToUseNameMaker>
+ <genes>
+  <li>Body_Standard</li>
+  <li>Body_Hulk</li>
+  <li>JungleFaceplate</li>
+  <li>JungleAntlers</li>
+  <li>LahlitTentacles</li>
+  <li>VerticalTusks</li>
+  <li>EmeraldEyes</li>
+  <li>PurpleEyes</li>
+  <li>BurntEyes</li>
+  <li>OrangeEyes</li>
+  <li>BlueEyes</li>
+  <li>YellowEyes</li>
+  <li>Hair_BaldOnly</li>
+  <li>Beard_NoBeardOnly</li>
+  <li>Robust</li>
+  <li>Pain_Reduced</li>
+  <li>Immunity_Strong</li>
+  <li>VerySleepy</li>
+  <li>DarkVision</li>
+  <li>Unbreakable</li>
+  <li>Efficient</li>
+  <li>Sadistic</li>
+  <li>Rally</li>
+  <li>Stripes</li>
+  <li MayRequire="nlh.core">Skin_YellowHibiscus</li>
+  <li MayRequire="nlh.core">Skin_RedHibiscus</li>
+  <li MayRequire="nlh.core">Skin_OrangeHibiscus</li>
+  <li MayRequire="nlh.core">Skin_Shaddock</li>
+  <li MayRequire="nlh.core">Skin_Unripened</li>
+  <li MayRequire="nlh.core">Skin_Seagrape</li>
+  <li>BlackBlood</li>
+  <li>AptitudeStrong_Melee</li>
+  <li>AptitudeStrong_Shooting</li>
+  <li>AptitudeStrong_Social</li>
+  <li>AptitudeTerrible_Plants</li>
+ </genes>
+</XenotypeDef>
+
+<XenotypeDef>
+ <defName>LahlitMountain</defName>
+ <label>Lahlit (Mountain)</label>
+ <description>The inventive, efficient, and unquestionably animalistic denizens of Lahlisek, the most hostile and hellish planet in all of the coreworld sectors, the Lahlit began as one of the first attempts to spread civilization to other worlds.
+ An extinct proto-mammal, Gorgonops torvus, was revived and given forced evolutionary treatments and numerous mutations before ultimately being spliced with the human genome to create a population of ancestral Lahlit that was then seeded on the newly-terraformed planet of Kárr-IV, now known as Lahlisek.
+ The reason modern Lahlit are so bestial is because of two reasons: one being the species' ability to rapidly evolve, adapting to whatever environment they find themselves in within little more than a few generations, and the other being that Kárr-IV was terraformed by a primitive, primordial algorithm riddled with debilitating mistakes.
+ The long-dead confederacy that was the United Terran Stars knew of the margin of error with their terraforming system-hence why they used transhuman bionts in Kárr-IV's colonization-but the sheer number of catastrophic errors in the planet's terraforming surpassed even the most cynical estimates.
+ Natural disasters are constant. The atmosphere is closer to Earth in the Carboniferous period than anything else, and the geosphere is very rich in heavy metals, gemstones, and above all, radioactive elements. The biosphere is locked in a bloody arms race where every organism seems to be constantly competing to be the deadliest on the planet.
+ 
+ Eusocial insect species where the smallest castes are the size of pitbulls, fungal organisms that take over entire forests and regularly release noxious and deadly gas, parasitic worms that enter your body through your eyes and eat you from the inside out, Lahlisek is one of the most ecologically diverse worlds in the galaxy with dozens of different supercontinents hosting thousands of unique ecosystems-and this trait of the planet is reflected in the Lahlit themselves.
+ The Lahlit are made up of a multitude of different subspecies, each with their own distinct cultures and ways of life. The Lahlit have only been one united race for around a few hundred years, and their relentless industrialism that drives dozens of horrific Lahliseki species extinct every day is always met by the planet breeding hundreds more.
+ This particular Lahlit subspecies is adapted to the dense, rocky, treacherous mountain ranges of many continents and supercontinents. The mountain Lahlit are physically stunted when compared to many other subspecies so they can move much more freely in their native environment, and their leathery frills and metallic complexions are widely regarded as beautiful.</description>
+ <descriptionShort></descriptionShort>
+ <iconPath>UI/Xenotypes/XenoIcon_Mountain</iconPath>
+ <inheritable>true</inheritable>
+ <nameMaker>NamerPersonLahlit</nameMaker>
+ <chanceToUseNameMaker>1</chanceToUseNameMaker>
+ <genes>
+  <li>Body_Standard</li>
+  <li>Body_Hulk</li>
+  <li>MountainFaceplate</li>
+  <li>MountainFrills</li>
+  <li>LahlitTentacles</li>
+  <li>VerticalTusks</li>
+  <li>EmeraldEyes</li>
+  <li>PurpleEyes</li>
+  <li>BurntEyes</li>
+  <li>OrangeEyes</li>
+  <li>BlueEyes</li>
+  <li>TealEyes</li>
+  <li>Hair_BaldOnly</li>
+  <li>Beard_NoBeardOnly</li>
+  <li>Robust</li>
+  <li>Pain_Reduced</li>
+  <li>VerySleepy</li>
+  <li>DarkVision</li>
+  <li>Unbreakable</li>
+  <li>Efficient</li>
+  <li>Sadistic</li>
+  <li>Rally</li>
+  <li MayRequire="nlh.core">Skin_MountainCopper</li>
+  <li MayRequire="nlh.core">Skin_FoolsGold</li>
+  <li MayRequire="nlh.core">Skin_GreenGem</li>
+  <li MayRequire="nlh.core">Skin_CloudyCrystal</li>
+  <li MayRequire="nlh.core">Skin_FadingCrystal</li>
+  <li MayRequire="nlh.core">Skin_MountainAmber</li>
+  <li MayRequire="nlh.core">Skin_InkBlack</li>
+  <li MayRequire="nlh.core">Skin_SlateGray</li>
+  <li MayRequire="nlh.core">Skin_MidGray</li>
+  <li MayRequire="nlh.core">Skin_MountainSapphire</li>
+  <li MayRequire="nlh.core">Skin_MountainLapis</li>
+  <li MayRequire="nlh.core">Skin_AncientCopper</li>
+  <li MayRequire="nlh.core">Skin_MountainElectrum</li>
+  <li MayRequire="nlh.core">Skin_MountainAmethyst</li>
+  <li>BlackBlood</li>
+  <li>AptitudeStrong_Melee</li>
+  <li>AptitudeStrong_Shooting</li>
+  <li>AptitudeStrong_Social</li>
+  <li>AptitudeTerrible_Plants</li>
+ </genes>
+</XenotypeDef>
+
+<XenotypeDef>
+ <defName>LahlitCave</defName>
+ <label>Lahlit (Cave)</label>
+ <description>The inventive, efficient, and unquestionably animalistic denizens of Lahlisek, the most hostile and hellish planet in all of the coreworld sectors, the Lahlit began as one of the first attempts to spread civilization to other worlds.
+ An extinct proto-mammal, Gorgonops torvus, was revived and given forced evolutionary treatments and numerous mutations before ultimately being spliced with the human genome to create a population of ancestral Lahlit that was then seeded on the newly-terraformed planet of Kárr-IV, now known as Lahlisek.
+ The reason modern Lahlit are so bestial is because of two reasons: one being the species' ability to rapidly evolve, adapting to whatever environment they find themselves in within little more than a few generations, and the other being that Kárr-IV was terraformed by a primitive, primordial algorithm riddled with debilitating mistakes.
+ The long-dead confederacy that was the United Terran Stars knew of the margin of error with their terraforming system-hence why they used transhuman bionts in Kárr-IV's colonization-but the sheer number of catastrophic errors in the planet's terraforming surpassed even the most cynical estimates.
+ Natural disasters are constant. The atmosphere is closer to Earth in the Carboniferous period than anything else, and the geosphere is very rich in heavy metals, gemstones, and above all, radioactive elements. The biosphere is locked in a bloody arms race where every organism seems to be constantly competing to be the deadliest on the planet.
+ 
+ Eusocial insect species where the smallest castes are the size of pitbulls, fungal organisms that take over entire forests and regularly release noxious and deadly gas, parasitic worms that enter your body through your eyes and eat you from the inside out, Lahlisek is one of the most ecologically diverse worlds in the galaxy with dozens of different supercontinents hosting thousands of unique ecosystems-and this trait of the planet is reflected in the Lahlit themselves.
+ The Lahlit are made up of a multitude of different subspecies, each with their own distinct cultures and ways of life. The Lahlit have only been one united race for around a few hundred years, and their relentless industrialism that drives dozens of horrific Lahliseki species extinct every day is always met by the planet breeding hundreds more.
+ This particular Lahlit subspecies is adapted to the neutral climates of subterranean ecosystems deep within Lahlisek's crust. The cave Lahlit are the heart of the Consortium's industry. Lahlisek is a literal gold mine-it's the most geologically wealthy planet anywhere near galactic civilization, and the formerly-sovereign cave kingdoms pay tribute to their corporate masters by hollowing the earth at their command.</description>
+ <descriptionShort></descriptionShort>
+ <iconPath>UI/Xenotypes/XenoIcon_Cave</iconPath>
+ <inheritable>true</inheritable>
+ <nameMaker>NamerPersonLahlit</nameMaker>
+ <chanceToUseNameMaker>1</chanceToUseNameMaker>
+ <genes>
+  <li>Body_Standard</li>
+  <li>Body_Hulk</li>
+  <li>CaveFaceplate</li>
+  <li>LahlitTentacles</li>
+  <li>VerticalTusks</li>
+  <li>PinkEyes</li>
+  <li>MagentaEyes</li>
+  <li>TealEyes</li>
+  <li>PurpleEyes</li>
+  <li>BrightEyes</li>
+  <li>Hair_BaldOnly</li>
+  <li>Beard_NoBeardOnly</li>
+  <li>Robust</li>
+  <li>Pain_Reduced</li>
+  <li>VerySleepy</li>
+  <li>DarkVision</li>
+  <li>Unbreakable</li>
+  <li>Efficient</li>
+  <li>Sadistic</li>
+  <li>MinTemp_SmallIncrease</li>
+  <li>MaxTemp_SmallDecrease</li>
+  <li>UVSensitivity_Mild</li>
+  <li>CaveDweller</li>
+  <li>Rally</li>
+  <li MayRequire="nlh.core">Skin_ChthonicPurple</li>
+  <li MayRequire="nlh.core">Skin_ChthonicAmethyst</li>
+  <li MayRequire="nlh.core">Skin_ChthonicBlue</li>
+  <li MayRequire="nlh.core">Skin_StormGray</li>
+  <li MayRequire="nlh.core">Skin_LightGray</li>
+  <li MayRequire="nlh.core">Hair_ShimmeringPink</li>
+  <li MayRequire="nlh.core">Hair_ShimmeringYellow</li>
+  <li MayRequire="nlh.core">Hair_ShimmeringMagenta</li>
+  <li MayRequire="nlh.core">Hair_ShimmeringCyan</li>
+  <li MayRequire="nlh.core">Hair_ShimmeringViolet</li>
+  <li>BlackBlood</li>
+  <li>AptitudeStrong_Melee</li>
+  <li>AptitudeStrong_Shooting</li>
+  <li>AptitudeStrong_Social</li>
+  <li>AptitudeTerrible_Plants</li>
+ </genes>
+</XenotypeDef>
+
+<XenotypeDef>
+ <defName>LahlitVolcanic</defName>
+ <label>Lahlit (Volcanic)</label>
+ <description>The inventive, efficient, and unquestionably animalistic denizens of Lahlisek, the most hostile and hellish planet in all of the coreworld sectors, the Lahlit began as one of the first attempts to spread civilization to other worlds.
+ An extinct proto-mammal, Gorgonops torvus, was revived and given forced evolutionary treatments and numerous mutations before ultimately being spliced with the human genome to create a population of ancestral Lahlit that was then seeded on the newly-terraformed planet of Kárr-IV, now known as Lahlisek.
+ The reason modern Lahlit are so bestial is because of two reasons: one being the species' ability to rapidly evolve, adapting to whatever environment they find themselves in within little more than a few generations, and the other being that Kárr-IV was terraformed by a primitive, primordial algorithm riddled with debilitating mistakes.
+ The long-dead confederacy that was the United Terran Stars knew of the margin of error with their terraforming system-hence why they used transhuman bionts in Kárr-IV's colonization-but the sheer number of catastrophic errors in the planet's terraforming surpassed even the most cynical estimates.
+ Natural disasters are constant. The atmosphere is closer to Earth in the Carboniferous period than anything else, and the geosphere is very rich in heavy metals, gemstones, and above all, radioactive elements. The biosphere is locked in a bloody arms race where every organism seems to be constantly competing to be the deadliest on the planet.
+ 
+ Eusocial insect species where the smallest castes are the size of pitbulls, fungal organisms that take over entire forests and regularly release noxious and deadly gas, parasitic worms that enter your body through your eyes and eat you from the inside out, Lahlisek is one of the most ecologically diverse worlds in the galaxy with dozens of different supercontinents hosting thousands of unique ecosystems-and this trait of the planet is reflected in the Lahlit themselves.
+ The Lahlit are made up of a multitude of different subspecies, each with their own distinct cultures and ways of life. The Lahlit have only been one united race for around a few hundred years, and their relentless industrialism that drives dozens of horrific Lahliseki species extinct every day is always met by the planet breeding hundreds more.
+ This particular Lahlit subspecies is adapted to Lahlisek's most geologically active regions, such as the ashlands of Zvortlok or the southern archipelago of Lek-Chukhroj. A feathery mane sprouts from the necks of this subspecies-an interesting and outlandish adaptation with seemingly no discernable purpose.</description>
+ <descriptionShort></descriptionShort>
+ <iconPath>UI/Xenotypes/XenoIcon_Volcanic</iconPath>
+ <inheritable>true</inheritable>
+ <nameMaker>NamerPersonLahlit</nameMaker>
+ <chanceToUseNameMaker>1</chanceToUseNameMaker>
+ <genes>
+ <li>Body_Standard</li>
+  <li>Body_Hulk</li>
+  <li>VolcanicFaceplate</li>
+  <li>LahlitTentacles</li>
+  <li>FeatherMane</li>
+  <li>VerticalTusks</li>
+  <li>BurntEyes</li>
+  <li>OrangeEyes</li>
+  <li>BrightEyes</li>
+  <li>Hair_BaldOnly</li>
+  <li>Beard_NoBeardOnly</li>
+  <li>Robust</li>
+  <li>Pain_Reduced</li>
+  <li>VerySleepy</li>
+  <li>DarkVision</li>
+  <li>Unbreakable</li>
+  <li>Efficient</li>
+  <li>Sadistic</li>
+  <li>MaxTemp_LargeIncrease</li>
+  <li>Rally</li>
+  <li MayRequire="nlh.core">Skin_DraconicMauve</li>
+  <li MayRequire="nlh.core">Skin_DraconicRed</li>
+  <li MayRequire="nlh.core">Skin_DraconicOrange</li>
+  <li MayRequire="nlh.core">Skin_DraconicRose</li>
+  <li MayRequire="nlh.core">Skin_WarmAsh</li>
+  <li MayRequire="nlh.core">Skin_DustyShell</li>
+  <li MayRequire="nlh.core">Skin_DirtyBronze</li>
+  <li MayRequire="nlh.core">Skin_InkBlack</li>
+  <li MayRequire="nlh.core">Skin_SlateGray</li>
+  <li MayRequire="nlh.core">Hair_Tanager</li>
+  <li MayRequire="nlh.core">Hair_DesertFlower</li>
+  <li MayRequire="nlh.core">Hair_Cordovan</li>
+  <li MayRequire="nlh.core">Hair_WarmAsh</li>
+  <li MayRequire="nlh.core">Hair_AspenLeaf</li>
+  <li>BlackBlood</li>
+  <li>AptitudeStrong_Melee</li>
+  <li>AptitudeStrong_Shooting</li>
+  <li>AptitudeStrong_Social</li>
+  <li>AptitudeTerrible_Plants</li>
+ </genes>
+</XenotypeDef>
+</Defs>

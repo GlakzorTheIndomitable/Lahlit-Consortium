@@ -1,0 +1,73 @@
+<Defs>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>LahlitTable</defName>
+    <label>Consortium fabrication bench</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>Through reverse-engineering every scarce scrap of Consortium technology we find off of dead Lahlit soldiers, we have gained quite an understanding of the crude, yet undoubtedly advanced processes used to create Consortium products.
+While not an exact replica of true-to-life Lahlit factory equipment, this bench is a close enough approximation that our engineers can replicate the techniques used by the Consortium without incident.</description>
+    <researchPrerequisites><li>LCTech</li></researchPrerequisites>
+    <graphicData>
+      <texPath>Things/Building/LahlitTable/LahlitTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Steel>75</Steel>
+      <Orichalcum>30</Orichalcum>
+      <Tungsten>30</Tungsten>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>5500</WorkToBuild>
+      <MaxHitPoints>320</MaxHitPoints>
+      <Flammability>0.4</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>250</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(110,110,50,0)</glowColor>
+      </li>
+    </comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>
+
+
+</Defs>

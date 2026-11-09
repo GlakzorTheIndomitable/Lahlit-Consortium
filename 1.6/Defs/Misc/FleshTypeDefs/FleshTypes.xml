@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FleshTypeDef>
+        <defName>FleshType_Black</defName>
+        <corpseCategory>CorpsesAnimal</corpseCategory>
+        <damageEffecter>Damage_Black</damageEffecter>
+        <genericWounds>
+            
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshA</texture>
+                <color>(10, 10, 10)</color></li>
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshB</texture>
+                <color>(10, 10, 10)</color></li>
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshC</texture>
+                <color>(10, 10, 10)</color></li>
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshD</texture>
+                <color>(10, 10, 10)</color></li>
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshE</texture>
+                <color>(10, 10, 10)</color></li>
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshF</texture>
+                <color>(10, 10, 10)</color></li>
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshG</texture>
+                <color>(10, 10, 10)</color></li>
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshH</texture>
+                <color>(10, 10, 10)</color></li>
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshI</texture>
+                <color>(10, 10, 10)</color></li>
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshJ</texture>
+                <color>(10, 10, 10)</color></li>
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshK</texture>
+                <color>(10, 10, 10)</color></li>
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshL</texture>
+                <color>(10, 10, 10)</color></li>
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshM</texture>
+                <color>(10, 10, 10)</color></li>
+                <li><texture>Things/Pawn/Wounds/Base_WoundFleshN</texture>
+                <color>(10, 10, 10)</color></li>
+            
+        </genericWounds>
+        <bandagedWounds>
+            <li>
+                <texture>Things/Pawn/Wounds/BandagedA</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Wounds/BandagedB</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Wounds/BandagedC</texture>
+            </li>
+        </bandagedWounds>
+        <hediffWounds>
+<li>
+                <hediff>MissingBodyPart</hediff>
+                <wounds>
+<li>
+                        <textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+                        <textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+                        <textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+                        <textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+                        <flipWest>true</flipWest>
+                        <onlyOnPart>Eye</onlyOnPart>
+                        <flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+                        <flipOnRotation>South</flipOnRotation>
+                        <tintWithSkinColor>true</tintWithSkinColor>
+                        <missingBodyPartFresh>false</missingBodyPartFresh>
+                        <scale>0.7</scale>
+                        <drawOffsetSouth>(0, 0, -0.24)</drawOffsetSouth>
+                        <drawOffsetEastWest>(-0.03, 0, -0.24)</drawOffsetEastWest>
+</li>
+                </wounds>    
+</li>    
+    </hediffWounds>
+    </FleshTypeDef>
+
+</Defs>

@@ -1,0 +1,636 @@
+<Defs>
+
+
+  <ThingDef Name="BaseMeleeWeaponLC" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Spacer</techLevel>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <relicChance>1</relicChance>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>LahlitTable</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+    </recipeMaker>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <tradeTags>
+      <li>LCMelee</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef Name="BaseMeleeWeapon_LCSharp" ParentName="BaseMeleeWeaponLC" Abstract="True">
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <recipeMaker>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Silver</li>
+          <li>Gold</li>
+          <li>WoodLog</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+
+
+  <ThingDef Name="BaseMeleeWeapon_LCSharp_Quality" Abstract="True" ParentName="BaseMeleeWeapon_LCSharp">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="BaseMeleeWeapon_LCBlunt" ParentName="BaseMeleeWeaponLC" Abstract="True">
+    <weaponClasses>
+      <li>MeleeBlunt</li>
+    </weaponClasses>
+    <recipeMaker>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Silver</li>
+          <li>Gold</li>
+          <li>WoodLog</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+
+
+  <ThingDef Name="BaseMeleeWeapon_LCBlunt_Quality" Abstract="True" ParentName="BaseMeleeWeapon_LCBlunt">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_LCSharp_Quality">
+    <defName>LC_Hekhva</defName>
+    <label>Type-13 Hekhva</label>
+    <description>The Consortium is best known for its hamfisted approach to...every problem. When all you know is an axe, you treat everything like a tree, and Lahlit aren't exactly too fond of nature.
+	
+	This particular variant of handaxe (of which there are many) seems to be catered toward utility use by a poorer demographic-the hilt of the weapon is repurposed scrap.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponMelee/Hekhva</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>Gearguut</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>1.4</Mass>
+    </statBases>
+    <relicChance>0</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Steel>30</Steel>
+      <Orichalcum>5</Orichalcum>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_LCSharp_Quality">
+      <defName>LC_HekhvaTwo</defName>
+    <label>Type-41 Hekhva</label>
+    <description>The Consortium is best known for its hamfisted approach to...every problem. When all you know is an axe, you treat everything like a tree, and Lahlit aren't exactly too fond of nature.
+	
+	This particular variant of handaxe (of which there are many) seems to be catered toward a military or self-defense purpose due to the...attempt at an ergonomic grip.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponMelee/Hekhva2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>Gearguut</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>1.4</Mass>
+    </statBases>
+    <relicChance>0</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Steel>30</Steel>
+      <Orichalcum>5</Orichalcum>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_LCSharp_Quality">
+    <defName>Kkaetl</defName>
+    <label>Kkaetl</label>
+    <description>Before Lahlisek was united under the rule of CEO-dynasties and guilds and corporations, barbarous pride-lords prowled the supercontinents, asserting their dominance through the butchery of tens of thousands with these ancestral blades.
+The Kkaetl defines Lahlit history and culture alike-it is timeless utilitarian savagery made manifest. These blades, a design going back millennia, are still very much used in a type of warfare far beyond the wildest dreams of the design's original creators.
+Kkaetlun are perfect for chopping off limbs and heads due to their flared-out design, and the tips at the ends of the blade can still punch holes in armor despite their rounded shape.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponMelee/Kkaetl</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>Gearguut</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>3200</WorkToMake>
+      <Mass>1.4</Mass>
+    </statBases>
+    <relicChance>0</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Steel>20</Steel>
+      <Orichalcum>8</Orichalcum>
+      <Tungsten>4</Tungsten>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_LCSharp_Quality">
+    <defName>BulEkrezh</defName>
+    <label>Type-18 Bul Ekrezh</label>
+    <description>Leave it to the Lahlit to put volatile experimental technology into the hands of their legions to skimp on quality assurance. The Bul Ekrezh is the type of careless invention that defines the Consortium in the eyes of many worlds: matter disruption fields for the working man on a budget.
+The Consortium was the first to develop such technology-blades that cast energy fields around themselves that can "cut" through any object by severing the molecular ties that bind it together-for the Lahlit aren't simple brutes. They're a highly intelligent people-but a wise people they most definitely aren't.
+Unfortunately, the Consortium designed this new and potentially groundbreaking defense solution like they designed every other product they've churned out over the centuries-with so many corners cut the damn thing might as well be disc-shaped. 
+Most galactic powers are waiting for another megacorporation to create a more...reliable version of this technology before they adopt it into their armies-for the Consortium-brand original could potentially fail at any moment, leaving the disruption field to rupture and essentially turn its wielder into microscopic chunks of flesh.</description>
+    <possessionCount>1</possessionCount>
+    <soundInteract>Interact_PlasmaSword</soundInteract>
+    <meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>
+    <graphicData>
+      <texPath>Things/WeaponMelee/BulEkrezh1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>Kethur</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>4800</WorkToMake>
+      <Mass>1.4</Mass>
+    </statBases>
+    <relicChance>0</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Orichalcum>14</Orichalcum>
+      <Tungsten>6</Tungsten>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.5</cooldownTime>
+        <armorPenetration>0.5</armorPenetration>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.5</cooldownTime>
+        <armorPenetration>0.8</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_LCSharp_Quality">
+    <defName>BulEkrezhTwo</defName>
+    <label>Type-42 Bul Ekrezh</label>
+    <description>This Bul Ekrezh's S-shaped hilt design was adopted from the material culture of the formerly distinct administrative territory of Ehnkkolz, an island continent whose Guild was "disbanded" by Th'res Liin and whose subsidiaries were brought under the heel of the Guild of neighboring Shekkogor, effectively granting Shekkogor's Guild absolute power over 2 separate landmasses.
+This wasn't the only "border redrawing" Liin devised as part of his Consortium reforms-it's his favorite way of getting rid of political opponents. The rest of Liin's dynasty saw themselves as a natural, modern continuation of the feudal, mercantilist empires that came before the Consortium. They thought that the Guilds would surely shatter the Consortium from the inside and break apart the
+new Lahlit nation that spent decades in the making if they weren't pleased. Theoretically, the CEO had ultimate power, but Liin's entire family seemed to be so enthralled by the potential threat of civil war that they were merely the puppets of the rich and powerful, just like the emperors and empresses of ancient days.
+
+Liin changed that. He was the only member of his dynasty to actually do his job-exerting ultimate power over the Guilds instead of the other way around. Some Guilds, like the Guild of Ehnkkolz or the Guilds of A'viss, didn't take kindly to his assertions. They formed a movement: Vruustad, a party dedicated to "tradition"-as ironic as that may seem for Lahlit...
+Liin's response was, of course, to have more than a few irate aristocrats stripped down to their skivvies, thrown into arenas, and fed to some of the most rabid creatures Lahlisek has ever produced. All the territory and property Liin's victims had in life was then swiftly gifted to his supporters, tying up many a loose end.</description>
+    <possessionCount>1</possessionCount>
+    <soundInteract>Interact_PlasmaSword</soundInteract>
+    <meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>
+    <graphicData>
+      <texPath>Things/WeaponMelee/BulEkrezh2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>Kethur</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>4800</WorkToMake>
+      <Mass>1.4</Mass>
+    </statBases>
+    <relicChance>0</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Orichalcum>14</Orichalcum>
+      <Tungsten>6</Tungsten>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.5</cooldownTime>
+        <armorPenetration>0.5</armorPenetration>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.5</cooldownTime>
+        <armorPenetration>0.8</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="BaseMeleeWeapon_LCSharp_Quality">
+    <defName>BulEkrezhThree</defName>
+    <label>Type-26 Bul Ekrezh</label>
+    <description>Like all things of Hogeiyezh, swords from the continent display features of an almost insectoid cast. Hogeiyesk blades tend to resemble terrifying mandibles-especially those once used in rituals. The continent was once home to widespread and flourishing shamanic tradition before the Consortium landed on its shores during the Wars of Synthesis.
+The people of Hogeiyezh used to hold strong belief in blood magic, and many outlandish and ornate swords and daggers were handcrafted by shamans to assist in ritualistic bloodletting.
+
+Some say that Dogeater warpriests have "rediscovered" these ancient beliefs and are doing their best to keep them alive, one sacrifice at a time.</description>
+    <possessionCount>1</possessionCount>
+    <soundInteract>Interact_PlasmaSword</soundInteract>
+    <meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>
+    <graphicData>
+      <texPath>Things/WeaponMelee/BulEkrezh3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>Azhaask</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>4800</WorkToMake>
+      <Mass>1.4</Mass>
+    </statBases>
+    <relicChance>0</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Orichalcum>14</Orichalcum>
+      <Tungsten>6</Tungsten>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.5</cooldownTime>
+        <armorPenetration>0.5</armorPenetration>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.5</cooldownTime>
+        <armorPenetration>0.8</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_LCSharp_Quality">
+    <defName>BulShaegar</defName>
+    <label>Type-12 Bul Shaegar</label>
+    <description>Worthy of its title, this Shaegar axe has been imbued with a molecular disruption field. In Lahlit'ehl, a "Shaegar" is any weapon, although particularly axes, used by mercenaries for head-hunting contracts.
+The Shaegar, often portrayed by an axe, is a common motif in the coats of arms of Lahlit guilds. In ancient days, long before the Consortium, the Lahlit were under the rule of petty nobles that constantly fought amongst themselves for wealth and status.
+The pride-lords of those times functioned much like the Consortium does today-if they couldn't forge somewhat-peaceful bonds of trade with another power, they just beat that power into submission until they signed the contract and didn't look at the fine print too much.
+
+The only thing protecting most Lahlit back then were guilds-simple worker's unions that held monopolies over various fields of production, and slowly but surely accrued more and more wealth and political power.
+Enough wealth and political power to start hiring thousands of mercenaries and arming disenfranchised carpenters and fishermen with the ultimate goal of a people's revolution. All across Lahlisek, there was a spring of proletarian takeovers-the last supercontinent to have true traditional nobility was the isolated, frozen hellhole of Xarathogh, whose Guild uprising started in the 3870s.
+Thing was, it didn't take long for the Lahlit guilds to become "the Guilds". The Guilds overthrew the nobility-only to take over in their stead. Your average Lahlit was now the property of a merchant instead of a baron, but other than that...life on Lahlisek in the late 4th millennium was the same as it ever was.</description>
+    <possessionCount>1</possessionCount>
+    <soundInteract>Interact_PlasmaSword</soundInteract>
+    <meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>
+    <graphicData>
+      <texPath>Things/WeaponMelee/BulShaegar1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>Kethur</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>4800</WorkToMake>
+      <Mass>1.4</Mass>
+    </statBases>
+    <relicChance>0</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Orichalcum>12</Orichalcum>
+      <Tungsten>9</Tungsten>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>3.3</cooldownTime>
+        <armorPenetration>0.8</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_LCSharp_Quality">
+    <defName>BulShaegarTwo</defName>
+    <label>Type-19 Bul Shaegar</label>
+    <description>This specific Bul Shaegar rendition was modeled after an axe supposedly owned by Ojirott Leku, an ancient knight of Hogeiyezh whose life was transcribed into legend. Ojirott's body was never found-all the archivists have of him is the axe-but legend has it that Ojirott's axe was driven into the skulls of many a great beast.
+Jhukkammr, Gessokodh, Il'skrunn, all names of monsters whose species were hunted to extinction in Leku's day-partially by his own efforts. And the axe shows it. Consortium scientists have found DNA on the weapon from easily dozens of extinct species, all of which were large, predatory, and highly aggressive, and many of which were mentioned in Ojirott's saga.
+They can't necessarily prove the finding actually belonged to Ojirott Leku, but...if someone has a better explanation, they sure as hell won't share it with their fellow academics.</description>
+    <possessionCount>1</possessionCount>
+    <soundInteract>Interact_PlasmaSword</soundInteract>
+    <meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>
+    <graphicData>
+      <texPath>Things/WeaponMelee/BulShaegar2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>Azhaask</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>4800</WorkToMake>
+      <Mass>1.4</Mass>
+    </statBases>
+    <relicChance>0</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Orichalcum>12</Orichalcum>
+      <Tungsten>9</Tungsten>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>21</power>
+        <cooldownTime>3.3</cooldownTime>
+        <armorPenetration>0.8</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseMeleeWeapon_LCBlunt_Quality">
+    <defName>BulAtlahg</defName>
+    <label>Type-33 Bul A'tlahg</label>
+    <description>The Consortium pulled out all the stops with this one-sporting a bulky head imbued with high-tech shockwave capacitors on the front end and a matter-disruption pick on the back, the Bul A'tlahg is a weapon well suited for utterly destroying...just about anything. A real utility tool.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/WeaponMelee/BulAtlahg</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ZeusHammer</soundInteract>
+    <meleeHitSound>Explosion_Thump</meleeHitSound>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>Azhaask</li>
+    </weaponTags>
+    <statBases>
+	  <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+      <WorkToMake>4800</WorkToMake>
+      <Mass>1.4</Mass>
+    </statBases>
+    <relicChance>0</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>LCTech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Orichalcum>14</Orichalcum>
+      <Tungsten>26</Tungsten>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>27</power>
+        <cooldownTime>3</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Bomb</def>
+            <amount>9</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>
